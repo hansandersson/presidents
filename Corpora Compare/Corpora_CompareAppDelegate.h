@@ -11,6 +11,9 @@
 @interface Corpora_CompareAppDelegate : NSObject <NSApplicationDelegate> {
 @private
 	NSWindow *window;
+	
+	IBOutlet NSWindow *progressWindow;
+	IBOutlet NSProgressIndicator *loadingProgressIndicator;
 }
 
 @property (assign) IBOutlet NSWindow *window;
