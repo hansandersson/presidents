@@ -7,9 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "PresidentialSpeechStatisticsProtocol.h"
 
 
-@interface President : NSViewController {
+@interface President : NSViewController <PresidentialSpeechStatisticsProtocol> {
 @private
 	NSString *name;
 	NSImage *portrait;
@@ -23,8 +24,11 @@
 	SEL action;
 	
     IBOutlet NSButton *portraitButton;
+	
+	NSColor *color;
 }
 
+@property (readwrite, copy) NSColor *color;
 @property (readwrite, assign) id target;
 @property (readwrite) SEL action;
 @property (readonly) NSDictionary *wordContexts;

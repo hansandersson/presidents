@@ -10,6 +10,8 @@
 
 @class President;
 
+@class ChartView;
+
 @interface CorpusView : NSView {
 @private
     NSMutableArray *presidents;
@@ -20,6 +22,7 @@
 	President *selection;
 	
 	IBOutlet NSTextField *labelField;
+	IBOutlet ChartView *chartView;
 }
 
 - (IBAction)select:(id)sender;
@@ -28,5 +31,7 @@
 - (void)positionPresidents;
 
 - (void)subviewFrameDidChange;
+
+- (void)shadow:(President *)president;
 
 @end

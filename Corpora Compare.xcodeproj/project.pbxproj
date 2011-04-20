@@ -301,6 +301,8 @@
 		3A1A9B64135C97C9007466B0 /* CorpusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A9B62135C97C8007466B0 /* CorpusView.m */; };
 		3A1A9B66135CA0F1007466B0 /* Parties.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B65135CA0F0007466B0 /* Parties.txt */; };
 		3A31E30D135E481A0084E981 /* Colors.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A31E30C135E481A0084E981 /* Colors.txt */; };
+		3A5C4D04135F41E800640E41 /* BackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5C4D03135F41E800640E41 /* BackgroundView.m */; };
+		3A5C4D07135F447E00640E41 /* ChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5C4D06135F447E00640E41 /* ChartView.m */; };
 		3A837F90135BC927004BCE17 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A837F8F135BC927004BCE17 /* Cocoa.framework */; };
 		3A837F9A135BC927004BCE17 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A837F98135BC927004BCE17 /* InfoPlist.strings */; };
 		3A837F9D135BC927004BCE17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A837F9C135BC927004BCE17 /* main.m */; };
@@ -310,10 +312,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3A1A98E7135C740A007466B0 /* President.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = President.h; sourceTree = "<group>"; };
+		3A1A98E7135C740A007466B0 /* President.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = President.h; sourceTree = "<group>"; };
 		3A1A98E8135C740A007466B0 /* President.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = President.m; sourceTree = "<group>"; };
 		3A1A98E9135C740A007466B0 /* President.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = President.xib; sourceTree = "<group>"; };
-		3A1A98EE135C74E5007466B0 /* Speech.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = Speech.h; sourceTree = "<group>"; };
+		3A1A98EE135C74E5007466B0 /* Speech.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Speech.h; sourceTree = "<group>"; };
 		3A1A98EF135C74E5007466B0 /* Speech.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Speech.m; sourceTree = "<group>"; };
 		3A1A98F6135C7E69007466B0 /* 1861-03-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1861-03-04.txt"; sourceTree = "<group>"; };
 		3A1A98F7135C7E69007466B0 /* 1861-12-03.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1861-12-03.txt"; sourceTree = "<group>"; };
@@ -600,10 +602,15 @@
 		3A1A9B31135C8B66007466B0 /* Abraham Lincoln.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abraham Lincoln.jpg"; sourceTree = "<group>"; };
 		3A1A9B5D135C8BE4007466B0 /* Chester Arthur.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Chester Arthur.gif"; sourceTree = "<group>"; };
 		3A1A9B5F135C926B007466B0 /* whitehouse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = whitehouse.jpg; sourceTree = "<group>"; };
-		3A1A9B61135C97C8007466B0 /* CorpusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = CorpusView.h; sourceTree = "<group>"; };
+		3A1A9B61135C97C8007466B0 /* CorpusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CorpusView.h; sourceTree = "<group>"; };
 		3A1A9B62135C97C8007466B0 /* CorpusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CorpusView.m; sourceTree = "<group>"; };
 		3A1A9B65135CA0F0007466B0 /* Parties.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Parties.txt; sourceTree = "<group>"; };
 		3A31E30C135E481A0084E981 /* Colors.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Colors.txt; sourceTree = "<group>"; };
+		3A5C4D00135F3E3D00640E41 /* PresidentialSpeechStatisticsProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresidentialSpeechStatisticsProtocol.h; sourceTree = "<group>"; };
+		3A5C4D02135F41E800640E41 /* BackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundView.h; sourceTree = "<group>"; };
+		3A5C4D03135F41E800640E41 /* BackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundView.m; sourceTree = "<group>"; };
+		3A5C4D05135F447D00640E41 /* ChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartView.h; sourceTree = "<group>"; };
+		3A5C4D06135F447E00640E41 /* ChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartView.m; sourceTree = "<group>"; };
 		3A837F8B135BC927004BCE17 /* Corpora Compare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Corpora Compare.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A837F8F135BC927004BCE17 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		3A837F92135BC927004BCE17 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -1312,14 +1319,19 @@
 		3A837F95135BC927004BCE17 /* Corpora Compare */ = {
 			isa = PBXGroup;
 			children = (
+				3A5C4D00135F3E3D00640E41 /* PresidentialSpeechStatisticsProtocol.h */,
 				3A837FA1135BC928004BCE17 /* Corpora_CompareAppDelegate.h */,
 				3A837FA2135BC928004BCE17 /* Corpora_CompareAppDelegate.m */,
 				3A1A98E7135C740A007466B0 /* President.h */,
 				3A1A98E8135C740A007466B0 /* President.m */,
-				3A1A9B61135C97C8007466B0 /* CorpusView.h */,
-				3A1A9B62135C97C8007466B0 /* CorpusView.m */,
 				3A1A98EE135C74E5007466B0 /* Speech.h */,
 				3A1A98EF135C74E5007466B0 /* Speech.m */,
+				3A5C4D02135F41E800640E41 /* BackgroundView.h */,
+				3A5C4D03135F41E800640E41 /* BackgroundView.m */,
+				3A5C4D05135F447D00640E41 /* ChartView.h */,
+				3A5C4D06135F447E00640E41 /* ChartView.m */,
+				3A1A9B61135C97C8007466B0 /* CorpusView.h */,
+				3A1A9B62135C97C8007466B0 /* CorpusView.m */,
 				3A837FA4135BC928004BCE17 /* MainMenu.xib */,
 				3A1A98E9135C740A007466B0 /* President.xib */,
 				3A837F96135BC927004BCE17 /* Supporting Files */,
@@ -1704,6 +1716,8 @@
 				3A1A98F1135C74E5007466B0 /* Speech.m in Sources */,
 				3A1A9B63135C97C9007466B0 /* CorpusView.h in Sources */,
 				3A1A9B64135C97C9007466B0 /* CorpusView.m in Sources */,
+				3A5C4D04135F41E800640E41 /* BackgroundView.m in Sources */,
+				3A5C4D07135F447E00640E41 /* ChartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

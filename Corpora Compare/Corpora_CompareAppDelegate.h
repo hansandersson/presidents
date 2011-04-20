@@ -7,8 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "PresidentialSpeechStatisticsProtocol.h"
 
-@interface Corpora_CompareAppDelegate : NSObject <NSApplicationDelegate> {
+@class CorpusView;
+@class ChartView;
+
+@interface Corpora_CompareAppDelegate : NSObject <NSApplicationDelegate, PresidentialSpeechStatisticsProtocol> {
 @private
 	NSWindow *window;
 	
@@ -20,6 +24,9 @@
 	
 	IBOutlet NSWindow *progressWindow;
 	IBOutlet NSProgressIndicator *loadingProgressIndicator;
+	
+	IBOutlet CorpusView *corpusView;
+	IBOutlet ChartView *chartView;
 }
 
 @property (assign) IBOutlet NSWindow *window;
@@ -29,5 +36,7 @@
 @property (readonly) NSDictionary *wordContexts;
 @property (readonly) NSArray *wordsByFrequency;
 @property (readonly) NSDecimalNumber *wordsCount;
+
+@property (readwrite, copy) NSColor *color;
 
 @end

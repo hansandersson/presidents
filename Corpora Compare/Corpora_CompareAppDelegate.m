@@ -9,6 +9,7 @@
 #import "Corpora_CompareAppDelegate.h"
 #import "President.h"
 #import "CorpusView.h"
+#import "ChartView.h"
 
 @implementation Corpora_CompareAppDelegate
 
@@ -20,8 +21,12 @@
 @synthesize wordsByFrequency;
 @synthesize wordsCount;
 
+@synthesize color;
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+	[self setColor:[NSColor colorWithCalibratedRed:1.0 green:1.0 blue:1.0 alpha:1.0]];
+	
 	NSArray *colors = [NSArray arrayWithObjects:[NSColor colorWithCalibratedRed:1.0 green:1.0 blue:1.0 alpha:1.0], [NSColor greenColor], [NSColor brownColor], [NSColor yellowColor], [NSColor orangeColor], [NSColor cyanColor], [NSColor redColor], [NSColor blueColor], nil];
 	
 	[[self window] setAcceptsMouseMovedEvents:YES];
@@ -79,9 +84,13 @@
 			[NSDecimalNumber decimalNumberWithMantissa:[(NSArray *)[wordContextsWorking valueForKey:word] count] exponent:0 isNegative:NO]];
 		}
 		
-		[(CorpusView *)[window contentView] addPresident:newPresident];
+		[newPresident setColor:[partyColors valueForKey:[presidentParties valueForKey:[newPresident name]]]];
+		
+		[corpusView addPresident:newPresident];
 		[loadingProgressIndicator incrementBy:1.0];
 	}
+	
+	wordContexts = [NSDictionary dictionaryWithDictionary:wordContextsWorking];
 	
 	wordsByFrequency = [[wordContexts allKeys] sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2){
 		return ( [[wordContexts valueForKey:obj1] count] == [[wordContexts valueForKey:obj2] count]
@@ -93,7 +102,9 @@
 	}];
 	
 	[progressWindow close];
+	[chartView setBarSpacing:2.0];
 	[window makeKeyAndOrderFront:self];
+	[chartView setRepresentedObject:self];
 }
 
 @end

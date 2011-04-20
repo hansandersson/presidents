@@ -8,17 +8,22 @@
 
 #import "CorpusView.h"
 #import "President.h"
-#import "Corpora_CompareAppDelegate.h"
+#import "ChartView.h"
 
 @implementation CorpusView
 
 - (IBAction)select:(id)sender
 {
-	if (selection == sender) selection = nil;
+	if (selection == sender)
+	{
+		selection = nil;
+		[chartView setRepresentedObject:(id <PresidentialSpeechStatisticsProtocol>)[[NSApplication sharedApplication] delegate]];
+	}
 	else
 	{
 		selection = sender;
 		highlight = nil;
+		[chartView setRepresentedObject:(id <PresidentialSpeechStatisticsProtocol>)sender];
 	}
 	[self positionPresidents];
 }
@@ -34,13 +39,15 @@
 			if (highlight != president)
 			{
 				highlight = president;
+				[chartView setComparedObject:highlight];
 				[self setNeedsDisplay:YES];
 			}
 			return;
 		}
 	}
-	if (highlight) [self setNeedsDisplay:YES];
 	highlight = nil;
+	[chartView setComparedObject:(id<PresidentialSpeechStatisticsProtocol>)[[NSApplication sharedApplication] delegate]];
+	[self setNeedsDisplay:YES];
 }
 
 - (NSSize)area
@@ -52,7 +59,7 @@
 {
 	NSSize area = [self area];
 	return NSMakePoint([self bounds].origin.x + 0.5*area.width,
-					   [self bounds].origin.y + 0.5*area.height);
+					   [self bounds].origin.y + area.height - 12);
 }
 
 - (void)addPresident:(President *)president
@@ -102,7 +109,7 @@
 		{
 			double angle = M_PI_2 + (double)(p)*M_PI/(double)([presidents count]);
 			destination = NSMakeRect(center.x + (0.5 * area.width * sin(angle)),
-									 center.y + (0.5 * area.height * cos(angle)), 32, 32);
+									 center.y + (area.height * cos(angle)), 32, 32);
 		}
 		[[[president view] animator] setFrame:destination];
 	}
@@ -123,12 +130,7 @@
 {
 	[super drawRect:dirtyRect];
 	
-	[[NSColor blackColor] setFill];
-	[[NSBezierPath bezierPathWithRect:[self bounds]] fill];
-	
 	President *reference = highlight ? highlight : selection;
-	
-	NSString *referencePartyName = [[(Corpora_CompareAppDelegate *)[[NSApplication sharedApplication] delegate] presidentParties] valueForKey:[reference name]];
 	
 	if (!reference)
 	{
@@ -136,17 +138,14 @@
 		return;
 	}
 	
-	NSColor *referencePartyColor = [[(Corpora_CompareAppDelegate *)[[NSApplication sharedApplication] delegate] partyColors] valueForKey:referencePartyName];
-	
-	[labelField setTextColor:referencePartyColor];
-	CGColorRef referencePartyColorRef = CGColorCreateGenericRGB([referencePartyColor redComponent], [referencePartyColor greenComponent], [referencePartyColor blueComponent], [referencePartyColor alphaComponent]);
+	[labelField setTextColor:[reference color]];
+	CGColorRef referencePartyColorRef = CGColorCreateGenericRGB([[reference color] redComponent], [[reference color] greenComponent], [[reference color] blueComponent], [[reference color] alphaComponent]);
 	[[labelField layer] setShadowColor:referencePartyColorRef];
 	CGColorRelease(referencePartyColorRef);
 	[labelField setStringValue:[reference name]];
 	
 	for (President *president in presidents)
 	{
-		NSColor *presidentPartyColor = [[(Corpora_CompareAppDelegate *)[[NSApplication sharedApplication] delegate] partyColors] valueForKey:[[(Corpora_CompareAppDelegate *)[[NSApplication sharedApplication] delegate] presidentParties] valueForKey:[president name]]];
 		if (president != reference)
 		{
 			NSPoint start = [reference viewCenter];
@@ -162,36 +161,27 @@
 							  decimalNumberByDividingBy:
 							  [maximumSimilarity decimalNumberBySubtracting:minimumSimilarity]];
 			
-			[[presidentPartyColor colorWithAlphaComponent:[pairSimilarity doubleValue]] setStroke];
+			[[[president color] colorWithAlphaComponent:[pairSimilarity doubleValue]] setStroke];
 			[arc setLineWidth:2.0 * [pairSimilarity doubleValue]];
 			[arc stroke];
 			
-			if ([presidentPartyColor isEqualTo:referencePartyColor])
-			{
-				NSShadow *shadow = [[NSShadow alloc] init];
-				[shadow setShadowBlurRadius:12.0];
-				[shadow setShadowOffset:CGSizeMake(0.0, 0.0)];
-				[shadow setShadowColor:presidentPartyColor];
-				[shadow set];
-				[presidentPartyColor setFill];
-				[presidentPartyColor setStroke];
-				NSBezierPath *halo = [NSBezierPath bezierPathWithRect:[[president view] frame]];
-				[halo fill];
-				[halo stroke];
-				[[[NSShadow alloc] init] set];
-				[[NSColor clearColor] setFill];
-			}
+			if ([[president color] isEqualTo:[reference color]]) [self shadow:president];
 		}
 	}
 	
+	[self shadow:reference];
+}
+
+- (void)shadow:(President *)president
+{
 	NSShadow *shadow = [[NSShadow alloc] init];
 	[shadow setShadowBlurRadius:12.0];
 	[shadow setShadowOffset:CGSizeMake(0.0, 0.0)];
-	[shadow setShadowColor:referencePartyColor];
+	[shadow setShadowColor:[president color]];
 	[shadow set];
-	[referencePartyColor setFill];
-	[referencePartyColor setStroke];
-	NSBezierPath *halo = [NSBezierPath bezierPathWithRect:[[reference view] frame]];
+	[[president color] setFill];
+	[[president color] setStroke];
+	NSBezierPath *halo = [NSBezierPath bezierPathWithRect:[[president view] frame]];
 	[halo fill];
 	[halo stroke];
 	[[[NSShadow alloc] init] set];

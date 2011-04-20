@@ -13,6 +13,7 @@
 
 @synthesize name;
 @synthesize portrait;
+@synthesize color;
 @synthesize wordContexts;
 @synthesize wordsByFrequency;
 @synthesize wordsCount;
