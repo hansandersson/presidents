@@ -20,8 +20,9 @@
 {
 	NSArray *colors = [NSArray arrayWithObjects:[NSColor whiteColor], [NSColor greenColor], [NSColor brownColor], [NSColor yellowColor], [NSColor orangeColor], [NSColor cyanColor], [NSColor redColor], [NSColor blueColor], nil];
 	
-	(void)aNotification;
 	[[self window] setAcceptsMouseMovedEvents:YES];
+	[progressWindow makeKeyAndOrderFront:[aNotification object]];
+	[progressWindow becomeFirstResponder];
 	[loadingProgressIndicator setUsesThreadedAnimation:YES];
 	[loadingProgressIndicator setCanDrawConcurrently:YES];
 	

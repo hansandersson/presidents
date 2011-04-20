@@ -14,10 +14,10 @@
 
 - (IBAction)select:(id)sender
 {
-	if (selection == [(NSView *)sender superview]) selection = nil;
+	if (selection == sender) selection = nil;
 	else
 	{
-		selection = [(NSView *)sender superview];
+		selection = sender;
 		highlight = nil;
 	}
 	[self positionPresidents];
@@ -64,6 +64,10 @@
 	[[president view] removeFromSuperview];
 	[[president view] setFrameOrigin:_center];
 	[self addSubview:[president view]];
+	
+	[[president view] setPostsFrameChangedNotifications:YES];
+	[(NSNotificationCenter *)[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(subviewFrameDidChange) name:NSViewFrameDidChangeNotification object:[president view]];
+	
 	[presidents addObject:president];
 	
 	[president setTarget:self];
@@ -88,18 +92,17 @@
 	NSPoint center = [self center];
 	for (NSUInteger p = 0; p < [presidents count]; p++)
 	{
-		NSView *presidentView = [(President *)[presidents objectAtIndex:p] view];
+		President *president = (President *)[presidents objectAtIndex:p];
 		NSPoint destination;
-		if (presidentView == selection) destination = NSMakePoint([self center].x - 24.0, [self center].y - 24.0);
+		if (president == selection) destination = NSMakePoint([self center].x - 24.0, [self center].y - 24.0);
 		else
 		{
-			double angle = (double)(p)*(2.0*M_PI)/(double)([presidents count]);
+			double angle = M_PI_2 + (double)(p)*M_PI/(double)([presidents count]);
 			destination = NSMakePoint(center.x + (0.5 * area.width * sin(angle)),
 									 center.y + (0.5 * area.height * cos(angle)));
 		}
-		[[presidentView animator] setFrameOrigin:destination];
+		[[[president view] animator] setFrameOrigin:destination];
 	}
-	[self display];
 }
 
 - (void)resizeSubviewsWithOldSize:(NSSize)oldSize
@@ -108,6 +111,10 @@
 	[self positionPresidents];
 }
 
+- (void)subviewFrameDidChange
+{
+	[self setNeedsDisplay:YES];
+}
 
 - (void)drawRect:(NSRect)dirtyRect
 {
@@ -116,30 +123,47 @@
 	[[NSColor blackColor] setFill];
 	[[NSBezierPath bezierPathWithRect:[self bounds]] fill];
 	
-	if (highlight || selection) for (President *president in presidents)
+	President *reference = highlight ? highlight : selection;
+	
+	NSString *referencePartyName = [[(Corpora_CompareAppDelegate *)[[NSApplication sharedApplication] delegate] presidentParties] valueForKey:[reference name]];
+	
+	if (reference) for (President *president in presidents)
 	{
-		if (president != highlight && [president view] != selection)
+		NSColor *presidentPartyColor = [[(Corpora_CompareAppDelegate *)[[NSApplication sharedApplication] delegate] partyColors] valueForKey:[[(Corpora_CompareAppDelegate *)[[NSApplication sharedApplication] delegate] presidentParties] valueForKey:[president name]]];
+		if (president != reference)
 		{
-			NSPoint start;
-			if (highlight) start = [highlight viewCenter];
-			else start = [selection center];
+			NSPoint start = [reference viewCenter];
 			NSPoint end = [president viewCenter];
 			
 			NSBezierPath *arc = [[NSBezierPath alloc] init];
 			[arc moveToPoint:start];
 			[arc curveToPoint:end controlPoint1:[self center] controlPoint2:[self center]];
 			
-			NSDecimalNumber *pairSimilarity = [similarities valueForKey:[[highlight name] stringByAppendingFormat:@"–%@", [president name]]];
+			NSDecimalNumber *pairSimilarity = [similarities valueForKey:[[reference name] stringByAppendingFormat:@"–%@", [president name]]];
 			
 			pairSimilarity = [[pairSimilarity decimalNumberBySubtracting:minimumSimilarity]
 							  decimalNumberByDividingBy:
 							  [maximumSimilarity decimalNumberBySubtracting:minimumSimilarity]];
 			
-			NSColor *presidentPartyColor = [[(Corpora_CompareAppDelegate *)[[NSApplication sharedApplication] delegate] partyColors] valueForKey:[[(Corpora_CompareAppDelegate *)[[NSApplication sharedApplication] delegate] presidentParties] valueForKey:[president name]]];
-			
 			[[presidentPartyColor colorWithAlphaComponent:[pairSimilarity doubleValue]] setStroke];
-			[arc setLineWidth:[pairSimilarity doubleValue]];
+			[arc setLineWidth:2.0 * [pairSimilarity doubleValue]];
 			[arc stroke];
+		}
+		
+		if ([presidentPartyColor isEqualTo:[[(Corpora_CompareAppDelegate *)[[NSApplication sharedApplication] delegate] partyColors] valueForKey:referencePartyName]])
+		{
+			NSShadow *shadow = [[NSShadow alloc] init];
+			[shadow setShadowBlurRadius:12.0];
+			[shadow setShadowOffset:CGSizeMake(0.0, 0.0)];
+			[shadow setShadowColor:presidentPartyColor];
+			[shadow set];
+			[presidentPartyColor setFill];
+			[presidentPartyColor setStroke];
+			NSBezierPath *halo = [NSBezierPath bezierPathWithRect:[[president view] frame]];
+			[halo fill];
+			[halo stroke];
+			[[[NSShadow alloc] init] set];
+			[[NSColor clearColor] setFill];
 		}
 	}
 }

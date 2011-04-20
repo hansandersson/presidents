@@ -15,6 +15,9 @@
 @synthesize portrait;
 @synthesize wordContexts;
 
+@synthesize target;
+@synthesize action;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -103,14 +106,10 @@
 	return [sharedWords decimalNumberByDividingBy:[myWordsCount decimalNumberByAdding:otherWordsCount]];
 }
 
-- (void)setTarget:(id)target
+- (IBAction)relay:(id)sender
 {
-	[portraitButton setTarget:target];
-}
-
-- (void)setAction:(SEL)action
-{
-	[portraitButton setAction:action];
+	(void)sender;
+	if (target && action) [target performSelector:action withObject:self];
 }
 
 - (void)dealloc

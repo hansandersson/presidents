@@ -17,12 +17,14 @@
 	NSDecimalNumber *minimumSimilarity;
 	NSMutableDictionary *similarities;
 	President *highlight;
-	NSView *selection;
+	President *selection;
 }
 
 - (IBAction)select:(id)sender;
 
 - (void)addPresident:(President *)president;
 - (void)positionPresidents;
+
+- (void)subviewFrameDidChange;
 
 @end

@@ -17,9 +17,14 @@
 	
 	NSDictionary *wordContexts;
 	
+	id target;
+	SEL action;
+	
     IBOutlet NSButton *portraitButton;
 }
 
+@property (readwrite, assign) id target;
+@property (readwrite) SEL action;
 @property (readonly, copy) NSDictionary *wordContexts;
 @property (readonly, copy) NSString *name;
 @property (readwrite, copy) NSImage *portrait;
@@ -27,11 +32,10 @@
 - (void)loadSpeeches:(NSArray *)speechPaths;
 - (void)loadName:(NSString *)newName;
 
+- (IBAction)relay:(id)sender;
+
 - (NSPoint)viewCenter;
 
 - (NSDecimalNumber *)computedSimilarityTo:(President *)otherPresident;
-
-- (void)setTarget:(id)target;
-- (void)setAction:(SEL)action;
 
 @end
