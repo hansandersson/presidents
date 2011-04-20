@@ -25,8 +25,8 @@
 
 @property (readwrite, assign) id target;
 @property (readwrite) SEL action;
-@property (readonly, copy) NSDictionary *wordContexts;
-@property (readonly, copy) NSString *name;
+@property (readonly) NSDictionary *wordContexts;
+@property (readonly) NSString *name;
 @property (readwrite, copy) NSImage *portrait;
 
 - (void)loadSpeeches:(NSArray *)speechPaths;

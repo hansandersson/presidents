@@ -18,7 +18,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-	NSArray *colors = [NSArray arrayWithObjects:[NSColor whiteColor], [NSColor greenColor], [NSColor brownColor], [NSColor yellowColor], [NSColor orangeColor], [NSColor cyanColor], [NSColor redColor], [NSColor blueColor], nil];
+	NSArray *colors = [NSArray arrayWithObjects:[NSColor colorWithCalibratedRed:1.0 green:1.0 blue:1.0 alpha:1.0], [NSColor greenColor], [NSColor brownColor], [NSColor yellowColor], [NSColor orangeColor], [NSColor cyanColor], [NSColor redColor], [NSColor blueColor], nil];
 	
 	[[self window] setAcceptsMouseMovedEvents:YES];
 	[progressWindow makeKeyAndOrderFront:[aNotification object]];

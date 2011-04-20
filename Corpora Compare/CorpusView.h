@@ -18,6 +18,8 @@
 	NSMutableDictionary *similarities;
 	President *highlight;
 	President *selection;
+	
+	IBOutlet NSTextField *labelField;
 }
 
 - (IBAction)select:(id)sender;
