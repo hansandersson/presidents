@@ -14,6 +14,8 @@
 @synthesize name;
 @synthesize portrait;
 @synthesize wordContexts;
+@synthesize wordsByFrequency;
+@synthesize wordsCount;
 
 @synthesize target;
 @synthesize action;
@@ -24,6 +26,8 @@
     if (self) {
         speeches = [NSArray array];
 		wordContexts = [NSDictionary dictionary];
+		wordsByFrequency = [NSArray array];
+		wordsCount = [NSDecimalNumber zero];
     }
     
     return self;
@@ -49,17 +53,29 @@
 	NSMutableArray *speechesWorking = [NSMutableArray arrayWithArray:speeches];
 	for (NSString *speechPath in speechPaths)
 	{
-		NSLog(@"\t%@", speechPath);
+		//NSLog(@"\t%@", speechPath);
 		Speech *newSpeech = [[Speech alloc] initWithFileName:speechPath];
 		[speechesWorking addObject:newSpeech];
 		
 		for (NSString *word in [[newSpeech wordContexts] allKeys])
 		{
 			if (![wordContextsWorking valueForKey:word]) [wordContextsWorking setValue:[NSMutableArray array] forKey:word];
-			[(NSMutableArray *)[wordContextsWorking valueForKey:word] addObjectsFromArray:[[newSpeech wordContexts] valueForKey:word]];
+			NSArray *wordContextsInSpeech = [[newSpeech wordContexts] valueForKey:word];
+			[(NSMutableArray *)[wordContextsWorking valueForKey:word] addObjectsFromArray:wordContextsInSpeech];
+			wordsCount = [wordsCount decimalNumberByAdding:
+						  [NSDecimalNumber decimalNumberWithMantissa:[wordContextsInSpeech count] exponent:0 isNegative:NO]
+						  ];
 		}
 	}
 	wordContexts = [NSDictionary dictionaryWithDictionary:wordContextsWorking];
+	wordsByFrequency = [[wordContexts allKeys] sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2){
+		return ( [[wordContexts valueForKey:obj1] count] == [[wordContexts valueForKey:obj2] count]
+				? NSOrderedSame
+				: ( [[wordContexts valueForKey:obj1] count] > [[wordContexts valueForKey:obj2] count]
+				   ? NSOrderedAscending //Most-frequent words first
+				   : NSOrderedDescending )
+				);
+	}];
 	speeches = [NSArray arrayWithArray:speechesWorking];
 }
 

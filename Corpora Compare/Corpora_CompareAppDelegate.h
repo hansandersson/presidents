@@ -14,6 +14,9 @@
 	
 	NSDictionary *partyColors;
 	NSDictionary *presidentParties;
+	NSDictionary *wordContexts;
+	NSArray *wordsByFrequency;
+	NSDecimalNumber *wordsCount;
 	
 	IBOutlet NSWindow *progressWindow;
 	IBOutlet NSProgressIndicator *loadingProgressIndicator;
@@ -22,5 +25,9 @@
 @property (assign) IBOutlet NSWindow *window;
 @property (readonly) NSDictionary *partyColors;
 @property (readonly) NSDictionary *presidentParties;
+
+@property (readonly) NSDictionary *wordContexts;
+@property (readonly) NSArray *wordsByFrequency;
+@property (readonly) NSDecimalNumber *wordsCount;
 
 @end

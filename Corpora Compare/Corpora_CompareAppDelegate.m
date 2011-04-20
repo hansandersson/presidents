@@ -16,6 +16,10 @@
 @synthesize partyColors;
 @synthesize presidentParties;
 
+@synthesize wordContexts;
+@synthesize wordsByFrequency;
+@synthesize wordsCount;
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
 	NSArray *colors = [NSArray arrayWithObjects:[NSColor colorWithCalibratedRed:1.0 green:1.0 blue:1.0 alpha:1.0], [NSColor greenColor], [NSColor brownColor], [NSColor yellowColor], [NSColor orangeColor], [NSColor cyanColor], [NSColor redColor], [NSColor blueColor], nil];
@@ -23,6 +27,7 @@
 	[[self window] setAcceptsMouseMovedEvents:YES];
 	[progressWindow makeKeyAndOrderFront:[aNotification object]];
 	[progressWindow becomeFirstResponder];
+	[progressWindow display];
 	[loadingProgressIndicator setUsesThreadedAnimation:YES];
 	[loadingProgressIndicator setCanDrawConcurrently:YES];
 	
@@ -51,19 +56,41 @@
 	[loadingProgressIndicator setMaxValue:[presidentInfos count]];
 	[loadingProgressIndicator setDoubleValue:0.0];
 	
+	NSMutableDictionary *wordContextsWorking = [NSMutableDictionary dictionary];
+	wordsCount = [NSDecimalNumber zero];
+	
 	NSMutableArray *presidentSpeechesWorking = [NSMutableArray arrayWithCapacity:[presidentInfos count]];
 	for (NSString *presidentInfo in presidentInfos)
 	{
 		NSArray *pieces = [presidentInfo componentsSeparatedByString:@"	"];
 		NSString *presidentName = [pieces objectAtIndex:0];
-		NSLog(@"Loading %@...", presidentName);
+		[progressWindow setTitle:[NSString stringWithFormat:@"Loading %@...", presidentName]];
+		[progressWindow display];
 		President *newPresident = [[President alloc] initWithNibName:@"President" bundle:[NSBundle mainBundle]];
 		[newPresident loadName:presidentName];
 		[newPresident loadSpeeches:[[pieces objectAtIndex:1] componentsSeparatedByString:@" "]];
 		[presidentSpeechesWorking addObject:newPresident];
+		
+		for (NSString *word in [[newPresident wordContexts] allKeys])
+		{
+			if (![wordContextsWorking valueForKey:word]) [wordContextsWorking setValue:[NSMutableArray array] forKey:word];
+			[(NSMutableArray *)[wordContextsWorking valueForKey:word] addObjectsFromArray:[[newPresident wordContexts] valueForKey:word]];
+			wordsCount = [wordsCount decimalNumberByAdding:
+			[NSDecimalNumber decimalNumberWithMantissa:[(NSArray *)[wordContextsWorking valueForKey:word] count] exponent:0 isNegative:NO]];
+		}
+		
 		[(CorpusView *)[window contentView] addPresident:newPresident];
 		[loadingProgressIndicator incrementBy:1.0];
 	}
+	
+	wordsByFrequency = [[wordContexts allKeys] sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2){
+		return ( [[wordContexts valueForKey:obj1] count] == [[wordContexts valueForKey:obj2] count]
+				? NSOrderedSame
+				: ( [[wordContexts valueForKey:obj1] count] > [[wordContexts valueForKey:obj2] count]
+				   ? NSOrderedAscending //Most-frequent words first
+				   : NSOrderedDescending )
+				);
+	}];
 	
 	[progressWindow close];
 	[window makeKeyAndOrderFront:self];

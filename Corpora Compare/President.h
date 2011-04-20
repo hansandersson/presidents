@@ -16,6 +16,8 @@
 	NSArray *speeches;
 	
 	NSDictionary *wordContexts;
+	NSArray *wordsByFrequency;
+	NSDecimalNumber *wordsCount;
 	
 	id target;
 	SEL action;
@@ -26,8 +28,10 @@
 @property (readwrite, assign) id target;
 @property (readwrite) SEL action;
 @property (readonly) NSDictionary *wordContexts;
+@property (readonly) NSArray *wordsByFrequency;
 @property (readonly) NSString *name;
 @property (readwrite, copy) NSImage *portrait;
+@property (readonly) NSDecimalNumber *wordsCount;
 
 - (void)loadSpeeches:(NSArray *)speechPaths;
 - (void)loadName:(NSString *)newName;
