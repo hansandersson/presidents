@@ -1,0 +1,43 @@
+George Washington	Unaffiliated
+John Adams	Federalist
+Thomas Jefferson	Democratic-Republican 1800
+James Madison	Democratic-Republican 1800
+James Monroe	Democratic-Republican 1800
+John Quincy Adams	Democratic-Republican 1800
+Andrew Jackson	Democratic 1828
+Martin Van Buren	Democratic 1828
+William Harrison	Whig 1828
+John Tyler	Whig 1828
+James Polk	Democratic 1828
+Zachary Taylor	Whig 1828
+Millard Fillmore	Whig 1828
+Franklin Pierce	Democratic 1828
+James Buchanan	Democratic 1828
+Abraham Lincoln	Republican 1860
+Andrew Johnson	Democratic 1860
+Ulysses Grant	Republican 1860
+Rutherford Hayes	Republican 1860
+James Garfield	Republican 1860
+Chester Arthur	Republican 1860
+Grover Cleveland	Democratic 1860
+Benjamin Harrison	Republican 1860
+William McKinley	Republican 1896
+Theodore Roosevelt	Republican 1896
+William Taft	Republican 1896
+Woodrow Wilson	Democratic 1896
+Warren Harding	Republican 1896
+Calvin Coolidge	Republican 1896
+Herbert Hoover	Republican 1896
+Franklin Roosevelt	Democratic 1932
+Harry Truman	Democratic 1932
+Dwight Eisenhower	Republican 1932
+John Kennedy	Democratic 1932
+Lyndon Johnson	Democratic 1964
+Richard Nixon	Republican 1964
+Gerald Ford	Republican 1964
+Jimmy Carter	Democratic 1964
+Ronald Reagan	Republican 1980
+George H W Bush	Republican 1980
+Bill Clinton	Democratic 1980
+George W Bush	Republican 1980
+Barack Obama	Democratic 1980

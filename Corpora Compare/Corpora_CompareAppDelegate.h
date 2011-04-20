@@ -12,10 +12,15 @@
 @private
 	NSWindow *window;
 	
+	NSDictionary *partyColors;
+	NSDictionary *presidentParties;
+	
 	IBOutlet NSWindow *progressWindow;
 	IBOutlet NSProgressIndicator *loadingProgressIndicator;
 }
 
 @property (assign) IBOutlet NSWindow *window;
+@property (readonly) NSDictionary *partyColors;
+@property (readonly) NSDictionary *presidentParties;
 
 @end

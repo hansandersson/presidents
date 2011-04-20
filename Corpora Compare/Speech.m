@@ -11,6 +11,8 @@
 
 @implementation Speech
 
+@synthesize wordContexts;
+
 - (id)init
 {
     self = [super init];

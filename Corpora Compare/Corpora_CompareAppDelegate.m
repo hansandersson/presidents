@@ -13,20 +13,44 @@
 @implementation Corpora_CompareAppDelegate
 
 @synthesize window;
+@synthesize partyColors;
+@synthesize presidentParties;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+	NSArray *colors = [NSArray arrayWithObjects:[NSColor whiteColor], [NSColor greenColor], [NSColor brownColor], [NSColor yellowColor], [NSColor orangeColor], [NSColor cyanColor], [NSColor redColor], [NSColor blueColor], nil];
+	
 	(void)aNotification;
+	[[self window] setAcceptsMouseMovedEvents:YES];
 	[loadingProgressIndicator setUsesThreadedAnimation:YES];
 	[loadingProgressIndicator setCanDrawConcurrently:YES];
 	
-	NSArray *presidentInfos = [[NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Presidents" ofType:@"txt"] usedEncoding:nil error:nil] componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
-	NSMutableArray *presidentsWorking = [NSMutableArray arrayWithCapacity:[presidentInfos count]];
+	NSArray *colorInfos = [[NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Colors" ofType:@"txt"] usedEncoding:nil error:nil] componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
+	
+	NSMutableDictionary *partyColorsWorking = [NSMutableDictionary dictionaryWithCapacity:[colors count]];
+	for (NSString *colorInfo in colorInfos)
+	{
+		NSArray *pieces = [colorInfo componentsSeparatedByString:@"	"];
+		[partyColorsWorking setValue:[colors objectAtIndex:[[pieces objectAtIndex:1] integerValue]] forKey:[pieces objectAtIndex:0]];
+	}
+	partyColors = [NSDictionary dictionaryWithDictionary:partyColorsWorking];
+	
+	NSArray *partyInfos = [[NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Parties" ofType:@"txt"] usedEncoding:nil error:nil] componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
+	NSMutableDictionary *presidentPartiesWorking = [NSMutableDictionary dictionaryWithCapacity:[partyInfos count]];
+	for (NSString *partyInfo in partyInfos)
+	{
+		NSArray *pieces = [partyInfo componentsSeparatedByString:@"	"];
+		[presidentPartiesWorking setValue:[pieces objectAtIndex:1] forKey:[pieces objectAtIndex:0]];
+	}
+	presidentParties = [NSDictionary dictionaryWithDictionary:presidentPartiesWorking];
+	
+	NSArray *presidentInfos = [[NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Speeches" ofType:@"txt"] usedEncoding:nil error:nil] componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
 	
 	[loadingProgressIndicator setIndeterminate:NO];
 	[loadingProgressIndicator setMaxValue:[presidentInfos count]];
 	[loadingProgressIndicator setDoubleValue:0.0];
 	
+	NSMutableArray *presidentSpeechesWorking = [NSMutableArray arrayWithCapacity:[presidentInfos count]];
 	for (NSString *presidentInfo in presidentInfos)
 	{
 		NSArray *pieces = [presidentInfo componentsSeparatedByString:@"	"];
@@ -35,7 +59,7 @@
 		President *newPresident = [[President alloc] initWithNibName:@"President" bundle:[NSBundle mainBundle]];
 		[newPresident loadName:presidentName];
 		[newPresident loadSpeeches:[[pieces objectAtIndex:1] componentsSeparatedByString:@" "]];
-		[presidentsWorking addObject:newPresident];
+		[presidentSpeechesWorking addObject:newPresident];
 		[(CorpusView *)[window contentView] addPresident:newPresident];
 		[loadingProgressIndicator incrementBy:1.0];
 	}

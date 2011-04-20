@@ -1,0 +1,15 @@
+Unaffiliated	0
+Federalist	0
+Democratic-Republican 1800	1
+Democratic 1828	2
+Whig 1828	3
+Republican 1860	4
+Democratic 1860	5
+Republican 1896	4
+Democratic 1896	5
+Republican 1932	6
+Democratic 1932	7
+Republican 1964	6
+Democratic 1964	7
+Republican 1980	6
+Democratic 1980	7

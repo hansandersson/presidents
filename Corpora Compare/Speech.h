@@ -15,6 +15,8 @@
 	NSDictionary *wordContexts;
 }
 
+@property (readonly, copy) NSDictionary *wordContexts;
+
 - (id)initWithFileName:(NSString *)fileName;
 
 @end
