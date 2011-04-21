@@ -109,26 +109,4 @@
 	[chartView setRepresentedObject:self];
 }
 
-- (IBAction)search:(id)sender
-{
-	[self controlTextDidEndEditing:[NSNotification notificationWithName:NSControlTextDidEndEditingNotification object:sender]];
-}
-
-- (void)controlTextDidEndEditing:(NSNotification *)notification
-{
-	NSString *searchWord = [[[[notification object] stringValue] lowercaseString]
-							stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-	NSInteger searchWordIndex = NSNotFound;
-	for (NSString *word in [[chartView representedObject] wordsByFrequency])
-	{
-		if ([word isEqualToString:searchWord])
-		{
-			searchWordIndex = [[[chartView representedObject] wordsByFrequency] indexOfObject:word];
-			break;
-		}
-	}
-	if (searchWordIndex == NSNotFound) return;
-	[chartView setBarsOffset:searchWordIndex];
-}
-
 @end

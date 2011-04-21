@@ -12,7 +12,7 @@
 @class CorpusView;
 @class ChartView;
 
-@interface EPluribusUnumAppDelegate : NSObject <NSControlTextEditingDelegate, NSApplicationDelegate, PresidentialSpeechStatisticsProtocol> {
+@interface EPluribusUnumAppDelegate : NSObject <NSApplicationDelegate, PresidentialSpeechStatisticsProtocol> {
 @private
 	NSWindow *window;
 	
@@ -38,7 +38,5 @@
 @property (readonly) NSDecimalNumber *wordsCount;
 
 @property (readwrite, copy) NSColor *color;
-
-- (IBAction)search:(id)sender;
 
 @end

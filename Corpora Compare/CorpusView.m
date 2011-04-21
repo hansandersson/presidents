@@ -12,6 +12,15 @@
 
 @implementation CorpusView
 
+@synthesize focusWord;
+
+- (void)setFocusWord:(NSString *)newFocusWord
+{
+	if ([focusWord isEqualToString:newFocusWord]) return;
+	focusWord = [newFocusWord copy];
+	[self positionPresidents];
+}
+
 - (IBAction)select:(id)sender
 {
 	if (selection == sender)
@@ -112,6 +121,16 @@
 									 center.y + ((area.height - 24) * cos(angle)), 32, 32);
 		}
 		[[[president view] animator] setFrame:destination];
+		
+		if (focusWord)
+		{
+			NSArray *presidentFocusWordContexts = [[president wordContexts] valueForKey:focusWord];
+			double focus = presidentFocusWordContexts
+			? (sqrt((double) [presidentFocusWordContexts count] / [[president wordsCount] doubleValue]))/2.0 + 0.5
+			: 0.25;
+			[[[president view] animator] setAlphaValue:focus];
+		}
+		else if ([[president view] alphaValue] != 1.0) [[[president view] animator] setAlphaValue:1.0];
 	}
 }
 

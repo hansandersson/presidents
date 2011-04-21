@@ -38,8 +38,9 @@
 			NSArray *words = [sentence componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 			for (NSString *word in words)
 			{
-				NSString *key = [[word stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] lowercaseString];
-				if (![key isEqualToString:@""])
+				NSString *key = [[[word stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] stringByTrimmingCharactersInSet:[NSCharacterSet punctuationCharacterSet]] lowercaseString];
+				
+				if (![key isEqualToString:@""] && ![[key stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"0987654321"]] isEqualToString:@""])
 				{
 					if (![wordContextsWorking valueForKey:key]) [wordContextsWorking setValue:[NSMutableArray array] forKey:key];
 					[[wordContextsWorking valueForKey:key] addObject:sentence];

@@ -23,7 +23,11 @@
 	
 	IBOutlet NSTextField *labelField;
 	IBOutlet ChartView *chartView;
+	
+	NSString *focusWord;
 }
+
+@property (readwrite, copy) NSString *focusWord;
 
 - (IBAction)select:(id)sender;
 
