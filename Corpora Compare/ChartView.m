@@ -17,6 +17,13 @@
 @synthesize barsCount;
 @synthesize barsOffset;
 
+- (void)setBarsOffset:(NSInteger)newBarsOffset
+{
+	if (newBarsOffset < 0) return;
+	barsOffset = newBarsOffset;
+	[self setNeedsDisplay:YES]; 
+}
+
 - (IBAction)incrementBarsCount:(id)sender
 {
 	(void)sender;

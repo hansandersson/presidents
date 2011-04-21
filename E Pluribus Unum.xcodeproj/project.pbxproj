@@ -1,0 +1,1926 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A1A98EA135C740A007466B0 /* President.h in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A98E7135C740A007466B0 /* President.h */; };
+		3A1A98EB135C740A007466B0 /* President.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A98E8135C740A007466B0 /* President.m */; };
+		3A1A98EC135C740A007466B0 /* President.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A98E9135C740A007466B0 /* President.xib */; };
+		3A1A98F0135C74E5007466B0 /* Speech.h in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A98EE135C74E5007466B0 /* Speech.h */; };
+		3A1A98F1135C74E5007466B0 /* Speech.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A98EF135C74E5007466B0 /* Speech.m */; };
+		3A1A9A11135C7E6A007466B0 /* 1861-03-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A98F6135C7E69007466B0 /* 1861-03-04.txt */; };
+		3A1A9A12135C7E6A007466B0 /* 1861-12-03.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A98F7135C7E69007466B0 /* 1861-12-03.txt */; };
+		3A1A9A13135C7E6A007466B0 /* 1862-12-01.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A98F8135C7E69007466B0 /* 1862-12-01.txt */; };
+		3A1A9A14135C7E6A007466B0 /* 1863-12-08.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A98F9135C7E69007466B0 /* 1863-12-08.txt */; };
+		3A1A9A15135C7E6A007466B0 /* 1864-12-06.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A98FA135C7E69007466B0 /* 1864-12-06.txt */; };
+		3A1A9A16135C7E6A007466B0 /* 1865-03-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A98FB135C7E69007466B0 /* 1865-03-04.txt */; };
+		3A1A9A17135C7E6A007466B0 /* 1829-03-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A98FD135C7E69007466B0 /* 1829-03-04.txt */; };
+		3A1A9A18135C7E6A007466B0 /* 1829-12-08.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A98FE135C7E69007466B0 /* 1829-12-08.txt */; };
+		3A1A9A19135C7E6A007466B0 /* 1830-12-06.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A98FF135C7E69007466B0 /* 1830-12-06.txt */; };
+		3A1A9A1A135C7E6A007466B0 /* 1831-12-06.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9900135C7E69007466B0 /* 1831-12-06.txt */; };
+		3A1A9A1B135C7E6A007466B0 /* 1832-12-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9901135C7E69007466B0 /* 1832-12-04.txt */; };
+		3A1A9A1C135C7E6A007466B0 /* 1833-03-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9902135C7E69007466B0 /* 1833-03-04.txt */; };
+		3A1A9A1D135C7E6A007466B0 /* 1833-12-03.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9903135C7E69007466B0 /* 1833-12-03.txt */; };
+		3A1A9A1E135C7E6A007466B0 /* 1834-12-01.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9904135C7E69007466B0 /* 1834-12-01.txt */; };
+		3A1A9A1F135C7E6A007466B0 /* 1835-12-07.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9905135C7E69007466B0 /* 1835-12-07.txt */; };
+		3A1A9A20135C7E6A007466B0 /* 1836-12-05.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9906135C7E69007466B0 /* 1836-12-05.txt */; };
+		3A1A9A21135C7E6A007466B0 /* 1865-12-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9908135C7E69007466B0 /* 1865-12-04.txt */; };
+		3A1A9A22135C7E6A007466B0 /* 2009-01-20.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A990A135C7E69007466B0 /* 2009-01-20.txt */; };
+		3A1A9A23135C7E6A007466B0 /* 2010-01-27.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A990B135C7E69007466B0 /* 2010-01-27.txt */; };
+		3A1A9A24135C7E6A007466B0 /* 1889-03-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A990D135C7E69007466B0 /* 1889-03-04.txt */; };
+		3A1A9A25135C7E6A007466B0 /* 1889-12-03.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A990E135C7E69007466B0 /* 1889-12-03.txt */; };
+		3A1A9A26135C7E6A007466B0 /* 1890-12-01.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A990F135C7E69007466B0 /* 1890-12-01.txt */; };
+		3A1A9A27135C7E6A007466B0 /* 1891-12-09.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9910135C7E69007466B0 /* 1891-12-09.txt */; };
+		3A1A9A28135C7E6A007466B0 /* 1892-12-06.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9911135C7E69007466B0 /* 1892-12-06.txt */; };
+		3A1A9A29135C7E6A007466B0 /* 1993-01-20.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9913135C7E69007466B0 /* 1993-01-20.txt */; };
+		3A1A9A2A135C7E6A007466B0 /* 1994-01-25.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9914135C7E69007466B0 /* 1994-01-25.txt */; };
+		3A1A9A2B135C7E6A007466B0 /* 1995-01-24.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9915135C7E69007466B0 /* 1995-01-24.txt */; };
+		3A1A9A2C135C7E6A007466B0 /* 1996-01-23.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9916135C7E69007466B0 /* 1996-01-23.txt */; };
+		3A1A9A2D135C7E6A007466B0 /* 1997-01-20.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9917135C7E69007466B0 /* 1997-01-20.txt */; };
+		3A1A9A2E135C7E6A007466B0 /* 1997-02-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9918135C7E69007466B0 /* 1997-02-04.txt */; };
+		3A1A9A2F135C7E6A007466B0 /* 1998-01-27.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9919135C7E69007466B0 /* 1998-01-27.txt */; };
+		3A1A9A30135C7E6A007466B0 /* 1999-01-19.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A991A135C7E69007466B0 /* 1999-01-19.txt */; };
+		3A1A9A31135C7E6A007466B0 /* 2000-01-27.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A991B135C7E69007466B0 /* 2000-01-27.txt */; };
+		3A1A9A32135C7E6A007466B0 /* 1923-12-06.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A991D135C7E69007466B0 /* 1923-12-06.txt */; };
+		3A1A9A33135C7E6A007466B0 /* 1924-12-03.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A991E135C7E69007466B0 /* 1924-12-03.txt */; };
+		3A1A9A34135C7E6A007466B0 /* 1925-03-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A991F135C7E69007466B0 /* 1925-03-04.txt */; };
+		3A1A9A35135C7E6A007466B0 /* 1925-12-08.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9920135C7E69007466B0 /* 1925-12-08.txt */; };
+		3A1A9A36135C7E6A007466B0 /* 1926-12-07.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9921135C7E69007466B0 /* 1926-12-07.txt */; };
+		3A1A9A37135C7E6A007466B0 /* 1927-12-06.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9922135C7E69007466B0 /* 1927-12-06.txt */; };
+		3A1A9A38135C7E6A007466B0 /* 1928-12-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9923135C7E69007466B0 /* 1928-12-04.txt */; };
+		3A1A9A39135C7E6A007466B0 /* 1881-12-06.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9925135C7E69007466B0 /* 1881-12-06.txt */; };
+		3A1A9A3A135C7E6A007466B0 /* 1882-12-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9926135C7E69007466B0 /* 1882-12-04.txt */; };
+		3A1A9A3B135C7E6A007466B0 /* 1883-12-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9927135C7E69007466B0 /* 1883-12-04.txt */; };
+		3A1A9A3C135C7E6A007466B0 /* 1884-12-01.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9928135C7E69007466B0 /* 1884-12-01.txt */; };
+		3A1A9A3D135C7E6A007466B0 /* 1953-01-20.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A992A135C7E69007466B0 /* 1953-01-20.txt */; };
+		3A1A9A3E135C7E6A007466B0 /* 1933-03-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A992C135C7E69007466B0 /* 1933-03-04.txt */; };
+		3A1A9A3F135C7E6A007466B0 /* 1937-01-20.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A992D135C7E69007466B0 /* 1937-01-20.txt */; };
+		3A1A9A40135C7E6A007466B0 /* 1941-01-06.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A992E135C7E69007466B0 /* 1941-01-06.txt */; };
+		3A1A9A41135C7E6A007466B0 /* 1941-01-20.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A992F135C7E69007466B0 /* 1941-01-20.txt */; };
+		3A1A9A42135C7E6A007466B0 /* 1943-01-07.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9930135C7E69007466B0 /* 1943-01-07.txt */; };
+		3A1A9A43135C7E6A007466B0 /* 1944-01-11.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9931135C7E69007466B0 /* 1944-01-11.txt */; };
+		3A1A9A44135C7E6A007466B0 /* 1945-01-20.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9932135C7E69007466B0 /* 1945-01-20.txt */; };
+		3A1A9A45135C7E6A007466B0 /* 1853-03-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9934135C7E69007466B0 /* 1853-03-04.txt */; };
+		3A1A9A46135C7E6A007466B0 /* 1853-12-05.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9935135C7E69007466B0 /* 1853-12-05.txt */; };
+		3A1A9A47135C7E6A007466B0 /* 1854-12-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9936135C7E69007466B0 /* 1854-12-04.txt */; };
+		3A1A9A48135C7E6A007466B0 /* 1855-12-31.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9937135C7E69007466B0 /* 1855-12-31.txt */; };
+		3A1A9A49135C7E6A007466B0 /* 1856-12-02.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9938135C7E69007466B0 /* 1856-12-02.txt */; };
+		3A1A9A4A135C7E6A007466B0 /* 1989-01-20.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A993A135C7E69007466B0 /* 1989-01-20.txt */; };
+		3A1A9A4B135C7E6A007466B0 /* 1990-01-31.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A993B135C7E69007466B0 /* 1990-01-31.txt */; };
+		3A1A9A4C135C7E6A007466B0 /* 1991-01-29.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A993C135C7E69007466B0 /* 1991-01-29.txt */; };
+		3A1A9A4D135C7E6A007466B0 /* 1992-01-28.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A993D135C7E69007466B0 /* 1992-01-28.txt */; };
+		3A1A9A4E135C7E6A007466B0 /* 2001-01-20.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A993F135C7E69007466B0 /* 2001-01-20.txt */; };
+		3A1A9A4F135C7E6A007466B0 /* 2002-01-29.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9940135C7E69007466B0 /* 2002-01-29.txt */; };
+		3A1A9A50135C7E6A007466B0 /* 2003-01-28.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9941135C7E69007466B0 /* 2003-01-28.txt */; };
+		3A1A9A51135C7E6A007466B0 /* 2004-01-20.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9942135C7E69007466B0 /* 2004-01-20.txt */; };
+		3A1A9A52135C7E6A007466B0 /* 2005-01-20.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9943135C7E69007466B0 /* 2005-01-20.txt */; };
+		3A1A9A53135C7E6A007466B0 /* 2005-02-02.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9944135C7E69007466B0 /* 2005-02-02.txt */; };
+		3A1A9A54135C7E6A007466B0 /* 2006-01-31.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9945135C7E69007466B0 /* 2006-01-31.txt */; };
+		3A1A9A55135C7E6A007466B0 /* 2007-01-23.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9946135C7E69007466B0 /* 2007-01-23.txt */; };
+		3A1A9A56135C7E6A007466B0 /* 2008-01-28.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9947135C7E69007466B0 /* 2008-01-28.txt */; };
+		3A1A9A57135C7E6A007466B0 /* 1789-04-30.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9949135C7E69007466B0 /* 1789-04-30.txt */; };
+		3A1A9A58135C7E6A007466B0 /* 1790-01-08.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A994A135C7E69007466B0 /* 1790-01-08.txt */; };
+		3A1A9A59135C7E6A007466B0 /* 1790-12-08.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A994B135C7E69007466B0 /* 1790-12-08.txt */; };
+		3A1A9A5A135C7E6A007466B0 /* 1791-10-25.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A994C135C7E69007466B0 /* 1791-10-25.txt */; };
+		3A1A9A5B135C7E6A007466B0 /* 1792-11-06.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A994D135C7E69007466B0 /* 1792-11-06.txt */; };
+		3A1A9A5C135C7E6A007466B0 /* 1793-03-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A994E135C7E69007466B0 /* 1793-03-04.txt */; };
+		3A1A9A5D135C7E6A007466B0 /* 1793-12-03.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A994F135C7E69007466B0 /* 1793-12-03.txt */; };
+		3A1A9A5E135C7E6A007466B0 /* 1794-11-19.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9950135C7E69007466B0 /* 1794-11-19.txt */; };
+		3A1A9A5F135C7E6A007466B0 /* 1795-12-08.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9951135C7E69007466B0 /* 1795-12-08.txt */; };
+		3A1A9A60135C7E6A007466B0 /* 1796-12-07.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9952135C7E69007466B0 /* 1796-12-07.txt */; };
+		3A1A9A61135C7E6A007466B0 /* 1975-01-15.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9954135C7E69007466B0 /* 1975-01-15.txt */; };
+		3A1A9A62135C7E6A007466B0 /* 1976-01-19.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9955135C7E69007466B0 /* 1976-01-19.txt */; };
+		3A1A9A63135C7E6A007466B0 /* 1977-01-12.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9956135C7E69007466B0 /* 1977-01-12.txt */; };
+		3A1A9A64135C7E6A007466B0 /* 1885-03-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9958135C7E69007466B0 /* 1885-03-04.txt */; };
+		3A1A9A65135C7E6A007466B0 /* 1885-12-08.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9959135C7E69007466B0 /* 1885-12-08.txt */; };
+		3A1A9A66135C7E6A007466B0 /* 1886-12-06.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A995A135C7E69007466B0 /* 1886-12-06.txt */; };
+		3A1A9A67135C7E6A007466B0 /* 1887-12-06.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A995B135C7E69007466B0 /* 1887-12-06.txt */; };
+		3A1A9A68135C7E6A007466B0 /* 1888-12-03.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A995C135C7E69007466B0 /* 1888-12-03.txt */; };
+		3A1A9A69135C7E6A007466B0 /* 1893-03-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A995D135C7E69007466B0 /* 1893-03-04.txt */; };
+		3A1A9A6A135C7E6A007466B0 /* 1893-12-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A995E135C7E69007466B0 /* 1893-12-04.txt */; };
+		3A1A9A6B135C7E6A007466B0 /* 1894-12-03.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A995F135C7E69007466B0 /* 1894-12-03.txt */; };
+		3A1A9A6C135C7E6A007466B0 /* 1895-12-02.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9960135C7E69007466B0 /* 1895-12-02.txt */; };
+		3A1A9A6D135C7E6A007466B0 /* 1896-12-07.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9961135C7E69007466B0 /* 1896-12-07.txt */; };
+		3A1A9A6E135C7E6A007466B0 /* 1949-01-20.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9963135C7E69007466B0 /* 1949-01-20.txt */; };
+		3A1A9A6F135C7E6A007466B0 /* 1929-03-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9965135C7E69007466B0 /* 1929-03-04.txt */; };
+		3A1A9A70135C7E6A007466B0 /* 1881-03-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9967135C7E69007466B0 /* 1881-03-04.txt */; };
+		3A1A9A71135C7E6A007466B0 /* 1857-03-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9969135C7E69007466B0 /* 1857-03-04.txt */; };
+		3A1A9A72135C7E6A007466B0 /* 1857-12-08.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A996A135C7E69007466B0 /* 1857-12-08.txt */; };
+		3A1A9A73135C7E6A007466B0 /* 1858-12-06.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A996B135C7E69007466B0 /* 1858-12-06.txt */; };
+		3A1A9A74135C7E6A007466B0 /* 1859-12-19.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A996C135C7E69007466B0 /* 1859-12-19.txt */; };
+		3A1A9A75135C7E6A007466B0 /* 1860-12-03.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A996D135C7E69007466B0 /* 1860-12-03.txt */; };
+		3A1A9A76135C7E6A007466B0 /* 1809-03-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A996F135C7E69007466B0 /* 1809-03-04.txt */; };
+		3A1A9A77135C7E6A007466B0 /* 1809-11-29.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9970135C7E69007466B0 /* 1809-11-29.txt */; };
+		3A1A9A78135C7E6A007466B0 /* 1810-12-05.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9971135C7E69007466B0 /* 1810-12-05.txt */; };
+		3A1A9A79135C7E6A007466B0 /* 1811-11-05.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9972135C7E69007466B0 /* 1811-11-05.txt */; };
+		3A1A9A7A135C7E6A007466B0 /* 1812-11-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9973135C7E69007466B0 /* 1812-11-04.txt */; };
+		3A1A9A7B135C7E6A007466B0 /* 1813-03-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9974135C7E69007466B0 /* 1813-03-04.txt */; };
+		3A1A9A7C135C7E6A007466B0 /* 1813-12-07.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9975135C7E69007466B0 /* 1813-12-07.txt */; };
+		3A1A9A7D135C7E6A007466B0 /* 1814-09-20.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9976135C7E69007466B0 /* 1814-09-20.txt */; };
+		3A1A9A7E135C7E6A007466B0 /* 1815-12-05.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9977135C7E69007466B0 /* 1815-12-05.txt */; };
+		3A1A9A7F135C7E6A007466B0 /* 1816-12-03.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9978135C7E69007466B0 /* 1816-12-03.txt */; };
+		3A1A9A80135C7E6A007466B0 /* 1817-03-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A997A135C7E69007466B0 /* 1817-03-04.txt */; };
+		3A1A9A81135C7E6A007466B0 /* 1817-12-12.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A997B135C7E69007466B0 /* 1817-12-12.txt */; };
+		3A1A9A82135C7E6A007466B0 /* 1818-11-16.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A997C135C7E69007466B0 /* 1818-11-16.txt */; };
+		3A1A9A83135C7E6A007466B0 /* 1819-12-07.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A997D135C7E69007466B0 /* 1819-12-07.txt */; };
+		3A1A9A84135C7E6A007466B0 /* 1820-11-14.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A997E135C7E69007466B0 /* 1820-11-14.txt */; };
+		3A1A9A85135C7E6A007466B0 /* 1821-03-05.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A997F135C7E69007466B0 /* 1821-03-05.txt */; };
+		3A1A9A86135C7E6A007466B0 /* 1821-12-03.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9980135C7E69007466B0 /* 1821-12-03.txt */; };
+		3A1A9A87135C7E6A007466B0 /* 1822-12-03.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9981135C7E69007466B0 /* 1822-12-03.txt */; };
+		3A1A9A88135C7E6A007466B0 /* 1823-12-02.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9982135C7E69007466B0 /* 1823-12-02.txt */; };
+		3A1A9A89135C7E6A007466B0 /* 1824-12-07.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9983135C7E69007466B0 /* 1824-12-07.txt */; };
+		3A1A9A8A135C7E6A007466B0 /* 1845-03-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9985135C7E69007466B0 /* 1845-03-04.txt */; };
+		3A1A9A8B135C7E6A007466B0 /* 1845-12-02.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9986135C7E69007466B0 /* 1845-12-02.txt */; };
+		3A1A9A8C135C7E6A007466B0 /* 1846-12-08.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9987135C7E69007466B0 /* 1846-12-08.txt */; };
+		3A1A9A8D135C7E6A007466B0 /* 1847-12-07.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9988135C7E69007466B0 /* 1847-12-07.txt */; };
+		3A1A9A8E135C7E6A007466B0 /* 1848-12-05.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9989135C7E69007466B0 /* 1848-12-05.txt */; };
+		3A1A9A8F135C7E6A007466B0 /* 1977-01-20.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A998B135C7E69007466B0 /* 1977-01-20.txt */; };
+		3A1A9A90135C7E6A007466B0 /* 1978-01-19.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A998C135C7E69007466B0 /* 1978-01-19.txt */; };
+		3A1A9A91135C7E6A007466B0 /* 1979-01-23.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A998D135C7E69007466B0 /* 1979-01-23.txt */; };
+		3A1A9A92135C7E6A007466B0 /* 1980-01-23.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A998E135C7E69007466B0 /* 1980-01-23.txt */; };
+		3A1A9A93135C7E6A007466B0 /* 1797-03-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9990135C7E69007466B0 /* 1797-03-04.txt */; };
+		3A1A9A94135C7E6A007466B0 /* 1797-11-22.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9991135C7E69007466B0 /* 1797-11-22.txt */; };
+		3A1A9A95135C7E6A007466B0 /* 1798-12-08.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9992135C7E69007466B0 /* 1798-12-08.txt */; };
+		3A1A9A96135C7E6A007466B0 /* 1799-12-03.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9993135C7E69007466B0 /* 1799-12-03.txt */; };
+		3A1A9A97135C7E6A007466B0 /* 1800-11-22.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9994135C7E69007466B0 /* 1800-11-22.txt */; };
+		3A1A9A98135C7E6A007466B0 /* 1961-01-20.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9996135C7E69007466B0 /* 1961-01-20.txt */; };
+		3A1A9A99135C7E6A007466B0 /* 1962-01-11.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9997135C7E69007466B0 /* 1962-01-11.txt */; };
+		3A1A9A9A135C7E6A007466B0 /* 1963-01-14.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9998135C7E69007466B0 /* 1963-01-14.txt */; };
+		3A1A9A9B135C7E6A007466B0 /* 1825-03-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A999A135C7E69007466B0 /* 1825-03-04.txt */; };
+		3A1A9A9C135C7E6A007466B0 /* 1825-12-06.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A999B135C7E69007466B0 /* 1825-12-06.txt */; };
+		3A1A9A9D135C7E6A007466B0 /* 1826-12-05.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A999C135C7E69007466B0 /* 1826-12-05.txt */; };
+		3A1A9A9E135C7E6A007466B0 /* 1827-12-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A999D135C7E69007466B0 /* 1827-12-04.txt */; };
+		3A1A9A9F135C7E6A007466B0 /* 1828-12-02.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A999E135C7E69007466B0 /* 1828-12-02.txt */; };
+		3A1A9AA0135C7E6A007466B0 /* 1841-12-07.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99A0135C7E69007466B0 /* 1841-12-07.txt */; };
+		3A1A9AA1135C7E6A007466B0 /* 1842-12-06.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99A1135C7E69007466B0 /* 1842-12-06.txt */; };
+		3A1A9AA2135C7E6A007466B0 /* 1843-12-05.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99A2135C7E69007466B0 /* 1843-12-05.txt */; };
+		3A1A9AA3135C7E6A007466B0 /* 1844-12-03.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99A3135C7E69007466B0 /* 1844-12-03.txt */; };
+		3A1A9AA4135C7E6A007466B0 /* 1964-01-08.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99A5135C7E6A007466B0 /* 1964-01-08.txt */; };
+		3A1A9AA5135C7E6A007466B0 /* 1965-01-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99A6135C7E6A007466B0 /* 1965-01-04.txt */; };
+		3A1A9AA6135C7E6A007466B0 /* 1965-01-20.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99A7135C7E6A007466B0 /* 1965-01-20.txt */; };
+		3A1A9AA7135C7E6A007466B0 /* 1966-01-12.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99A8135C7E6A007466B0 /* 1966-01-12.txt */; };
+		3A1A9AA8135C7E6A007466B0 /* 1967-01-10.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99A9135C7E6A007466B0 /* 1967-01-10.txt */; };
+		3A1A9AA9135C7E6A007466B0 /* 1968-01-17.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99AA135C7E6A007466B0 /* 1968-01-17.txt */; };
+		3A1A9AAA135C7E6A007466B0 /* 1969-01-14.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99AB135C7E6A007466B0 /* 1969-01-14.txt */; };
+		3A1A9AAB135C7E6A007466B0 /* 1837-03-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99AD135C7E6A007466B0 /* 1837-03-04.txt */; };
+		3A1A9AAC135C7E6A007466B0 /* 1837-12-05.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99AE135C7E6A007466B0 /* 1837-12-05.txt */; };
+		3A1A9AAD135C7E6A007466B0 /* 1838-12-03.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99AF135C7E6A007466B0 /* 1838-12-03.txt */; };
+		3A1A9AAE135C7E6A007466B0 /* 1839-12-02.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99B0135C7E6A007466B0 /* 1839-12-02.txt */; };
+		3A1A9AAF135C7E6A007466B0 /* 1840-12-05.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99B1135C7E6A007466B0 /* 1840-12-05.txt */; };
+		3A1A9AB0135C7E6A007466B0 /* 1850-12-02.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99B3135C7E6A007466B0 /* 1850-12-02.txt */; };
+		3A1A9AB1135C7E6A007466B0 /* 1851-12-02.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99B4135C7E6A007466B0 /* 1851-12-02.txt */; };
+		3A1A9AB2135C7E6A007466B0 /* 1852-12-06.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99B5135C7E6A007466B0 /* 1852-12-06.txt */; };
+		3A1A9AB3135C7E6A007466B0 /* 1969-01-20.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99B7135C7E6A007466B0 /* 1969-01-20.txt */; };
+		3A1A9AB4135C7E6A007466B0 /* 1970-01-22.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99B8135C7E6A007466B0 /* 1970-01-22.txt */; };
+		3A1A9AB5135C7E6A007466B0 /* 1971-01-22.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99B9135C7E6A007466B0 /* 1971-01-22.txt */; };
+		3A1A9AB6135C7E6A007466B0 /* 1971-02-25.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99BA135C7E6A007466B0 /* 1971-02-25.txt */; };
+		3A1A9AB7135C7E6A007466B0 /* 1972-01-20.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99BB135C7E6A007466B0 /* 1972-01-20.txt */; };
+		3A1A9AB8135C7E6A007466B0 /* 1973-01-20.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99BC135C7E6A007466B0 /* 1973-01-20.txt */; };
+		3A1A9AB9135C7E6A007466B0 /* 1974-01-30.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99BD135C7E6A007466B0 /* 1974-01-30.txt */; };
+		3A1A9ABA135C7E6A007466B0 /* 1981-01-20.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99BF135C7E6A007466B0 /* 1981-01-20.txt */; };
+		3A1A9ABB135C7E6A007466B0 /* 1981-06-29.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99C0135C7E6A007466B0 /* 1981-06-29.txt */; };
+		3A1A9ABC135C7E6A007466B0 /* 1982-01-26.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99C1135C7E6A007466B0 /* 1982-01-26.txt */; };
+		3A1A9ABD135C7E6A007466B0 /* 1983-01-25.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99C2135C7E6A007466B0 /* 1983-01-25.txt */; };
+		3A1A9ABE135C7E6A007466B0 /* 1984-01-25.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99C3135C7E6A007466B0 /* 1984-01-25.txt */; };
+		3A1A9ABF135C7E6A007466B0 /* 1985-01-21.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99C4135C7E6A007466B0 /* 1985-01-21.txt */; };
+		3A1A9AC0135C7E6A007466B0 /* 1985-02-06.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99C5135C7E6A007466B0 /* 1985-02-06.txt */; };
+		3A1A9AC1135C7E6A007466B0 /* 1986-02-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99C6135C7E6A007466B0 /* 1986-02-04.txt */; };
+		3A1A9AC2135C7E6A007466B0 /* 1987-01-27.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99C7135C7E6A007466B0 /* 1987-01-27.txt */; };
+		3A1A9AC3135C7E6A007466B0 /* 1988-01-25.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99C8135C7E6A007466B0 /* 1988-01-25.txt */; };
+		3A1A9AC4135C7E6A007466B0 /* 1877-03-05.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99CA135C7E6A007466B0 /* 1877-03-05.txt */; };
+		3A1A9AC5135C7E6A007466B0 /* 1877-12-03.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99CB135C7E6A007466B0 /* 1877-12-03.txt */; };
+		3A1A9AC6135C7E6A007466B0 /* 1878-12-02.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99CC135C7E6A007466B0 /* 1878-12-02.txt */; };
+		3A1A9AC7135C7E6A007466B0 /* 1879-12-01.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99CD135C7E6A007466B0 /* 1879-12-01.txt */; };
+		3A1A9AC8135C7E6A007466B0 /* 1880-12-06.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99CE135C7E6A007466B0 /* 1880-12-06.txt */; };
+		3A1A9AC9135C7E6A007466B0 /* 1901-12-03.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99D0135C7E6A007466B0 /* 1901-12-03.txt */; };
+		3A1A9ACA135C7E6A007466B0 /* 1902-12-02.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99D1135C7E6A007466B0 /* 1902-12-02.txt */; };
+		3A1A9ACB135C7E6A007466B0 /* 1903-12-07.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99D2135C7E6A007466B0 /* 1903-12-07.txt */; };
+		3A1A9ACC135C7E6A007466B0 /* 1904-12-06.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99D3135C7E6A007466B0 /* 1904-12-06.txt */; };
+		3A1A9ACD135C7E6A007466B0 /* 1905-03-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99D4135C7E6A007466B0 /* 1905-03-04.txt */; };
+		3A1A9ACE135C7E6A007466B0 /* 1905-12-05.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99D5135C7E6A007466B0 /* 1905-12-05.txt */; };
+		3A1A9ACF135C7E6A007466B0 /* 1906-12-03.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99D6135C7E6A007466B0 /* 1906-12-03.txt */; };
+		3A1A9AD0135C7E6A007466B0 /* 1907-12-03.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99D7135C7E6A007466B0 /* 1907-12-03.txt */; };
+		3A1A9AD1135C7E6A007466B0 /* 1908-12-09.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99D8135C7E6A007466B0 /* 1908-12-09.txt */; };
+		3A1A9AD2135C7E6A007466B0 /* 1801-03-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99DA135C7E6A007466B0 /* 1801-03-04.txt */; };
+		3A1A9AD3135C7E6A007466B0 /* 1801-12-08.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99DB135C7E6A007466B0 /* 1801-12-08.txt */; };
+		3A1A9AD4135C7E6A007466B0 /* 1802-12-15.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99DC135C7E6A007466B0 /* 1802-12-15.txt */; };
+		3A1A9AD5135C7E6A007466B0 /* 1803-10-17.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99DD135C7E6A007466B0 /* 1803-10-17.txt */; };
+		3A1A9AD6135C7E6A007466B0 /* 1804-11-08.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99DE135C7E6A007466B0 /* 1804-11-08.txt */; };
+		3A1A9AD7135C7E6A007466B0 /* 1805-03-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99DF135C7E6A007466B0 /* 1805-03-04.txt */; };
+		3A1A9AD8135C7E6A007466B0 /* 1805-12-03.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99E0135C7E6A007466B0 /* 1805-12-03.txt */; };
+		3A1A9AD9135C7E6A007466B0 /* 1806-12-02.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99E1135C7E6A007466B0 /* 1806-12-02.txt */; };
+		3A1A9ADA135C7E6A007466B0 /* 1807-10-27.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99E2135C7E6A007466B0 /* 1807-10-27.txt */; };
+		3A1A9ADB135C7E6A007466B0 /* 1808-11-08.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99E3135C7E6A007466B0 /* 1808-11-08.txt */; };
+		3A1A9ADC135C7E6A007466B0 /* 1869-03-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99E5135C7E6A007466B0 /* 1869-03-04.txt */; };
+		3A1A9ADD135C7E6A007466B0 /* 1869-12-06.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99E6135C7E6A007466B0 /* 1869-12-06.txt */; };
+		3A1A9ADE135C7E6A007466B0 /* 1870-12-05.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99E7135C7E6A007466B0 /* 1870-12-05.txt */; };
+		3A1A9ADF135C7E6A007466B0 /* 1871-12-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99E8135C7E6A007466B0 /* 1871-12-04.txt */; };
+		3A1A9AE0135C7E6A007466B0 /* 1872-12-02.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99E9135C7E6A007466B0 /* 1872-12-02.txt */; };
+		3A1A9AE1135C7E6A007466B0 /* 1873-03-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99EA135C7E6A007466B0 /* 1873-03-04.txt */; };
+		3A1A9AE2135C7E6A007466B0 /* 1873-12-01.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99EB135C7E6A007466B0 /* 1873-12-01.txt */; };
+		3A1A9AE3135C7E6A007466B0 /* 1874-12-07.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99EC135C7E6A007466B0 /* 1874-12-07.txt */; };
+		3A1A9AE4135C7E6A007466B0 /* 1875-12-07.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99ED135C7E6A007466B0 /* 1875-12-07.txt */; };
+		3A1A9AE5135C7E6A007466B0 /* 1876-12-05.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99EE135C7E6A007466B0 /* 1876-12-05.txt */; };
+		3A1A9AE6135C7E6A007466B0 /* 1921-03-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99F0135C7E6A007466B0 /* 1921-03-04.txt */; };
+		3A1A9AE7135C7E6A007466B0 /* 1921-12-06.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99F1135C7E6A007466B0 /* 1921-12-06.txt */; };
+		3A1A9AE8135C7E6A007466B0 /* 1922-12-08.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99F2135C7E6A007466B0 /* 1922-12-08.txt */; };
+		3A1A9AE9135C7E6A007466B0 /* 1841-03-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99F4135C7E6A007466B0 /* 1841-03-04.txt */; };
+		3A1A9AEA135C7E6A007466B0 /* 1909-03-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99F6135C7E6A007466B0 /* 1909-03-04.txt */; };
+		3A1A9AEB135C7E6A007466B0 /* 1909-12-07.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99F7135C7E6A007466B0 /* 1909-12-07.txt */; };
+		3A1A9AEC135C7E6A007466B0 /* 1910-12-06.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99F8135C7E6A007466B0 /* 1910-12-06.txt */; };
+		3A1A9AED135C7E6A007466B0 /* 1911-12-05.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99F9135C7E6A007466B0 /* 1911-12-05.txt */; };
+		3A1A9AEE135C7E6A007466B0 /* 1912-12-03.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99FA135C7E6A007466B0 /* 1912-12-03.txt */; };
+		3A1A9AEF135C7E6A007466B0 /* 1897-03-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99FC135C7E6A007466B0 /* 1897-03-04.txt */; };
+		3A1A9AF0135C7E6A007466B0 /* 1897-12-06.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99FD135C7E6A007466B0 /* 1897-12-06.txt */; };
+		3A1A9AF1135C7E6A007466B0 /* 1898-12-05.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99FE135C7E6A007466B0 /* 1898-12-05.txt */; };
+		3A1A9AF2135C7E6A007466B0 /* 1899-12-05.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A99FF135C7E6A007466B0 /* 1899-12-05.txt */; };
+		3A1A9AF3135C7E6A007466B0 /* 1900-12-03.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9A00135C7E6A007466B0 /* 1900-12-03.txt */; };
+		3A1A9AF4135C7E6A007466B0 /* 1901-03-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9A01135C7E6A007466B0 /* 1901-03-04.txt */; };
+		3A1A9AF5135C7E6A007466B0 /* 1913-03-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9A03135C7E6A007466B0 /* 1913-03-04.txt */; };
+		3A1A9AF6135C7E6A007466B0 /* 1913-12-02.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9A04135C7E6A007466B0 /* 1913-12-02.txt */; };
+		3A1A9AF7135C7E6A007466B0 /* 1914-12-08.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9A05135C7E6A007466B0 /* 1914-12-08.txt */; };
+		3A1A9AF8135C7E6A007466B0 /* 1915-12-07.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9A06135C7E6A007466B0 /* 1915-12-07.txt */; };
+		3A1A9AF9135C7E6A007466B0 /* 1916-12-05.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9A07135C7E6A007466B0 /* 1916-12-05.txt */; };
+		3A1A9AFA135C7E6A007466B0 /* 1917-03-05.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9A08135C7E6A007466B0 /* 1917-03-05.txt */; };
+		3A1A9AFB135C7E6A007466B0 /* 1917-12-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9A09135C7E6A007466B0 /* 1917-12-04.txt */; };
+		3A1A9AFC135C7E6A007466B0 /* 1918-12-02.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9A0A135C7E6A007466B0 /* 1918-12-02.txt */; };
+		3A1A9AFD135C7E6A007466B0 /* 1919-12-02.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9A0B135C7E6A007466B0 /* 1919-12-02.txt */; };
+		3A1A9AFE135C7E6A007466B0 /* 1920-12-07.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9A0C135C7E6A007466B0 /* 1920-12-07.txt */; };
+		3A1A9AFF135C7E6A007466B0 /* 1849-03-05.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9A0E135C7E6A007466B0 /* 1849-03-05.txt */; };
+		3A1A9B00135C7E6A007466B0 /* 1849-12-04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9A0F135C7E6A007466B0 /* 1849-12-04.txt */; };
+		3A1A9B05135C83D3007466B0 /* Speeches.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B04135C83D3007466B0 /* Speeches.txt */; };
+		3A1A9B32135C8B66007466B0 /* Zachary Taylor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B07135C8B66007466B0 /* Zachary Taylor.jpg */; };
+		3A1A9B33135C8B66007466B0 /* Woodrow Wilson.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B08135C8B66007466B0 /* Woodrow Wilson.gif */; };
+		3A1A9B34135C8B66007466B0 /* William McKinley.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B09135C8B66007466B0 /* William McKinley.gif */; };
+		3A1A9B35135C8B66007466B0 /* William Taft.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B0A135C8B66007466B0 /* William Taft.jpg */; };
+		3A1A9B36135C8B66007466B0 /* William Harrison.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B0B135C8B66007466B0 /* William Harrison.jpg */; };
+		3A1A9B37135C8B66007466B0 /* Warren Harding.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B0C135C8B66007466B0 /* Warren Harding.gif */; };
+		3A1A9B38135C8B66007466B0 /* Ulysses Grant.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B0D135C8B66007466B0 /* Ulysses Grant.gif */; };
+		3A1A9B39135C8B66007466B0 /* Thomas Jefferson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B0E135C8B66007466B0 /* Thomas Jefferson.jpg */; };
+		3A1A9B3A135C8B66007466B0 /* Theodore Roosevelt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B0F135C8B66007466B0 /* Theodore Roosevelt.jpg */; };
+		3A1A9B3B135C8B66007466B0 /* Rutherford Hayes.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B10135C8B66007466B0 /* Rutherford Hayes.png */; };
+		3A1A9B3C135C8B66007466B0 /* Ronald Reagan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B11135C8B66007466B0 /* Ronald Reagan.jpg */; };
+		3A1A9B3D135C8B66007466B0 /* Richard Nixon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B12135C8B66007466B0 /* Richard Nixon.jpg */; };
+		3A1A9B3E135C8B66007466B0 /* Millard Fillmore.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B13135C8B66007466B0 /* Millard Fillmore.jpg */; };
+		3A1A9B3F135C8B66007466B0 /* Martin Van Buren.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B14135C8B66007466B0 /* Martin Van Buren.gif */; };
+		3A1A9B40135C8B66007466B0 /* Lyndon Johnson.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B15135C8B66007466B0 /* Lyndon Johnson.png */; };
+		3A1A9B41135C8B66007466B0 /* John Tyler.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B16135C8B66007466B0 /* John Tyler.jpg */; };
+		3A1A9B42135C8B66007466B0 /* John Quincy Adams.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B17135C8B66007466B0 /* John Quincy Adams.jpg */; };
+		3A1A9B43135C8B66007466B0 /* John Kennedy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B18135C8B66007466B0 /* John Kennedy.jpg */; };
+		3A1A9B44135C8B66007466B0 /* John Adams.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B19135C8B66007466B0 /* John Adams.jpg */; };
+		3A1A9B45135C8B66007466B0 /* Jimmy Carter.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B1A135C8B66007466B0 /* Jimmy Carter.gif */; };
+		3A1A9B46135C8B66007466B0 /* James Polk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B1B135C8B66007466B0 /* James Polk.jpg */; };
+		3A1A9B47135C8B66007466B0 /* James Monroe.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B1C135C8B66007466B0 /* James Monroe.gif */; };
+		3A1A9B48135C8B66007466B0 /* James Madison.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B1D135C8B66007466B0 /* James Madison.jpg */; };
+		3A1A9B49135C8B66007466B0 /* James Buchanan.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B1E135C8B66007466B0 /* James Buchanan.gif */; };
+		3A1A9B4A135C8B66007466B0 /* James Garfield.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B1F135C8B66007466B0 /* James Garfield.jpg */; };
+		3A1A9B4B135C8B66007466B0 /* Herbert Hoover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B20135C8B66007466B0 /* Herbert Hoover.jpg */; };
+		3A1A9B4C135C8B66007466B0 /* Harry Truman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B21135C8B66007466B0 /* Harry Truman.jpg */; };
+		3A1A9B4D135C8B66007466B0 /* Grover Cleveland.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B22135C8B66007466B0 /* Grover Cleveland.jpg */; };
+		3A1A9B4E135C8B66007466B0 /* Gerald Ford.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B23135C8B66007466B0 /* Gerald Ford.jpg */; };
+		3A1A9B4F135C8B66007466B0 /* George Washington.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B24135C8B66007466B0 /* George Washington.jpg */; };
+		3A1A9B50135C8B66007466B0 /* George W Bush.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B25135C8B66007466B0 /* George W Bush.jpeg */; };
+		3A1A9B51135C8B66007466B0 /* George H W Bush.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B26135C8B66007466B0 /* George H W Bush.jpg */; };
+		3A1A9B52135C8B66007466B0 /* Franklin Pierce.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B27135C8B66007466B0 /* Franklin Pierce.jpg */; };
+		3A1A9B53135C8B66007466B0 /* Franklin Roosevelt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B28135C8B66007466B0 /* Franklin Roosevelt.jpg */; };
+		3A1A9B54135C8B66007466B0 /* Dwight Eisenhower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B29135C8B66007466B0 /* Dwight Eisenhower.jpg */; };
+		3A1A9B55135C8B66007466B0 /* Calvin Coolidge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B2A135C8B66007466B0 /* Calvin Coolidge.jpg */; };
+		3A1A9B57135C8B66007466B0 /* Bill Clinton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B2C135C8B66007466B0 /* Bill Clinton.jpg */; };
+		3A1A9B58135C8B66007466B0 /* Benjamin Harrison.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B2D135C8B66007466B0 /* Benjamin Harrison.jpg */; };
+		3A1A9B59135C8B66007466B0 /* Barack Obama.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B2E135C8B66007466B0 /* Barack Obama.jpg */; };
+		3A1A9B5A135C8B66007466B0 /* Andrew Johnson.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B2F135C8B66007466B0 /* Andrew Johnson.gif */; };
+		3A1A9B5B135C8B66007466B0 /* Andrew Jackson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B30135C8B66007466B0 /* Andrew Jackson.jpg */; };
+		3A1A9B5C135C8B66007466B0 /* Abraham Lincoln.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B31135C8B66007466B0 /* Abraham Lincoln.jpg */; };
+		3A1A9B5E135C8BE4007466B0 /* Chester Arthur.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B5D135C8BE4007466B0 /* Chester Arthur.gif */; };
+		3A1A9B60135C926B007466B0 /* whitehouse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B5F135C926B007466B0 /* whitehouse.jpg */; };
+		3A1A9B63135C97C9007466B0 /* CorpusView.h in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A9B61135C97C8007466B0 /* CorpusView.h */; };
+		3A1A9B64135C97C9007466B0 /* CorpusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A9B62135C97C8007466B0 /* CorpusView.m */; };
+		3A1A9B66135CA0F1007466B0 /* Parties.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A9B65135CA0F0007466B0 /* Parties.txt */; };
+		3A31E30D135E481A0084E981 /* Colors.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A31E30C135E481A0084E981 /* Colors.txt */; };
+		3A36344713609E610032DF4F /* EPluribusUnum.icns in Resources */ = {isa = PBXBuildFile; fileRef = 3A36344613609E610032DF4F /* EPluribusUnum.icns */; };
+		3A5C4D04135F41E800640E41 /* BackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5C4D03135F41E800640E41 /* BackgroundView.m */; };
+		3A5C4D07135F447E00640E41 /* ChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5C4D06135F447E00640E41 /* ChartView.m */; };
+		3A837F90135BC927004BCE17 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A837F8F135BC927004BCE17 /* Cocoa.framework */; };
+		3A837F9A135BC927004BCE17 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A837F98135BC927004BCE17 /* InfoPlist.strings */; };
+		3A837F9D135BC927004BCE17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A837F9C135BC927004BCE17 /* main.m */; };
+		3A837FA0135BC927004BCE17 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3A837F9E135BC927004BCE17 /* Credits.rtf */; };
+		3A837FA3135BC928004BCE17 /* EPluribusUnumAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A837FA2135BC928004BCE17 /* EPluribusUnumAppDelegate.m */; };
+		3A837FA6135BC928004BCE17 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A837FA4135BC928004BCE17 /* MainMenu.xib */; };
+		3A9A942A13608ED000B9DBCF /* right.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 3A9A942913608ECF00B9DBCF /* right.tiff */; };
+		3A9A942D13608EDA00B9DBCF /* left.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 3A9A942C13608EDA00B9DBCF /* left.tiff */; };
+		3A9A942F13608EEC00B9DBCF /* right_alt.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 3A9A942E13608EEC00B9DBCF /* right_alt.tiff */; };
+		3A9A943113608EF500B9DBCF /* left_alt.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 3A9A943013608EF500B9DBCF /* left_alt.tiff */; };
+		3A9A94341360911D00B9DBCF /* in.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A9A94321360911C00B9DBCF /* in.png */; };
+		3A9A94351360911D00B9DBCF /* out.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A9A94331360911C00B9DBCF /* out.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A1A98E7135C740A007466B0 /* President.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = President.h; sourceTree = "<group>"; };
+		3A1A98E8135C740A007466B0 /* President.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = President.m; sourceTree = "<group>"; };
+		3A1A98E9135C740A007466B0 /* President.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = President.xib; sourceTree = "<group>"; };
+		3A1A98EE135C74E5007466B0 /* Speech.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Speech.h; sourceTree = "<group>"; };
+		3A1A98EF135C74E5007466B0 /* Speech.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Speech.m; sourceTree = "<group>"; };
+		3A1A98F6135C7E69007466B0 /* 1861-03-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1861-03-04.txt"; sourceTree = "<group>"; };
+		3A1A98F7135C7E69007466B0 /* 1861-12-03.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1861-12-03.txt"; sourceTree = "<group>"; };
+		3A1A98F8135C7E69007466B0 /* 1862-12-01.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1862-12-01.txt"; sourceTree = "<group>"; };
+		3A1A98F9135C7E69007466B0 /* 1863-12-08.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1863-12-08.txt"; sourceTree = "<group>"; };
+		3A1A98FA135C7E69007466B0 /* 1864-12-06.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1864-12-06.txt"; sourceTree = "<group>"; };
+		3A1A98FB135C7E69007466B0 /* 1865-03-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1865-03-04.txt"; sourceTree = "<group>"; };
+		3A1A98FD135C7E69007466B0 /* 1829-03-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1829-03-04.txt"; sourceTree = "<group>"; };
+		3A1A98FE135C7E69007466B0 /* 1829-12-08.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1829-12-08.txt"; sourceTree = "<group>"; };
+		3A1A98FF135C7E69007466B0 /* 1830-12-06.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1830-12-06.txt"; sourceTree = "<group>"; };
+		3A1A9900135C7E69007466B0 /* 1831-12-06.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1831-12-06.txt"; sourceTree = "<group>"; };
+		3A1A9901135C7E69007466B0 /* 1832-12-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1832-12-04.txt"; sourceTree = "<group>"; };
+		3A1A9902135C7E69007466B0 /* 1833-03-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1833-03-04.txt"; sourceTree = "<group>"; };
+		3A1A9903135C7E69007466B0 /* 1833-12-03.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1833-12-03.txt"; sourceTree = "<group>"; };
+		3A1A9904135C7E69007466B0 /* 1834-12-01.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1834-12-01.txt"; sourceTree = "<group>"; };
+		3A1A9905135C7E69007466B0 /* 1835-12-07.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1835-12-07.txt"; sourceTree = "<group>"; };
+		3A1A9906135C7E69007466B0 /* 1836-12-05.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1836-12-05.txt"; sourceTree = "<group>"; };
+		3A1A9908135C7E69007466B0 /* 1865-12-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1865-12-04.txt"; sourceTree = "<group>"; };
+		3A1A990A135C7E69007466B0 /* 2009-01-20.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "2009-01-20.txt"; sourceTree = "<group>"; };
+		3A1A990B135C7E69007466B0 /* 2010-01-27.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "2010-01-27.txt"; sourceTree = "<group>"; };
+		3A1A990D135C7E69007466B0 /* 1889-03-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1889-03-04.txt"; sourceTree = "<group>"; };
+		3A1A990E135C7E69007466B0 /* 1889-12-03.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1889-12-03.txt"; sourceTree = "<group>"; };
+		3A1A990F135C7E69007466B0 /* 1890-12-01.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1890-12-01.txt"; sourceTree = "<group>"; };
+		3A1A9910135C7E69007466B0 /* 1891-12-09.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1891-12-09.txt"; sourceTree = "<group>"; };
+		3A1A9911135C7E69007466B0 /* 1892-12-06.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1892-12-06.txt"; sourceTree = "<group>"; };
+		3A1A9913135C7E69007466B0 /* 1993-01-20.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1993-01-20.txt"; sourceTree = "<group>"; };
+		3A1A9914135C7E69007466B0 /* 1994-01-25.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1994-01-25.txt"; sourceTree = "<group>"; };
+		3A1A9915135C7E69007466B0 /* 1995-01-24.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1995-01-24.txt"; sourceTree = "<group>"; };
+		3A1A9916135C7E69007466B0 /* 1996-01-23.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1996-01-23.txt"; sourceTree = "<group>"; };
+		3A1A9917135C7E69007466B0 /* 1997-01-20.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1997-01-20.txt"; sourceTree = "<group>"; };
+		3A1A9918135C7E69007466B0 /* 1997-02-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1997-02-04.txt"; sourceTree = "<group>"; };
+		3A1A9919135C7E69007466B0 /* 1998-01-27.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1998-01-27.txt"; sourceTree = "<group>"; };
+		3A1A991A135C7E69007466B0 /* 1999-01-19.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1999-01-19.txt"; sourceTree = "<group>"; };
+		3A1A991B135C7E69007466B0 /* 2000-01-27.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "2000-01-27.txt"; sourceTree = "<group>"; };
+		3A1A991D135C7E69007466B0 /* 1923-12-06.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1923-12-06.txt"; sourceTree = "<group>"; };
+		3A1A991E135C7E69007466B0 /* 1924-12-03.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1924-12-03.txt"; sourceTree = "<group>"; };
+		3A1A991F135C7E69007466B0 /* 1925-03-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1925-03-04.txt"; sourceTree = "<group>"; };
+		3A1A9920135C7E69007466B0 /* 1925-12-08.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1925-12-08.txt"; sourceTree = "<group>"; };
+		3A1A9921135C7E69007466B0 /* 1926-12-07.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1926-12-07.txt"; sourceTree = "<group>"; };
+		3A1A9922135C7E69007466B0 /* 1927-12-06.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1927-12-06.txt"; sourceTree = "<group>"; };
+		3A1A9923135C7E69007466B0 /* 1928-12-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1928-12-04.txt"; sourceTree = "<group>"; };
+		3A1A9925135C7E69007466B0 /* 1881-12-06.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1881-12-06.txt"; sourceTree = "<group>"; };
+		3A1A9926135C7E69007466B0 /* 1882-12-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1882-12-04.txt"; sourceTree = "<group>"; };
+		3A1A9927135C7E69007466B0 /* 1883-12-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1883-12-04.txt"; sourceTree = "<group>"; };
+		3A1A9928135C7E69007466B0 /* 1884-12-01.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1884-12-01.txt"; sourceTree = "<group>"; };
+		3A1A992A135C7E69007466B0 /* 1953-01-20.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1953-01-20.txt"; sourceTree = "<group>"; };
+		3A1A992C135C7E69007466B0 /* 1933-03-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1933-03-04.txt"; sourceTree = "<group>"; };
+		3A1A992D135C7E69007466B0 /* 1937-01-20.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1937-01-20.txt"; sourceTree = "<group>"; };
+		3A1A992E135C7E69007466B0 /* 1941-01-06.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1941-01-06.txt"; sourceTree = "<group>"; };
+		3A1A992F135C7E69007466B0 /* 1941-01-20.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1941-01-20.txt"; sourceTree = "<group>"; };
+		3A1A9930135C7E69007466B0 /* 1943-01-07.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1943-01-07.txt"; sourceTree = "<group>"; };
+		3A1A9931135C7E69007466B0 /* 1944-01-11.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1944-01-11.txt"; sourceTree = "<group>"; };
+		3A1A9932135C7E69007466B0 /* 1945-01-20.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1945-01-20.txt"; sourceTree = "<group>"; };
+		3A1A9934135C7E69007466B0 /* 1853-03-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1853-03-04.txt"; sourceTree = "<group>"; };
+		3A1A9935135C7E69007466B0 /* 1853-12-05.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1853-12-05.txt"; sourceTree = "<group>"; };
+		3A1A9936135C7E69007466B0 /* 1854-12-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1854-12-04.txt"; sourceTree = "<group>"; };
+		3A1A9937135C7E69007466B0 /* 1855-12-31.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1855-12-31.txt"; sourceTree = "<group>"; };
+		3A1A9938135C7E69007466B0 /* 1856-12-02.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1856-12-02.txt"; sourceTree = "<group>"; };
+		3A1A993A135C7E69007466B0 /* 1989-01-20.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1989-01-20.txt"; sourceTree = "<group>"; };
+		3A1A993B135C7E69007466B0 /* 1990-01-31.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1990-01-31.txt"; sourceTree = "<group>"; };
+		3A1A993C135C7E69007466B0 /* 1991-01-29.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1991-01-29.txt"; sourceTree = "<group>"; };
+		3A1A993D135C7E69007466B0 /* 1992-01-28.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1992-01-28.txt"; sourceTree = "<group>"; };
+		3A1A993F135C7E69007466B0 /* 2001-01-20.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "2001-01-20.txt"; sourceTree = "<group>"; };
+		3A1A9940135C7E69007466B0 /* 2002-01-29.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "2002-01-29.txt"; sourceTree = "<group>"; };
+		3A1A9941135C7E69007466B0 /* 2003-01-28.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "2003-01-28.txt"; sourceTree = "<group>"; };
+		3A1A9942135C7E69007466B0 /* 2004-01-20.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "2004-01-20.txt"; sourceTree = "<group>"; };
+		3A1A9943135C7E69007466B0 /* 2005-01-20.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "2005-01-20.txt"; sourceTree = "<group>"; };
+		3A1A9944135C7E69007466B0 /* 2005-02-02.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "2005-02-02.txt"; sourceTree = "<group>"; };
+		3A1A9945135C7E69007466B0 /* 2006-01-31.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "2006-01-31.txt"; sourceTree = "<group>"; };
+		3A1A9946135C7E69007466B0 /* 2007-01-23.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "2007-01-23.txt"; sourceTree = "<group>"; };
+		3A1A9947135C7E69007466B0 /* 2008-01-28.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "2008-01-28.txt"; sourceTree = "<group>"; };
+		3A1A9949135C7E69007466B0 /* 1789-04-30.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1789-04-30.txt"; sourceTree = "<group>"; };
+		3A1A994A135C7E69007466B0 /* 1790-01-08.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1790-01-08.txt"; sourceTree = "<group>"; };
+		3A1A994B135C7E69007466B0 /* 1790-12-08.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1790-12-08.txt"; sourceTree = "<group>"; };
+		3A1A994C135C7E69007466B0 /* 1791-10-25.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1791-10-25.txt"; sourceTree = "<group>"; };
+		3A1A994D135C7E69007466B0 /* 1792-11-06.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1792-11-06.txt"; sourceTree = "<group>"; };
+		3A1A994E135C7E69007466B0 /* 1793-03-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1793-03-04.txt"; sourceTree = "<group>"; };
+		3A1A994F135C7E69007466B0 /* 1793-12-03.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1793-12-03.txt"; sourceTree = "<group>"; };
+		3A1A9950135C7E69007466B0 /* 1794-11-19.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1794-11-19.txt"; sourceTree = "<group>"; };
+		3A1A9951135C7E69007466B0 /* 1795-12-08.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1795-12-08.txt"; sourceTree = "<group>"; };
+		3A1A9952135C7E69007466B0 /* 1796-12-07.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1796-12-07.txt"; sourceTree = "<group>"; };
+		3A1A9954135C7E69007466B0 /* 1975-01-15.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1975-01-15.txt"; sourceTree = "<group>"; };
+		3A1A9955135C7E69007466B0 /* 1976-01-19.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1976-01-19.txt"; sourceTree = "<group>"; };
+		3A1A9956135C7E69007466B0 /* 1977-01-12.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1977-01-12.txt"; sourceTree = "<group>"; };
+		3A1A9958135C7E69007466B0 /* 1885-03-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1885-03-04.txt"; sourceTree = "<group>"; };
+		3A1A9959135C7E69007466B0 /* 1885-12-08.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1885-12-08.txt"; sourceTree = "<group>"; };
+		3A1A995A135C7E69007466B0 /* 1886-12-06.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1886-12-06.txt"; sourceTree = "<group>"; };
+		3A1A995B135C7E69007466B0 /* 1887-12-06.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1887-12-06.txt"; sourceTree = "<group>"; };
+		3A1A995C135C7E69007466B0 /* 1888-12-03.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1888-12-03.txt"; sourceTree = "<group>"; };
+		3A1A995D135C7E69007466B0 /* 1893-03-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1893-03-04.txt"; sourceTree = "<group>"; };
+		3A1A995E135C7E69007466B0 /* 1893-12-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1893-12-04.txt"; sourceTree = "<group>"; };
+		3A1A995F135C7E69007466B0 /* 1894-12-03.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1894-12-03.txt"; sourceTree = "<group>"; };
+		3A1A9960135C7E69007466B0 /* 1895-12-02.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1895-12-02.txt"; sourceTree = "<group>"; };
+		3A1A9961135C7E69007466B0 /* 1896-12-07.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1896-12-07.txt"; sourceTree = "<group>"; };
+		3A1A9963135C7E69007466B0 /* 1949-01-20.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1949-01-20.txt"; sourceTree = "<group>"; };
+		3A1A9965135C7E69007466B0 /* 1929-03-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1929-03-04.txt"; sourceTree = "<group>"; };
+		3A1A9967135C7E69007466B0 /* 1881-03-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1881-03-04.txt"; sourceTree = "<group>"; };
+		3A1A9969135C7E69007466B0 /* 1857-03-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1857-03-04.txt"; sourceTree = "<group>"; };
+		3A1A996A135C7E69007466B0 /* 1857-12-08.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1857-12-08.txt"; sourceTree = "<group>"; };
+		3A1A996B135C7E69007466B0 /* 1858-12-06.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1858-12-06.txt"; sourceTree = "<group>"; };
+		3A1A996C135C7E69007466B0 /* 1859-12-19.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1859-12-19.txt"; sourceTree = "<group>"; };
+		3A1A996D135C7E69007466B0 /* 1860-12-03.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1860-12-03.txt"; sourceTree = "<group>"; };
+		3A1A996F135C7E69007466B0 /* 1809-03-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1809-03-04.txt"; sourceTree = "<group>"; };
+		3A1A9970135C7E69007466B0 /* 1809-11-29.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1809-11-29.txt"; sourceTree = "<group>"; };
+		3A1A9971135C7E69007466B0 /* 1810-12-05.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1810-12-05.txt"; sourceTree = "<group>"; };
+		3A1A9972135C7E69007466B0 /* 1811-11-05.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1811-11-05.txt"; sourceTree = "<group>"; };
+		3A1A9973135C7E69007466B0 /* 1812-11-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1812-11-04.txt"; sourceTree = "<group>"; };
+		3A1A9974135C7E69007466B0 /* 1813-03-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1813-03-04.txt"; sourceTree = "<group>"; };
+		3A1A9975135C7E69007466B0 /* 1813-12-07.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1813-12-07.txt"; sourceTree = "<group>"; };
+		3A1A9976135C7E69007466B0 /* 1814-09-20.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1814-09-20.txt"; sourceTree = "<group>"; };
+		3A1A9977135C7E69007466B0 /* 1815-12-05.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1815-12-05.txt"; sourceTree = "<group>"; };
+		3A1A9978135C7E69007466B0 /* 1816-12-03.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1816-12-03.txt"; sourceTree = "<group>"; };
+		3A1A997A135C7E69007466B0 /* 1817-03-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1817-03-04.txt"; sourceTree = "<group>"; };
+		3A1A997B135C7E69007466B0 /* 1817-12-12.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1817-12-12.txt"; sourceTree = "<group>"; };
+		3A1A997C135C7E69007466B0 /* 1818-11-16.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1818-11-16.txt"; sourceTree = "<group>"; };
+		3A1A997D135C7E69007466B0 /* 1819-12-07.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1819-12-07.txt"; sourceTree = "<group>"; };
+		3A1A997E135C7E69007466B0 /* 1820-11-14.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1820-11-14.txt"; sourceTree = "<group>"; };
+		3A1A997F135C7E69007466B0 /* 1821-03-05.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1821-03-05.txt"; sourceTree = "<group>"; };
+		3A1A9980135C7E69007466B0 /* 1821-12-03.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1821-12-03.txt"; sourceTree = "<group>"; };
+		3A1A9981135C7E69007466B0 /* 1822-12-03.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1822-12-03.txt"; sourceTree = "<group>"; };
+		3A1A9982135C7E69007466B0 /* 1823-12-02.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1823-12-02.txt"; sourceTree = "<group>"; };
+		3A1A9983135C7E69007466B0 /* 1824-12-07.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1824-12-07.txt"; sourceTree = "<group>"; };
+		3A1A9985135C7E69007466B0 /* 1845-03-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1845-03-04.txt"; sourceTree = "<group>"; };
+		3A1A9986135C7E69007466B0 /* 1845-12-02.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1845-12-02.txt"; sourceTree = "<group>"; };
+		3A1A9987135C7E69007466B0 /* 1846-12-08.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1846-12-08.txt"; sourceTree = "<group>"; };
+		3A1A9988135C7E69007466B0 /* 1847-12-07.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1847-12-07.txt"; sourceTree = "<group>"; };
+		3A1A9989135C7E69007466B0 /* 1848-12-05.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1848-12-05.txt"; sourceTree = "<group>"; };
+		3A1A998B135C7E69007466B0 /* 1977-01-20.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1977-01-20.txt"; sourceTree = "<group>"; };
+		3A1A998C135C7E69007466B0 /* 1978-01-19.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1978-01-19.txt"; sourceTree = "<group>"; };
+		3A1A998D135C7E69007466B0 /* 1979-01-23.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1979-01-23.txt"; sourceTree = "<group>"; };
+		3A1A998E135C7E69007466B0 /* 1980-01-23.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1980-01-23.txt"; sourceTree = "<group>"; };
+		3A1A9990135C7E69007466B0 /* 1797-03-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1797-03-04.txt"; sourceTree = "<group>"; };
+		3A1A9991135C7E69007466B0 /* 1797-11-22.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1797-11-22.txt"; sourceTree = "<group>"; };
+		3A1A9992135C7E69007466B0 /* 1798-12-08.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1798-12-08.txt"; sourceTree = "<group>"; };
+		3A1A9993135C7E69007466B0 /* 1799-12-03.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1799-12-03.txt"; sourceTree = "<group>"; };
+		3A1A9994135C7E69007466B0 /* 1800-11-22.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1800-11-22.txt"; sourceTree = "<group>"; };
+		3A1A9996135C7E69007466B0 /* 1961-01-20.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1961-01-20.txt"; sourceTree = "<group>"; };
+		3A1A9997135C7E69007466B0 /* 1962-01-11.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1962-01-11.txt"; sourceTree = "<group>"; };
+		3A1A9998135C7E69007466B0 /* 1963-01-14.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1963-01-14.txt"; sourceTree = "<group>"; };
+		3A1A999A135C7E69007466B0 /* 1825-03-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1825-03-04.txt"; sourceTree = "<group>"; };
+		3A1A999B135C7E69007466B0 /* 1825-12-06.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1825-12-06.txt"; sourceTree = "<group>"; };
+		3A1A999C135C7E69007466B0 /* 1826-12-05.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1826-12-05.txt"; sourceTree = "<group>"; };
+		3A1A999D135C7E69007466B0 /* 1827-12-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1827-12-04.txt"; sourceTree = "<group>"; };
+		3A1A999E135C7E69007466B0 /* 1828-12-02.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1828-12-02.txt"; sourceTree = "<group>"; };
+		3A1A99A0135C7E69007466B0 /* 1841-12-07.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1841-12-07.txt"; sourceTree = "<group>"; };
+		3A1A99A1135C7E69007466B0 /* 1842-12-06.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1842-12-06.txt"; sourceTree = "<group>"; };
+		3A1A99A2135C7E69007466B0 /* 1843-12-05.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1843-12-05.txt"; sourceTree = "<group>"; };
+		3A1A99A3135C7E69007466B0 /* 1844-12-03.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1844-12-03.txt"; sourceTree = "<group>"; };
+		3A1A99A5135C7E6A007466B0 /* 1964-01-08.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1964-01-08.txt"; sourceTree = "<group>"; };
+		3A1A99A6135C7E6A007466B0 /* 1965-01-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1965-01-04.txt"; sourceTree = "<group>"; };
+		3A1A99A7135C7E6A007466B0 /* 1965-01-20.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1965-01-20.txt"; sourceTree = "<group>"; };
+		3A1A99A8135C7E6A007466B0 /* 1966-01-12.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1966-01-12.txt"; sourceTree = "<group>"; };
+		3A1A99A9135C7E6A007466B0 /* 1967-01-10.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1967-01-10.txt"; sourceTree = "<group>"; };
+		3A1A99AA135C7E6A007466B0 /* 1968-01-17.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1968-01-17.txt"; sourceTree = "<group>"; };
+		3A1A99AB135C7E6A007466B0 /* 1969-01-14.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1969-01-14.txt"; sourceTree = "<group>"; };
+		3A1A99AD135C7E6A007466B0 /* 1837-03-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1837-03-04.txt"; sourceTree = "<group>"; };
+		3A1A99AE135C7E6A007466B0 /* 1837-12-05.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1837-12-05.txt"; sourceTree = "<group>"; };
+		3A1A99AF135C7E6A007466B0 /* 1838-12-03.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1838-12-03.txt"; sourceTree = "<group>"; };
+		3A1A99B0135C7E6A007466B0 /* 1839-12-02.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1839-12-02.txt"; sourceTree = "<group>"; };
+		3A1A99B1135C7E6A007466B0 /* 1840-12-05.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1840-12-05.txt"; sourceTree = "<group>"; };
+		3A1A99B3135C7E6A007466B0 /* 1850-12-02.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1850-12-02.txt"; sourceTree = "<group>"; };
+		3A1A99B4135C7E6A007466B0 /* 1851-12-02.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1851-12-02.txt"; sourceTree = "<group>"; };
+		3A1A99B5135C7E6A007466B0 /* 1852-12-06.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1852-12-06.txt"; sourceTree = "<group>"; };
+		3A1A99B7135C7E6A007466B0 /* 1969-01-20.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1969-01-20.txt"; sourceTree = "<group>"; };
+		3A1A99B8135C7E6A007466B0 /* 1970-01-22.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1970-01-22.txt"; sourceTree = "<group>"; };
+		3A1A99B9135C7E6A007466B0 /* 1971-01-22.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1971-01-22.txt"; sourceTree = "<group>"; };
+		3A1A99BA135C7E6A007466B0 /* 1971-02-25.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1971-02-25.txt"; sourceTree = "<group>"; };
+		3A1A99BB135C7E6A007466B0 /* 1972-01-20.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1972-01-20.txt"; sourceTree = "<group>"; };
+		3A1A99BC135C7E6A007466B0 /* 1973-01-20.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1973-01-20.txt"; sourceTree = "<group>"; };
+		3A1A99BD135C7E6A007466B0 /* 1974-01-30.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1974-01-30.txt"; sourceTree = "<group>"; };
+		3A1A99BF135C7E6A007466B0 /* 1981-01-20.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1981-01-20.txt"; sourceTree = "<group>"; };
+		3A1A99C0135C7E6A007466B0 /* 1981-06-29.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1981-06-29.txt"; sourceTree = "<group>"; };
+		3A1A99C1135C7E6A007466B0 /* 1982-01-26.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1982-01-26.txt"; sourceTree = "<group>"; };
+		3A1A99C2135C7E6A007466B0 /* 1983-01-25.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1983-01-25.txt"; sourceTree = "<group>"; };
+		3A1A99C3135C7E6A007466B0 /* 1984-01-25.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1984-01-25.txt"; sourceTree = "<group>"; };
+		3A1A99C4135C7E6A007466B0 /* 1985-01-21.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1985-01-21.txt"; sourceTree = "<group>"; };
+		3A1A99C5135C7E6A007466B0 /* 1985-02-06.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1985-02-06.txt"; sourceTree = "<group>"; };
+		3A1A99C6135C7E6A007466B0 /* 1986-02-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1986-02-04.txt"; sourceTree = "<group>"; };
+		3A1A99C7135C7E6A007466B0 /* 1987-01-27.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1987-01-27.txt"; sourceTree = "<group>"; };
+		3A1A99C8135C7E6A007466B0 /* 1988-01-25.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1988-01-25.txt"; sourceTree = "<group>"; };
+		3A1A99CA135C7E6A007466B0 /* 1877-03-05.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1877-03-05.txt"; sourceTree = "<group>"; };
+		3A1A99CB135C7E6A007466B0 /* 1877-12-03.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1877-12-03.txt"; sourceTree = "<group>"; };
+		3A1A99CC135C7E6A007466B0 /* 1878-12-02.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1878-12-02.txt"; sourceTree = "<group>"; };
+		3A1A99CD135C7E6A007466B0 /* 1879-12-01.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1879-12-01.txt"; sourceTree = "<group>"; };
+		3A1A99CE135C7E6A007466B0 /* 1880-12-06.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1880-12-06.txt"; sourceTree = "<group>"; };
+		3A1A99D0135C7E6A007466B0 /* 1901-12-03.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1901-12-03.txt"; sourceTree = "<group>"; };
+		3A1A99D1135C7E6A007466B0 /* 1902-12-02.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1902-12-02.txt"; sourceTree = "<group>"; };
+		3A1A99D2135C7E6A007466B0 /* 1903-12-07.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1903-12-07.txt"; sourceTree = "<group>"; };
+		3A1A99D3135C7E6A007466B0 /* 1904-12-06.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1904-12-06.txt"; sourceTree = "<group>"; };
+		3A1A99D4135C7E6A007466B0 /* 1905-03-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1905-03-04.txt"; sourceTree = "<group>"; };
+		3A1A99D5135C7E6A007466B0 /* 1905-12-05.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1905-12-05.txt"; sourceTree = "<group>"; };
+		3A1A99D6135C7E6A007466B0 /* 1906-12-03.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1906-12-03.txt"; sourceTree = "<group>"; };
+		3A1A99D7135C7E6A007466B0 /* 1907-12-03.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1907-12-03.txt"; sourceTree = "<group>"; };
+		3A1A99D8135C7E6A007466B0 /* 1908-12-09.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1908-12-09.txt"; sourceTree = "<group>"; };
+		3A1A99DA135C7E6A007466B0 /* 1801-03-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1801-03-04.txt"; sourceTree = "<group>"; };
+		3A1A99DB135C7E6A007466B0 /* 1801-12-08.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1801-12-08.txt"; sourceTree = "<group>"; };
+		3A1A99DC135C7E6A007466B0 /* 1802-12-15.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1802-12-15.txt"; sourceTree = "<group>"; };
+		3A1A99DD135C7E6A007466B0 /* 1803-10-17.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1803-10-17.txt"; sourceTree = "<group>"; };
+		3A1A99DE135C7E6A007466B0 /* 1804-11-08.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1804-11-08.txt"; sourceTree = "<group>"; };
+		3A1A99DF135C7E6A007466B0 /* 1805-03-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1805-03-04.txt"; sourceTree = "<group>"; };
+		3A1A99E0135C7E6A007466B0 /* 1805-12-03.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1805-12-03.txt"; sourceTree = "<group>"; };
+		3A1A99E1135C7E6A007466B0 /* 1806-12-02.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1806-12-02.txt"; sourceTree = "<group>"; };
+		3A1A99E2135C7E6A007466B0 /* 1807-10-27.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1807-10-27.txt"; sourceTree = "<group>"; };
+		3A1A99E3135C7E6A007466B0 /* 1808-11-08.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1808-11-08.txt"; sourceTree = "<group>"; };
+		3A1A99E5135C7E6A007466B0 /* 1869-03-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1869-03-04.txt"; sourceTree = "<group>"; };
+		3A1A99E6135C7E6A007466B0 /* 1869-12-06.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1869-12-06.txt"; sourceTree = "<group>"; };
+		3A1A99E7135C7E6A007466B0 /* 1870-12-05.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1870-12-05.txt"; sourceTree = "<group>"; };
+		3A1A99E8135C7E6A007466B0 /* 1871-12-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1871-12-04.txt"; sourceTree = "<group>"; };
+		3A1A99E9135C7E6A007466B0 /* 1872-12-02.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1872-12-02.txt"; sourceTree = "<group>"; };
+		3A1A99EA135C7E6A007466B0 /* 1873-03-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1873-03-04.txt"; sourceTree = "<group>"; };
+		3A1A99EB135C7E6A007466B0 /* 1873-12-01.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1873-12-01.txt"; sourceTree = "<group>"; };
+		3A1A99EC135C7E6A007466B0 /* 1874-12-07.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1874-12-07.txt"; sourceTree = "<group>"; };
+		3A1A99ED135C7E6A007466B0 /* 1875-12-07.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1875-12-07.txt"; sourceTree = "<group>"; };
+		3A1A99EE135C7E6A007466B0 /* 1876-12-05.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1876-12-05.txt"; sourceTree = "<group>"; };
+		3A1A99F0135C7E6A007466B0 /* 1921-03-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1921-03-04.txt"; sourceTree = "<group>"; };
+		3A1A99F1135C7E6A007466B0 /* 1921-12-06.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1921-12-06.txt"; sourceTree = "<group>"; };
+		3A1A99F2135C7E6A007466B0 /* 1922-12-08.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1922-12-08.txt"; sourceTree = "<group>"; };
+		3A1A99F4135C7E6A007466B0 /* 1841-03-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1841-03-04.txt"; sourceTree = "<group>"; };
+		3A1A99F6135C7E6A007466B0 /* 1909-03-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1909-03-04.txt"; sourceTree = "<group>"; };
+		3A1A99F7135C7E6A007466B0 /* 1909-12-07.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1909-12-07.txt"; sourceTree = "<group>"; };
+		3A1A99F8135C7E6A007466B0 /* 1910-12-06.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1910-12-06.txt"; sourceTree = "<group>"; };
+		3A1A99F9135C7E6A007466B0 /* 1911-12-05.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1911-12-05.txt"; sourceTree = "<group>"; };
+		3A1A99FA135C7E6A007466B0 /* 1912-12-03.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1912-12-03.txt"; sourceTree = "<group>"; };
+		3A1A99FC135C7E6A007466B0 /* 1897-03-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1897-03-04.txt"; sourceTree = "<group>"; };
+		3A1A99FD135C7E6A007466B0 /* 1897-12-06.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1897-12-06.txt"; sourceTree = "<group>"; };
+		3A1A99FE135C7E6A007466B0 /* 1898-12-05.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1898-12-05.txt"; sourceTree = "<group>"; };
+		3A1A99FF135C7E6A007466B0 /* 1899-12-05.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1899-12-05.txt"; sourceTree = "<group>"; };
+		3A1A9A00135C7E6A007466B0 /* 1900-12-03.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1900-12-03.txt"; sourceTree = "<group>"; };
+		3A1A9A01135C7E6A007466B0 /* 1901-03-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1901-03-04.txt"; sourceTree = "<group>"; };
+		3A1A9A03135C7E6A007466B0 /* 1913-03-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1913-03-04.txt"; sourceTree = "<group>"; };
+		3A1A9A04135C7E6A007466B0 /* 1913-12-02.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1913-12-02.txt"; sourceTree = "<group>"; };
+		3A1A9A05135C7E6A007466B0 /* 1914-12-08.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1914-12-08.txt"; sourceTree = "<group>"; };
+		3A1A9A06135C7E6A007466B0 /* 1915-12-07.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1915-12-07.txt"; sourceTree = "<group>"; };
+		3A1A9A07135C7E6A007466B0 /* 1916-12-05.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1916-12-05.txt"; sourceTree = "<group>"; };
+		3A1A9A08135C7E6A007466B0 /* 1917-03-05.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1917-03-05.txt"; sourceTree = "<group>"; };
+		3A1A9A09135C7E6A007466B0 /* 1917-12-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1917-12-04.txt"; sourceTree = "<group>"; };
+		3A1A9A0A135C7E6A007466B0 /* 1918-12-02.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1918-12-02.txt"; sourceTree = "<group>"; };
+		3A1A9A0B135C7E6A007466B0 /* 1919-12-02.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1919-12-02.txt"; sourceTree = "<group>"; };
+		3A1A9A0C135C7E6A007466B0 /* 1920-12-07.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1920-12-07.txt"; sourceTree = "<group>"; };
+		3A1A9A0E135C7E6A007466B0 /* 1849-03-05.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1849-03-05.txt"; sourceTree = "<group>"; };
+		3A1A9A0F135C7E6A007466B0 /* 1849-12-04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1849-12-04.txt"; sourceTree = "<group>"; };
+		3A1A9B04135C83D3007466B0 /* Speeches.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Speeches.txt; sourceTree = "<group>"; };
+		3A1A9B07135C8B66007466B0 /* Zachary Taylor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Zachary Taylor.jpg"; sourceTree = "<group>"; };
+		3A1A9B08135C8B66007466B0 /* Woodrow Wilson.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Woodrow Wilson.gif"; sourceTree = "<group>"; };
+		3A1A9B09135C8B66007466B0 /* William McKinley.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "William McKinley.gif"; sourceTree = "<group>"; };
+		3A1A9B0A135C8B66007466B0 /* William Taft.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "William Taft.jpg"; sourceTree = "<group>"; };
+		3A1A9B0B135C8B66007466B0 /* William Harrison.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "William Harrison.jpg"; sourceTree = "<group>"; };
+		3A1A9B0C135C8B66007466B0 /* Warren Harding.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Warren Harding.gif"; sourceTree = "<group>"; };
+		3A1A9B0D135C8B66007466B0 /* Ulysses Grant.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Ulysses Grant.gif"; sourceTree = "<group>"; };
+		3A1A9B0E135C8B66007466B0 /* Thomas Jefferson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Thomas Jefferson.jpg"; sourceTree = "<group>"; };
+		3A1A9B0F135C8B66007466B0 /* Theodore Roosevelt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Theodore Roosevelt.jpg"; sourceTree = "<group>"; };
+		3A1A9B10135C8B66007466B0 /* Rutherford Hayes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rutherford Hayes.png"; sourceTree = "<group>"; };
+		3A1A9B11135C8B66007466B0 /* Ronald Reagan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ronald Reagan.jpg"; sourceTree = "<group>"; };
+		3A1A9B12135C8B66007466B0 /* Richard Nixon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Richard Nixon.jpg"; sourceTree = "<group>"; };
+		3A1A9B13135C8B66007466B0 /* Millard Fillmore.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Millard Fillmore.jpg"; sourceTree = "<group>"; };
+		3A1A9B14135C8B66007466B0 /* Martin Van Buren.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Martin Van Buren.gif"; sourceTree = "<group>"; };
+		3A1A9B15135C8B66007466B0 /* Lyndon Johnson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lyndon Johnson.png"; sourceTree = "<group>"; };
+		3A1A9B16135C8B66007466B0 /* John Tyler.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "John Tyler.jpg"; sourceTree = "<group>"; };
+		3A1A9B17135C8B66007466B0 /* John Quincy Adams.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "John Quincy Adams.jpg"; sourceTree = "<group>"; };
+		3A1A9B18135C8B66007466B0 /* John Kennedy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "John Kennedy.jpg"; sourceTree = "<group>"; };
+		3A1A9B19135C8B66007466B0 /* John Adams.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "John Adams.jpg"; sourceTree = "<group>"; };
+		3A1A9B1A135C8B66007466B0 /* Jimmy Carter.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Jimmy Carter.gif"; sourceTree = "<group>"; };
+		3A1A9B1B135C8B66007466B0 /* James Polk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "James Polk.jpg"; sourceTree = "<group>"; };
+		3A1A9B1C135C8B66007466B0 /* James Monroe.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "James Monroe.gif"; sourceTree = "<group>"; };
+		3A1A9B1D135C8B66007466B0 /* James Madison.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "James Madison.jpg"; sourceTree = "<group>"; };
+		3A1A9B1E135C8B66007466B0 /* James Buchanan.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "James Buchanan.gif"; sourceTree = "<group>"; };
+		3A1A9B1F135C8B66007466B0 /* James Garfield.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "James Garfield.jpg"; sourceTree = "<group>"; };
+		3A1A9B20135C8B66007466B0 /* Herbert Hoover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Herbert Hoover.jpg"; sourceTree = "<group>"; };
+		3A1A9B21135C8B66007466B0 /* Harry Truman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Harry Truman.jpg"; sourceTree = "<group>"; };
+		3A1A9B22135C8B66007466B0 /* Grover Cleveland.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Grover Cleveland.jpg"; sourceTree = "<group>"; };
+		3A1A9B23135C8B66007466B0 /* Gerald Ford.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Gerald Ford.jpg"; sourceTree = "<group>"; };
+		3A1A9B24135C8B66007466B0 /* George Washington.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "George Washington.jpg"; sourceTree = "<group>"; };
+		3A1A9B25135C8B66007466B0 /* George W Bush.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "George W Bush.jpeg"; sourceTree = "<group>"; };
+		3A1A9B26135C8B66007466B0 /* George H W Bush.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "George H W Bush.jpg"; sourceTree = "<group>"; };
+		3A1A9B27135C8B66007466B0 /* Franklin Pierce.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Franklin Pierce.jpg"; sourceTree = "<group>"; };
+		3A1A9B28135C8B66007466B0 /* Franklin Roosevelt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Franklin Roosevelt.jpg"; sourceTree = "<group>"; };
+		3A1A9B29135C8B66007466B0 /* Dwight Eisenhower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Dwight Eisenhower.jpg"; sourceTree = "<group>"; };
+		3A1A9B2A135C8B66007466B0 /* Calvin Coolidge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Calvin Coolidge.jpg"; sourceTree = "<group>"; };
+		3A1A9B2C135C8B66007466B0 /* Bill Clinton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bill Clinton.jpg"; sourceTree = "<group>"; };
+		3A1A9B2D135C8B66007466B0 /* Benjamin Harrison.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Benjamin Harrison.jpg"; sourceTree = "<group>"; };
+		3A1A9B2E135C8B66007466B0 /* Barack Obama.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Barack Obama.jpg"; sourceTree = "<group>"; };
+		3A1A9B2F135C8B66007466B0 /* Andrew Johnson.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Andrew Johnson.gif"; sourceTree = "<group>"; };
+		3A1A9B30135C8B66007466B0 /* Andrew Jackson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Andrew Jackson.jpg"; sourceTree = "<group>"; };
+		3A1A9B31135C8B66007466B0 /* Abraham Lincoln.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abraham Lincoln.jpg"; sourceTree = "<group>"; };
+		3A1A9B5D135C8BE4007466B0 /* Chester Arthur.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Chester Arthur.gif"; sourceTree = "<group>"; };
+		3A1A9B5F135C926B007466B0 /* whitehouse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = whitehouse.jpg; sourceTree = "<group>"; };
+		3A1A9B61135C97C8007466B0 /* CorpusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CorpusView.h; sourceTree = "<group>"; };
+		3A1A9B62135C97C8007466B0 /* CorpusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CorpusView.m; sourceTree = "<group>"; };
+		3A1A9B65135CA0F0007466B0 /* Parties.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Parties.txt; sourceTree = "<group>"; };
+		3A31E30C135E481A0084E981 /* Colors.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Colors.txt; sourceTree = "<group>"; };
+		3A36344613609E610032DF4F /* EPluribusUnum.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = EPluribusUnum.icns; path = ../EPluribusUnum.icns; sourceTree = "<group>"; };
+		3A5C4D00135F3E3D00640E41 /* PresidentialSpeechStatisticsProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresidentialSpeechStatisticsProtocol.h; sourceTree = "<group>"; };
+		3A5C4D02135F41E800640E41 /* BackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundView.h; sourceTree = "<group>"; };
+		3A5C4D03135F41E800640E41 /* BackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundView.m; sourceTree = "<group>"; };
+		3A5C4D05135F447D00640E41 /* ChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartView.h; sourceTree = "<group>"; };
+		3A5C4D06135F447E00640E41 /* ChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartView.m; sourceTree = "<group>"; };
+		3A837F8B135BC927004BCE17 /* E Pluribus Unum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E Pluribus Unum.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A837F8F135BC927004BCE17 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3A837F92135BC927004BCE17 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		3A837F93135BC927004BCE17 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3A837F94135BC927004BCE17 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3A837F97135BC927004BCE17 /* E Pluribus Unum-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "E Pluribus Unum-Info.plist"; sourceTree = "<group>"; };
+		3A837F99135BC927004BCE17 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3A837F9B135BC927004BCE17 /* E Pluribus Unum-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "E Pluribus Unum-Prefix.pch"; sourceTree = "<group>"; };
+		3A837F9C135BC927004BCE17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3A837F9F135BC927004BCE17 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		3A837FA1135BC928004BCE17 /* EPluribusUnumAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EPluribusUnumAppDelegate.h; sourceTree = "<group>"; };
+		3A837FA2135BC928004BCE17 /* EPluribusUnumAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EPluribusUnumAppDelegate.m; sourceTree = "<group>"; };
+		3A837FA5135BC928004BCE17 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		3A9A942913608ECF00B9DBCF /* right.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = right.tiff; sourceTree = "<group>"; };
+		3A9A942C13608EDA00B9DBCF /* left.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = left.tiff; sourceTree = "<group>"; };
+		3A9A942E13608EEC00B9DBCF /* right_alt.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = right_alt.tiff; sourceTree = "<group>"; };
+		3A9A943013608EF500B9DBCF /* left_alt.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = left_alt.tiff; sourceTree = "<group>"; };
+		3A9A94321360911C00B9DBCF /* in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = in.png; sourceTree = "<group>"; };
+		3A9A94331360911C00B9DBCF /* out.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = out.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A837F88135BC927004BCE17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A837F90135BC927004BCE17 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A1A98F3135C7E69007466B0 /* Speeches */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A98F5135C7E69007466B0 /* Abraham Lincoln */,
+				3A1A98FC135C7E69007466B0 /* Andrew Jackson */,
+				3A1A9907135C7E69007466B0 /* Andrew Johnson */,
+				3A1A9909135C7E69007466B0 /* Barack Obama */,
+				3A1A990C135C7E69007466B0 /* Benjamin Harrison */,
+				3A1A9912135C7E69007466B0 /* Bill Clinton */,
+				3A1A991C135C7E69007466B0 /* Calvin Coolidge */,
+				3A1A9924135C7E69007466B0 /* Chester Alan Arthur */,
+				3A1A9929135C7E69007466B0 /* Dwight David Eisenhower */,
+				3A1A992B135C7E69007466B0 /* Franklin Delano Roosevelt */,
+				3A1A9933135C7E69007466B0 /* Franklin Pierce */,
+				3A1A9939135C7E69007466B0 /* George H. W. Bush */,
+				3A1A993E135C7E69007466B0 /* George W. Bush */,
+				3A1A9948135C7E69007466B0 /* George Washington */,
+				3A1A9953135C7E69007466B0 /* Gerald Rudolph Ford */,
+				3A1A9957135C7E69007466B0 /* Grover Cleveland */,
+				3A1A9962135C7E69007466B0 /* Harry S. Truman */,
+				3A1A9964135C7E69007466B0 /* Herbert Clark Hoover */,
+				3A1A9966135C7E69007466B0 /* James Abram Garfield */,
+				3A1A9968135C7E69007466B0 /* James Buchanan */,
+				3A1A996E135C7E69007466B0 /* James Madison */,
+				3A1A9979135C7E69007466B0 /* James Monroe */,
+				3A1A9984135C7E69007466B0 /* James Polk */,
+				3A1A998A135C7E69007466B0 /* Jimmy Carter */,
+				3A1A998F135C7E69007466B0 /* John Adams */,
+				3A1A9995135C7E69007466B0 /* John Fitzgerald Kennedy */,
+				3A1A9999135C7E69007466B0 /* John Quincy Adams */,
+				3A1A999F135C7E69007466B0 /* John Tyler */,
+				3A1A99A4135C7E69007466B0 /* Lyndon Baines Johnson */,
+				3A1A99AC135C7E6A007466B0 /* Martin Van Buren */,
+				3A1A99B2135C7E6A007466B0 /* Millard Fillmore */,
+				3A1A99B6135C7E6A007466B0 /* Richard Milhous Nixon */,
+				3A1A99BE135C7E6A007466B0 /* Ronald Wilson Reagan */,
+				3A1A99C9135C7E6A007466B0 /* Rutherford Birchard Hayes */,
+				3A1A99CF135C7E6A007466B0 /* Theodore Roosevelt */,
+				3A1A99D9135C7E6A007466B0 /* Thomas Jefferson */,
+				3A1A99E4135C7E6A007466B0 /* Ulysses S. Grant */,
+				3A1A99EF135C7E6A007466B0 /* Warren Gamaliel Harding */,
+				3A1A99F3135C7E6A007466B0 /* William Henry Harrison */,
+				3A1A99F5135C7E6A007466B0 /* William Howard Taft */,
+				3A1A99FB135C7E6A007466B0 /* William McKinley */,
+				3A1A9A02135C7E6A007466B0 /* Woodrow Wilson */,
+				3A1A9A0D135C7E6A007466B0 /* Zachary Taylor */,
+			);
+			name = Speeches;
+			path = Presidents;
+			sourceTree = "<group>";
+		};
+		3A1A98F5135C7E69007466B0 /* Abraham Lincoln */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A98F6135C7E69007466B0 /* 1861-03-04.txt */,
+				3A1A98F7135C7E69007466B0 /* 1861-12-03.txt */,
+				3A1A98F8135C7E69007466B0 /* 1862-12-01.txt */,
+				3A1A98F9135C7E69007466B0 /* 1863-12-08.txt */,
+				3A1A98FA135C7E69007466B0 /* 1864-12-06.txt */,
+				3A1A98FB135C7E69007466B0 /* 1865-03-04.txt */,
+			);
+			path = "Abraham Lincoln";
+			sourceTree = "<group>";
+		};
+		3A1A98FC135C7E69007466B0 /* Andrew Jackson */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A98FD135C7E69007466B0 /* 1829-03-04.txt */,
+				3A1A98FE135C7E69007466B0 /* 1829-12-08.txt */,
+				3A1A98FF135C7E69007466B0 /* 1830-12-06.txt */,
+				3A1A9900135C7E69007466B0 /* 1831-12-06.txt */,
+				3A1A9901135C7E69007466B0 /* 1832-12-04.txt */,
+				3A1A9902135C7E69007466B0 /* 1833-03-04.txt */,
+				3A1A9903135C7E69007466B0 /* 1833-12-03.txt */,
+				3A1A9904135C7E69007466B0 /* 1834-12-01.txt */,
+				3A1A9905135C7E69007466B0 /* 1835-12-07.txt */,
+				3A1A9906135C7E69007466B0 /* 1836-12-05.txt */,
+			);
+			path = "Andrew Jackson";
+			sourceTree = "<group>";
+		};
+		3A1A9907135C7E69007466B0 /* Andrew Johnson */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A9908135C7E69007466B0 /* 1865-12-04.txt */,
+			);
+			path = "Andrew Johnson";
+			sourceTree = "<group>";
+		};
+		3A1A9909135C7E69007466B0 /* Barack Obama */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A990A135C7E69007466B0 /* 2009-01-20.txt */,
+				3A1A990B135C7E69007466B0 /* 2010-01-27.txt */,
+			);
+			path = "Barack Obama";
+			sourceTree = "<group>";
+		};
+		3A1A990C135C7E69007466B0 /* Benjamin Harrison */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A990D135C7E69007466B0 /* 1889-03-04.txt */,
+				3A1A990E135C7E69007466B0 /* 1889-12-03.txt */,
+				3A1A990F135C7E69007466B0 /* 1890-12-01.txt */,
+				3A1A9910135C7E69007466B0 /* 1891-12-09.txt */,
+				3A1A9911135C7E69007466B0 /* 1892-12-06.txt */,
+			);
+			path = "Benjamin Harrison";
+			sourceTree = "<group>";
+		};
+		3A1A9912135C7E69007466B0 /* Bill Clinton */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A9913135C7E69007466B0 /* 1993-01-20.txt */,
+				3A1A9914135C7E69007466B0 /* 1994-01-25.txt */,
+				3A1A9915135C7E69007466B0 /* 1995-01-24.txt */,
+				3A1A9916135C7E69007466B0 /* 1996-01-23.txt */,
+				3A1A9917135C7E69007466B0 /* 1997-01-20.txt */,
+				3A1A9918135C7E69007466B0 /* 1997-02-04.txt */,
+				3A1A9919135C7E69007466B0 /* 1998-01-27.txt */,
+				3A1A991A135C7E69007466B0 /* 1999-01-19.txt */,
+				3A1A991B135C7E69007466B0 /* 2000-01-27.txt */,
+			);
+			path = "Bill Clinton";
+			sourceTree = "<group>";
+		};
+		3A1A991C135C7E69007466B0 /* Calvin Coolidge */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A991D135C7E69007466B0 /* 1923-12-06.txt */,
+				3A1A991E135C7E69007466B0 /* 1924-12-03.txt */,
+				3A1A991F135C7E69007466B0 /* 1925-03-04.txt */,
+				3A1A9920135C7E69007466B0 /* 1925-12-08.txt */,
+				3A1A9921135C7E69007466B0 /* 1926-12-07.txt */,
+				3A1A9922135C7E69007466B0 /* 1927-12-06.txt */,
+				3A1A9923135C7E69007466B0 /* 1928-12-04.txt */,
+			);
+			path = "Calvin Coolidge";
+			sourceTree = "<group>";
+		};
+		3A1A9924135C7E69007466B0 /* Chester Alan Arthur */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A9925135C7E69007466B0 /* 1881-12-06.txt */,
+				3A1A9926135C7E69007466B0 /* 1882-12-04.txt */,
+				3A1A9927135C7E69007466B0 /* 1883-12-04.txt */,
+				3A1A9928135C7E69007466B0 /* 1884-12-01.txt */,
+			);
+			path = "Chester Alan Arthur";
+			sourceTree = "<group>";
+		};
+		3A1A9929135C7E69007466B0 /* Dwight David Eisenhower */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A992A135C7E69007466B0 /* 1953-01-20.txt */,
+			);
+			path = "Dwight David Eisenhower";
+			sourceTree = "<group>";
+		};
+		3A1A992B135C7E69007466B0 /* Franklin Delano Roosevelt */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A992C135C7E69007466B0 /* 1933-03-04.txt */,
+				3A1A992D135C7E69007466B0 /* 1937-01-20.txt */,
+				3A1A992E135C7E69007466B0 /* 1941-01-06.txt */,
+				3A1A992F135C7E69007466B0 /* 1941-01-20.txt */,
+				3A1A9930135C7E69007466B0 /* 1943-01-07.txt */,
+				3A1A9931135C7E69007466B0 /* 1944-01-11.txt */,
+				3A1A9932135C7E69007466B0 /* 1945-01-20.txt */,
+			);
+			path = "Franklin Delano Roosevelt";
+			sourceTree = "<group>";
+		};
+		3A1A9933135C7E69007466B0 /* Franklin Pierce */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A9934135C7E69007466B0 /* 1853-03-04.txt */,
+				3A1A9935135C7E69007466B0 /* 1853-12-05.txt */,
+				3A1A9936135C7E69007466B0 /* 1854-12-04.txt */,
+				3A1A9937135C7E69007466B0 /* 1855-12-31.txt */,
+				3A1A9938135C7E69007466B0 /* 1856-12-02.txt */,
+			);
+			path = "Franklin Pierce";
+			sourceTree = "<group>";
+		};
+		3A1A9939135C7E69007466B0 /* George H. W. Bush */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A993A135C7E69007466B0 /* 1989-01-20.txt */,
+				3A1A993B135C7E69007466B0 /* 1990-01-31.txt */,
+				3A1A993C135C7E69007466B0 /* 1991-01-29.txt */,
+				3A1A993D135C7E69007466B0 /* 1992-01-28.txt */,
+			);
+			path = "George H. W. Bush";
+			sourceTree = "<group>";
+		};
+		3A1A993E135C7E69007466B0 /* George W. Bush */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A993F135C7E69007466B0 /* 2001-01-20.txt */,
+				3A1A9940135C7E69007466B0 /* 2002-01-29.txt */,
+				3A1A9941135C7E69007466B0 /* 2003-01-28.txt */,
+				3A1A9942135C7E69007466B0 /* 2004-01-20.txt */,
+				3A1A9943135C7E69007466B0 /* 2005-01-20.txt */,
+				3A1A9944135C7E69007466B0 /* 2005-02-02.txt */,
+				3A1A9945135C7E69007466B0 /* 2006-01-31.txt */,
+				3A1A9946135C7E69007466B0 /* 2007-01-23.txt */,
+				3A1A9947135C7E69007466B0 /* 2008-01-28.txt */,
+			);
+			path = "George W. Bush";
+			sourceTree = "<group>";
+		};
+		3A1A9948135C7E69007466B0 /* George Washington */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A9949135C7E69007466B0 /* 1789-04-30.txt */,
+				3A1A994A135C7E69007466B0 /* 1790-01-08.txt */,
+				3A1A994B135C7E69007466B0 /* 1790-12-08.txt */,
+				3A1A994C135C7E69007466B0 /* 1791-10-25.txt */,
+				3A1A994D135C7E69007466B0 /* 1792-11-06.txt */,
+				3A1A994E135C7E69007466B0 /* 1793-03-04.txt */,
+				3A1A994F135C7E69007466B0 /* 1793-12-03.txt */,
+				3A1A9950135C7E69007466B0 /* 1794-11-19.txt */,
+				3A1A9951135C7E69007466B0 /* 1795-12-08.txt */,
+				3A1A9952135C7E69007466B0 /* 1796-12-07.txt */,
+			);
+			path = "George Washington";
+			sourceTree = "<group>";
+		};
+		3A1A9953135C7E69007466B0 /* Gerald Rudolph Ford */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A9954135C7E69007466B0 /* 1975-01-15.txt */,
+				3A1A9955135C7E69007466B0 /* 1976-01-19.txt */,
+				3A1A9956135C7E69007466B0 /* 1977-01-12.txt */,
+			);
+			path = "Gerald Rudolph Ford";
+			sourceTree = "<group>";
+		};
+		3A1A9957135C7E69007466B0 /* Grover Cleveland */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A9958135C7E69007466B0 /* 1885-03-04.txt */,
+				3A1A9959135C7E69007466B0 /* 1885-12-08.txt */,
+				3A1A995A135C7E69007466B0 /* 1886-12-06.txt */,
+				3A1A995B135C7E69007466B0 /* 1887-12-06.txt */,
+				3A1A995C135C7E69007466B0 /* 1888-12-03.txt */,
+				3A1A995D135C7E69007466B0 /* 1893-03-04.txt */,
+				3A1A995E135C7E69007466B0 /* 1893-12-04.txt */,
+				3A1A995F135C7E69007466B0 /* 1894-12-03.txt */,
+				3A1A9960135C7E69007466B0 /* 1895-12-02.txt */,
+				3A1A9961135C7E69007466B0 /* 1896-12-07.txt */,
+			);
+			path = "Grover Cleveland";
+			sourceTree = "<group>";
+		};
+		3A1A9962135C7E69007466B0 /* Harry S. Truman */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A9963135C7E69007466B0 /* 1949-01-20.txt */,
+			);
+			path = "Harry S. Truman";
+			sourceTree = "<group>";
+		};
+		3A1A9964135C7E69007466B0 /* Herbert Clark Hoover */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A9965135C7E69007466B0 /* 1929-03-04.txt */,
+			);
+			path = "Herbert Clark Hoover";
+			sourceTree = "<group>";
+		};
+		3A1A9966135C7E69007466B0 /* James Abram Garfield */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A9967135C7E69007466B0 /* 1881-03-04.txt */,
+			);
+			path = "James Abram Garfield";
+			sourceTree = "<group>";
+		};
+		3A1A9968135C7E69007466B0 /* James Buchanan */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A9969135C7E69007466B0 /* 1857-03-04.txt */,
+				3A1A996A135C7E69007466B0 /* 1857-12-08.txt */,
+				3A1A996B135C7E69007466B0 /* 1858-12-06.txt */,
+				3A1A996C135C7E69007466B0 /* 1859-12-19.txt */,
+				3A1A996D135C7E69007466B0 /* 1860-12-03.txt */,
+			);
+			path = "James Buchanan";
+			sourceTree = "<group>";
+		};
+		3A1A996E135C7E69007466B0 /* James Madison */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A996F135C7E69007466B0 /* 1809-03-04.txt */,
+				3A1A9970135C7E69007466B0 /* 1809-11-29.txt */,
+				3A1A9971135C7E69007466B0 /* 1810-12-05.txt */,
+				3A1A9972135C7E69007466B0 /* 1811-11-05.txt */,
+				3A1A9973135C7E69007466B0 /* 1812-11-04.txt */,
+				3A1A9974135C7E69007466B0 /* 1813-03-04.txt */,
+				3A1A9975135C7E69007466B0 /* 1813-12-07.txt */,
+				3A1A9976135C7E69007466B0 /* 1814-09-20.txt */,
+				3A1A9977135C7E69007466B0 /* 1815-12-05.txt */,
+				3A1A9978135C7E69007466B0 /* 1816-12-03.txt */,
+			);
+			path = "James Madison";
+			sourceTree = "<group>";
+		};
+		3A1A9979135C7E69007466B0 /* James Monroe */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A997A135C7E69007466B0 /* 1817-03-04.txt */,
+				3A1A997B135C7E69007466B0 /* 1817-12-12.txt */,
+				3A1A997C135C7E69007466B0 /* 1818-11-16.txt */,
+				3A1A997D135C7E69007466B0 /* 1819-12-07.txt */,
+				3A1A997E135C7E69007466B0 /* 1820-11-14.txt */,
+				3A1A997F135C7E69007466B0 /* 1821-03-05.txt */,
+				3A1A9980135C7E69007466B0 /* 1821-12-03.txt */,
+				3A1A9981135C7E69007466B0 /* 1822-12-03.txt */,
+				3A1A9982135C7E69007466B0 /* 1823-12-02.txt */,
+				3A1A9983135C7E69007466B0 /* 1824-12-07.txt */,
+			);
+			path = "James Monroe";
+			sourceTree = "<group>";
+		};
+		3A1A9984135C7E69007466B0 /* James Polk */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A9985135C7E69007466B0 /* 1845-03-04.txt */,
+				3A1A9986135C7E69007466B0 /* 1845-12-02.txt */,
+				3A1A9987135C7E69007466B0 /* 1846-12-08.txt */,
+				3A1A9988135C7E69007466B0 /* 1847-12-07.txt */,
+				3A1A9989135C7E69007466B0 /* 1848-12-05.txt */,
+			);
+			path = "James Polk";
+			sourceTree = "<group>";
+		};
+		3A1A998A135C7E69007466B0 /* Jimmy Carter */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A998B135C7E69007466B0 /* 1977-01-20.txt */,
+				3A1A998C135C7E69007466B0 /* 1978-01-19.txt */,
+				3A1A998D135C7E69007466B0 /* 1979-01-23.txt */,
+				3A1A998E135C7E69007466B0 /* 1980-01-23.txt */,
+			);
+			path = "Jimmy Carter";
+			sourceTree = "<group>";
+		};
+		3A1A998F135C7E69007466B0 /* John Adams */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A9990135C7E69007466B0 /* 1797-03-04.txt */,
+				3A1A9991135C7E69007466B0 /* 1797-11-22.txt */,
+				3A1A9992135C7E69007466B0 /* 1798-12-08.txt */,
+				3A1A9993135C7E69007466B0 /* 1799-12-03.txt */,
+				3A1A9994135C7E69007466B0 /* 1800-11-22.txt */,
+			);
+			path = "John Adams";
+			sourceTree = "<group>";
+		};
+		3A1A9995135C7E69007466B0 /* John Fitzgerald Kennedy */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A9996135C7E69007466B0 /* 1961-01-20.txt */,
+				3A1A9997135C7E69007466B0 /* 1962-01-11.txt */,
+				3A1A9998135C7E69007466B0 /* 1963-01-14.txt */,
+			);
+			path = "John Fitzgerald Kennedy";
+			sourceTree = "<group>";
+		};
+		3A1A9999135C7E69007466B0 /* John Quincy Adams */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A999A135C7E69007466B0 /* 1825-03-04.txt */,
+				3A1A999B135C7E69007466B0 /* 1825-12-06.txt */,
+				3A1A999C135C7E69007466B0 /* 1826-12-05.txt */,
+				3A1A999D135C7E69007466B0 /* 1827-12-04.txt */,
+				3A1A999E135C7E69007466B0 /* 1828-12-02.txt */,
+			);
+			path = "John Quincy Adams";
+			sourceTree = "<group>";
+		};
+		3A1A999F135C7E69007466B0 /* John Tyler */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A99A0135C7E69007466B0 /* 1841-12-07.txt */,
+				3A1A99A1135C7E69007466B0 /* 1842-12-06.txt */,
+				3A1A99A2135C7E69007466B0 /* 1843-12-05.txt */,
+				3A1A99A3135C7E69007466B0 /* 1844-12-03.txt */,
+			);
+			path = "John Tyler";
+			sourceTree = "<group>";
+		};
+		3A1A99A4135C7E69007466B0 /* Lyndon Baines Johnson */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A99A5135C7E6A007466B0 /* 1964-01-08.txt */,
+				3A1A99A6135C7E6A007466B0 /* 1965-01-04.txt */,
+				3A1A99A7135C7E6A007466B0 /* 1965-01-20.txt */,
+				3A1A99A8135C7E6A007466B0 /* 1966-01-12.txt */,
+				3A1A99A9135C7E6A007466B0 /* 1967-01-10.txt */,
+				3A1A99AA135C7E6A007466B0 /* 1968-01-17.txt */,
+				3A1A99AB135C7E6A007466B0 /* 1969-01-14.txt */,
+			);
+			path = "Lyndon Baines Johnson";
+			sourceTree = "<group>";
+		};
+		3A1A99AC135C7E6A007466B0 /* Martin Van Buren */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A99AD135C7E6A007466B0 /* 1837-03-04.txt */,
+				3A1A99AE135C7E6A007466B0 /* 1837-12-05.txt */,
+				3A1A99AF135C7E6A007466B0 /* 1838-12-03.txt */,
+				3A1A99B0135C7E6A007466B0 /* 1839-12-02.txt */,
+				3A1A99B1135C7E6A007466B0 /* 1840-12-05.txt */,
+			);
+			path = "Martin Van Buren";
+			sourceTree = "<group>";
+		};
+		3A1A99B2135C7E6A007466B0 /* Millard Fillmore */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A99B3135C7E6A007466B0 /* 1850-12-02.txt */,
+				3A1A99B4135C7E6A007466B0 /* 1851-12-02.txt */,
+				3A1A99B5135C7E6A007466B0 /* 1852-12-06.txt */,
+			);
+			path = "Millard Fillmore";
+			sourceTree = "<group>";
+		};
+		3A1A99B6135C7E6A007466B0 /* Richard Milhous Nixon */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A99B7135C7E6A007466B0 /* 1969-01-20.txt */,
+				3A1A99B8135C7E6A007466B0 /* 1970-01-22.txt */,
+				3A1A99B9135C7E6A007466B0 /* 1971-01-22.txt */,
+				3A1A99BA135C7E6A007466B0 /* 1971-02-25.txt */,
+				3A1A99BB135C7E6A007466B0 /* 1972-01-20.txt */,
+				3A1A99BC135C7E6A007466B0 /* 1973-01-20.txt */,
+				3A1A99BD135C7E6A007466B0 /* 1974-01-30.txt */,
+			);
+			path = "Richard Milhous Nixon";
+			sourceTree = "<group>";
+		};
+		3A1A99BE135C7E6A007466B0 /* Ronald Wilson Reagan */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A99BF135C7E6A007466B0 /* 1981-01-20.txt */,
+				3A1A99C0135C7E6A007466B0 /* 1981-06-29.txt */,
+				3A1A99C1135C7E6A007466B0 /* 1982-01-26.txt */,
+				3A1A99C2135C7E6A007466B0 /* 1983-01-25.txt */,
+				3A1A99C3135C7E6A007466B0 /* 1984-01-25.txt */,
+				3A1A99C4135C7E6A007466B0 /* 1985-01-21.txt */,
+				3A1A99C5135C7E6A007466B0 /* 1985-02-06.txt */,
+				3A1A99C6135C7E6A007466B0 /* 1986-02-04.txt */,
+				3A1A99C7135C7E6A007466B0 /* 1987-01-27.txt */,
+				3A1A99C8135C7E6A007466B0 /* 1988-01-25.txt */,
+			);
+			path = "Ronald Wilson Reagan";
+			sourceTree = "<group>";
+		};
+		3A1A99C9135C7E6A007466B0 /* Rutherford Birchard Hayes */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A99CA135C7E6A007466B0 /* 1877-03-05.txt */,
+				3A1A99CB135C7E6A007466B0 /* 1877-12-03.txt */,
+				3A1A99CC135C7E6A007466B0 /* 1878-12-02.txt */,
+				3A1A99CD135C7E6A007466B0 /* 1879-12-01.txt */,
+				3A1A99CE135C7E6A007466B0 /* 1880-12-06.txt */,
+			);
+			path = "Rutherford Birchard Hayes";
+			sourceTree = "<group>";
+		};
+		3A1A99CF135C7E6A007466B0 /* Theodore Roosevelt */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A99D0135C7E6A007466B0 /* 1901-12-03.txt */,
+				3A1A99D1135C7E6A007466B0 /* 1902-12-02.txt */,
+				3A1A99D2135C7E6A007466B0 /* 1903-12-07.txt */,
+				3A1A99D3135C7E6A007466B0 /* 1904-12-06.txt */,
+				3A1A99D4135C7E6A007466B0 /* 1905-03-04.txt */,
+				3A1A99D5135C7E6A007466B0 /* 1905-12-05.txt */,
+				3A1A99D6135C7E6A007466B0 /* 1906-12-03.txt */,
+				3A1A99D7135C7E6A007466B0 /* 1907-12-03.txt */,
+				3A1A99D8135C7E6A007466B0 /* 1908-12-09.txt */,
+			);
+			path = "Theodore Roosevelt";
+			sourceTree = "<group>";
+		};
+		3A1A99D9135C7E6A007466B0 /* Thomas Jefferson */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A99DA135C7E6A007466B0 /* 1801-03-04.txt */,
+				3A1A99DB135C7E6A007466B0 /* 1801-12-08.txt */,
+				3A1A99DC135C7E6A007466B0 /* 1802-12-15.txt */,
+				3A1A99DD135C7E6A007466B0 /* 1803-10-17.txt */,
+				3A1A99DE135C7E6A007466B0 /* 1804-11-08.txt */,
+				3A1A99DF135C7E6A007466B0 /* 1805-03-04.txt */,
+				3A1A99E0135C7E6A007466B0 /* 1805-12-03.txt */,
+				3A1A99E1135C7E6A007466B0 /* 1806-12-02.txt */,
+				3A1A99E2135C7E6A007466B0 /* 1807-10-27.txt */,
+				3A1A99E3135C7E6A007466B0 /* 1808-11-08.txt */,
+			);
+			path = "Thomas Jefferson";
+			sourceTree = "<group>";
+		};
+		3A1A99E4135C7E6A007466B0 /* Ulysses S. Grant */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A99E5135C7E6A007466B0 /* 1869-03-04.txt */,
+				3A1A99E6135C7E6A007466B0 /* 1869-12-06.txt */,
+				3A1A99E7135C7E6A007466B0 /* 1870-12-05.txt */,
+				3A1A99E8135C7E6A007466B0 /* 1871-12-04.txt */,
+				3A1A99E9135C7E6A007466B0 /* 1872-12-02.txt */,
+				3A1A99EA135C7E6A007466B0 /* 1873-03-04.txt */,
+				3A1A99EB135C7E6A007466B0 /* 1873-12-01.txt */,
+				3A1A99EC135C7E6A007466B0 /* 1874-12-07.txt */,
+				3A1A99ED135C7E6A007466B0 /* 1875-12-07.txt */,
+				3A1A99EE135C7E6A007466B0 /* 1876-12-05.txt */,
+			);
+			path = "Ulysses S. Grant";
+			sourceTree = "<group>";
+		};
+		3A1A99EF135C7E6A007466B0 /* Warren Gamaliel Harding */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A99F0135C7E6A007466B0 /* 1921-03-04.txt */,
+				3A1A99F1135C7E6A007466B0 /* 1921-12-06.txt */,
+				3A1A99F2135C7E6A007466B0 /* 1922-12-08.txt */,
+			);
+			path = "Warren Gamaliel Harding";
+			sourceTree = "<group>";
+		};
+		3A1A99F3135C7E6A007466B0 /* William Henry Harrison */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A99F4135C7E6A007466B0 /* 1841-03-04.txt */,
+			);
+			path = "William Henry Harrison";
+			sourceTree = "<group>";
+		};
+		3A1A99F5135C7E6A007466B0 /* William Howard Taft */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A99F6135C7E6A007466B0 /* 1909-03-04.txt */,
+				3A1A99F7135C7E6A007466B0 /* 1909-12-07.txt */,
+				3A1A99F8135C7E6A007466B0 /* 1910-12-06.txt */,
+				3A1A99F9135C7E6A007466B0 /* 1911-12-05.txt */,
+				3A1A99FA135C7E6A007466B0 /* 1912-12-03.txt */,
+			);
+			path = "William Howard Taft";
+			sourceTree = "<group>";
+		};
+		3A1A99FB135C7E6A007466B0 /* William McKinley */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A99FC135C7E6A007466B0 /* 1897-03-04.txt */,
+				3A1A99FD135C7E6A007466B0 /* 1897-12-06.txt */,
+				3A1A99FE135C7E6A007466B0 /* 1898-12-05.txt */,
+				3A1A99FF135C7E6A007466B0 /* 1899-12-05.txt */,
+				3A1A9A00135C7E6A007466B0 /* 1900-12-03.txt */,
+				3A1A9A01135C7E6A007466B0 /* 1901-03-04.txt */,
+			);
+			path = "William McKinley";
+			sourceTree = "<group>";
+		};
+		3A1A9A02135C7E6A007466B0 /* Woodrow Wilson */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A9A03135C7E6A007466B0 /* 1913-03-04.txt */,
+				3A1A9A04135C7E6A007466B0 /* 1913-12-02.txt */,
+				3A1A9A05135C7E6A007466B0 /* 1914-12-08.txt */,
+				3A1A9A06135C7E6A007466B0 /* 1915-12-07.txt */,
+				3A1A9A07135C7E6A007466B0 /* 1916-12-05.txt */,
+				3A1A9A08135C7E6A007466B0 /* 1917-03-05.txt */,
+				3A1A9A09135C7E6A007466B0 /* 1917-12-04.txt */,
+				3A1A9A0A135C7E6A007466B0 /* 1918-12-02.txt */,
+				3A1A9A0B135C7E6A007466B0 /* 1919-12-02.txt */,
+				3A1A9A0C135C7E6A007466B0 /* 1920-12-07.txt */,
+			);
+			path = "Woodrow Wilson";
+			sourceTree = "<group>";
+		};
+		3A1A9A0D135C7E6A007466B0 /* Zachary Taylor */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A9A0E135C7E6A007466B0 /* 1849-03-05.txt */,
+				3A1A9A0F135C7E6A007466B0 /* 1849-12-04.txt */,
+			);
+			path = "Zachary Taylor";
+			sourceTree = "<group>";
+		};
+		3A1A9B06135C8B57007466B0 /* Portraits */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A9B07135C8B66007466B0 /* Zachary Taylor.jpg */,
+				3A1A9B08135C8B66007466B0 /* Woodrow Wilson.gif */,
+				3A1A9B09135C8B66007466B0 /* William McKinley.gif */,
+				3A1A9B0A135C8B66007466B0 /* William Taft.jpg */,
+				3A1A9B0B135C8B66007466B0 /* William Harrison.jpg */,
+				3A1A9B0C135C8B66007466B0 /* Warren Harding.gif */,
+				3A1A9B0D135C8B66007466B0 /* Ulysses Grant.gif */,
+				3A1A9B0E135C8B66007466B0 /* Thomas Jefferson.jpg */,
+				3A1A9B5D135C8BE4007466B0 /* Chester Arthur.gif */,
+				3A1A9B0F135C8B66007466B0 /* Theodore Roosevelt.jpg */,
+				3A1A9B10135C8B66007466B0 /* Rutherford Hayes.png */,
+				3A1A9B11135C8B66007466B0 /* Ronald Reagan.jpg */,
+				3A1A9B12135C8B66007466B0 /* Richard Nixon.jpg */,
+				3A1A9B13135C8B66007466B0 /* Millard Fillmore.jpg */,
+				3A1A9B14135C8B66007466B0 /* Martin Van Buren.gif */,
+				3A1A9B15135C8B66007466B0 /* Lyndon Johnson.png */,
+				3A1A9B16135C8B66007466B0 /* John Tyler.jpg */,
+				3A1A9B17135C8B66007466B0 /* John Quincy Adams.jpg */,
+				3A1A9B18135C8B66007466B0 /* John Kennedy.jpg */,
+				3A1A9B19135C8B66007466B0 /* John Adams.jpg */,
+				3A1A9B1A135C8B66007466B0 /* Jimmy Carter.gif */,
+				3A1A9B1B135C8B66007466B0 /* James Polk.jpg */,
+				3A1A9B1C135C8B66007466B0 /* James Monroe.gif */,
+				3A1A9B1D135C8B66007466B0 /* James Madison.jpg */,
+				3A1A9B1E135C8B66007466B0 /* James Buchanan.gif */,
+				3A1A9B1F135C8B66007466B0 /* James Garfield.jpg */,
+				3A1A9B20135C8B66007466B0 /* Herbert Hoover.jpg */,
+				3A1A9B21135C8B66007466B0 /* Harry Truman.jpg */,
+				3A1A9B22135C8B66007466B0 /* Grover Cleveland.jpg */,
+				3A1A9B23135C8B66007466B0 /* Gerald Ford.jpg */,
+				3A1A9B24135C8B66007466B0 /* George Washington.jpg */,
+				3A1A9B25135C8B66007466B0 /* George W Bush.jpeg */,
+				3A1A9B26135C8B66007466B0 /* George H W Bush.jpg */,
+				3A1A9B27135C8B66007466B0 /* Franklin Pierce.jpg */,
+				3A1A9B28135C8B66007466B0 /* Franklin Roosevelt.jpg */,
+				3A1A9B29135C8B66007466B0 /* Dwight Eisenhower.jpg */,
+				3A1A9B2A135C8B66007466B0 /* Calvin Coolidge.jpg */,
+				3A1A9B2C135C8B66007466B0 /* Bill Clinton.jpg */,
+				3A1A9B2D135C8B66007466B0 /* Benjamin Harrison.jpg */,
+				3A1A9B2E135C8B66007466B0 /* Barack Obama.jpg */,
+				3A1A9B2F135C8B66007466B0 /* Andrew Johnson.gif */,
+				3A1A9B30135C8B66007466B0 /* Andrew Jackson.jpg */,
+				3A1A9B31135C8B66007466B0 /* Abraham Lincoln.jpg */,
+			);
+			name = Portraits;
+			sourceTree = "<group>";
+		};
+		3A837F80135BC927004BCE17 = {
+			isa = PBXGroup;
+			children = (
+				3A837F95135BC927004BCE17 /* E Pluribus Unum */,
+				3A837F8E135BC927004BCE17 /* Frameworks */,
+				3A837F8C135BC927004BCE17 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A837F8C135BC927004BCE17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A837F8B135BC927004BCE17 /* E Pluribus Unum.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A837F8E135BC927004BCE17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A837F8F135BC927004BCE17 /* Cocoa.framework */,
+				3A837F91135BC927004BCE17 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A837F91135BC927004BCE17 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A837F92135BC927004BCE17 /* AppKit.framework */,
+				3A837F93135BC927004BCE17 /* CoreData.framework */,
+				3A837F94135BC927004BCE17 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		3A837F95135BC927004BCE17 /* E Pluribus Unum */ = {
+			isa = PBXGroup;
+			children = (
+				3A5C4D00135F3E3D00640E41 /* PresidentialSpeechStatisticsProtocol.h */,
+				3A837FA1135BC928004BCE17 /* EPluribusUnumAppDelegate.h */,
+				3A837FA2135BC928004BCE17 /* EPluribusUnumAppDelegate.m */,
+				3A1A98E7135C740A007466B0 /* President.h */,
+				3A1A98E8135C740A007466B0 /* President.m */,
+				3A1A98EE135C74E5007466B0 /* Speech.h */,
+				3A1A98EF135C74E5007466B0 /* Speech.m */,
+				3A5C4D02135F41E800640E41 /* BackgroundView.h */,
+				3A5C4D03135F41E800640E41 /* BackgroundView.m */,
+				3A5C4D05135F447D00640E41 /* ChartView.h */,
+				3A5C4D06135F447E00640E41 /* ChartView.m */,
+				3A1A9B61135C97C8007466B0 /* CorpusView.h */,
+				3A1A9B62135C97C8007466B0 /* CorpusView.m */,
+				3A837FA4135BC928004BCE17 /* MainMenu.xib */,
+				3A1A98E9135C740A007466B0 /* President.xib */,
+				3A837F96135BC927004BCE17 /* Supporting Files */,
+			);
+			name = "E Pluribus Unum";
+			path = "Corpora Compare";
+			sourceTree = "<group>";
+		};
+		3A837F96135BC927004BCE17 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A36344613609E610032DF4F /* EPluribusUnum.icns */,
+				3A9A94321360911C00B9DBCF /* in.png */,
+				3A9A94331360911C00B9DBCF /* out.png */,
+				3A9A942913608ECF00B9DBCF /* right.tiff */,
+				3A9A942E13608EEC00B9DBCF /* right_alt.tiff */,
+				3A9A942C13608EDA00B9DBCF /* left.tiff */,
+				3A9A943013608EF500B9DBCF /* left_alt.tiff */,
+				3A1A9B5F135C926B007466B0 /* whitehouse.jpg */,
+				3A1A9B04135C83D3007466B0 /* Speeches.txt */,
+				3A1A9B65135CA0F0007466B0 /* Parties.txt */,
+				3A31E30C135E481A0084E981 /* Colors.txt */,
+				3A1A9B06135C8B57007466B0 /* Portraits */,
+				3A1A98F3135C7E69007466B0 /* Speeches */,
+				3A837F97135BC927004BCE17 /* E Pluribus Unum-Info.plist */,
+				3A837F98135BC927004BCE17 /* InfoPlist.strings */,
+				3A837F9B135BC927004BCE17 /* E Pluribus Unum-Prefix.pch */,
+				3A837F9C135BC927004BCE17 /* main.m */,
+				3A837F9E135BC927004BCE17 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A837F8A135BC927004BCE17 /* E Pluribus Unum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A837FA9135BC928004BCE17 /* Build configuration list for PBXNativeTarget "E Pluribus Unum" */;
+			buildPhases = (
+				3A837F87135BC927004BCE17 /* Sources */,
+				3A837F88135BC927004BCE17 /* Frameworks */,
+				3A837F89135BC927004BCE17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "E Pluribus Unum";
+			productName = "Corpora Compare";
+			productReference = 3A837F8B135BC927004BCE17 /* E Pluribus Unum.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A837F82135BC927004BCE17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Ultramentem;
+			};
+			buildConfigurationList = 3A837F85135BC927004BCE17 /* Build configuration list for PBXProject "E Pluribus Unum" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3A837F80135BC927004BCE17;
+			productRefGroup = 3A837F8C135BC927004BCE17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A837F8A135BC927004BCE17 /* E Pluribus Unum */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A837F89135BC927004BCE17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A837F9A135BC927004BCE17 /* InfoPlist.strings in Resources */,
+				3A837FA0135BC927004BCE17 /* Credits.rtf in Resources */,
+				3A837FA6135BC928004BCE17 /* MainMenu.xib in Resources */,
+				3A1A98EC135C740A007466B0 /* President.xib in Resources */,
+				3A1A9A11135C7E6A007466B0 /* 1861-03-04.txt in Resources */,
+				3A1A9A12135C7E6A007466B0 /* 1861-12-03.txt in Resources */,
+				3A1A9A13135C7E6A007466B0 /* 1862-12-01.txt in Resources */,
+				3A1A9A14135C7E6A007466B0 /* 1863-12-08.txt in Resources */,
+				3A1A9A15135C7E6A007466B0 /* 1864-12-06.txt in Resources */,
+				3A1A9A16135C7E6A007466B0 /* 1865-03-04.txt in Resources */,
+				3A1A9A17135C7E6A007466B0 /* 1829-03-04.txt in Resources */,
+				3A1A9A18135C7E6A007466B0 /* 1829-12-08.txt in Resources */,
+				3A1A9A19135C7E6A007466B0 /* 1830-12-06.txt in Resources */,
+				3A1A9A1A135C7E6A007466B0 /* 1831-12-06.txt in Resources */,
+				3A1A9A1B135C7E6A007466B0 /* 1832-12-04.txt in Resources */,
+				3A1A9A1C135C7E6A007466B0 /* 1833-03-04.txt in Resources */,
+				3A1A9A1D135C7E6A007466B0 /* 1833-12-03.txt in Resources */,
+				3A1A9A1E135C7E6A007466B0 /* 1834-12-01.txt in Resources */,
+				3A1A9A1F135C7E6A007466B0 /* 1835-12-07.txt in Resources */,
+				3A1A9A20135C7E6A007466B0 /* 1836-12-05.txt in Resources */,
+				3A1A9A21135C7E6A007466B0 /* 1865-12-04.txt in Resources */,
+				3A1A9A22135C7E6A007466B0 /* 2009-01-20.txt in Resources */,
+				3A1A9A23135C7E6A007466B0 /* 2010-01-27.txt in Resources */,
+				3A1A9A24135C7E6A007466B0 /* 1889-03-04.txt in Resources */,
+				3A1A9A25135C7E6A007466B0 /* 1889-12-03.txt in Resources */,
+				3A1A9A26135C7E6A007466B0 /* 1890-12-01.txt in Resources */,
+				3A1A9A27135C7E6A007466B0 /* 1891-12-09.txt in Resources */,
+				3A1A9A28135C7E6A007466B0 /* 1892-12-06.txt in Resources */,
+				3A1A9A29135C7E6A007466B0 /* 1993-01-20.txt in Resources */,
+				3A1A9A2A135C7E6A007466B0 /* 1994-01-25.txt in Resources */,
+				3A1A9A2B135C7E6A007466B0 /* 1995-01-24.txt in Resources */,
+				3A1A9A2C135C7E6A007466B0 /* 1996-01-23.txt in Resources */,
+				3A1A9A2D135C7E6A007466B0 /* 1997-01-20.txt in Resources */,
+				3A1A9A2E135C7E6A007466B0 /* 1997-02-04.txt in Resources */,
+				3A1A9A2F135C7E6A007466B0 /* 1998-01-27.txt in Resources */,
+				3A1A9A30135C7E6A007466B0 /* 1999-01-19.txt in Resources */,
+				3A1A9A31135C7E6A007466B0 /* 2000-01-27.txt in Resources */,
+				3A1A9A32135C7E6A007466B0 /* 1923-12-06.txt in Resources */,
+				3A1A9A33135C7E6A007466B0 /* 1924-12-03.txt in Resources */,
+				3A1A9A34135C7E6A007466B0 /* 1925-03-04.txt in Resources */,
+				3A1A9A35135C7E6A007466B0 /* 1925-12-08.txt in Resources */,
+				3A1A9A36135C7E6A007466B0 /* 1926-12-07.txt in Resources */,
+				3A1A9A37135C7E6A007466B0 /* 1927-12-06.txt in Resources */,
+				3A1A9A38135C7E6A007466B0 /* 1928-12-04.txt in Resources */,
+				3A1A9A39135C7E6A007466B0 /* 1881-12-06.txt in Resources */,
+				3A1A9A3A135C7E6A007466B0 /* 1882-12-04.txt in Resources */,
+				3A1A9A3B135C7E6A007466B0 /* 1883-12-04.txt in Resources */,
+				3A1A9A3C135C7E6A007466B0 /* 1884-12-01.txt in Resources */,
+				3A1A9A3D135C7E6A007466B0 /* 1953-01-20.txt in Resources */,
+				3A1A9A3E135C7E6A007466B0 /* 1933-03-04.txt in Resources */,
+				3A1A9A3F135C7E6A007466B0 /* 1937-01-20.txt in Resources */,
+				3A1A9A40135C7E6A007466B0 /* 1941-01-06.txt in Resources */,
+				3A1A9A41135C7E6A007466B0 /* 1941-01-20.txt in Resources */,
+				3A1A9A42135C7E6A007466B0 /* 1943-01-07.txt in Resources */,
+				3A1A9A43135C7E6A007466B0 /* 1944-01-11.txt in Resources */,
+				3A1A9A44135C7E6A007466B0 /* 1945-01-20.txt in Resources */,
+				3A1A9A45135C7E6A007466B0 /* 1853-03-04.txt in Resources */,
+				3A1A9A46135C7E6A007466B0 /* 1853-12-05.txt in Resources */,
+				3A1A9A47135C7E6A007466B0 /* 1854-12-04.txt in Resources */,
+				3A1A9A48135C7E6A007466B0 /* 1855-12-31.txt in Resources */,
+				3A1A9A49135C7E6A007466B0 /* 1856-12-02.txt in Resources */,
+				3A1A9A4A135C7E6A007466B0 /* 1989-01-20.txt in Resources */,
+				3A1A9A4B135C7E6A007466B0 /* 1990-01-31.txt in Resources */,
+				3A1A9A4C135C7E6A007466B0 /* 1991-01-29.txt in Resources */,
+				3A1A9A4D135C7E6A007466B0 /* 1992-01-28.txt in Resources */,
+				3A1A9A4E135C7E6A007466B0 /* 2001-01-20.txt in Resources */,
+				3A1A9A4F135C7E6A007466B0 /* 2002-01-29.txt in Resources */,
+				3A1A9A50135C7E6A007466B0 /* 2003-01-28.txt in Resources */,
+				3A1A9A51135C7E6A007466B0 /* 2004-01-20.txt in Resources */,
+				3A1A9A52135C7E6A007466B0 /* 2005-01-20.txt in Resources */,
+				3A1A9A53135C7E6A007466B0 /* 2005-02-02.txt in Resources */,
+				3A1A9A54135C7E6A007466B0 /* 2006-01-31.txt in Resources */,
+				3A1A9A55135C7E6A007466B0 /* 2007-01-23.txt in Resources */,
+				3A1A9A56135C7E6A007466B0 /* 2008-01-28.txt in Resources */,
+				3A1A9A57135C7E6A007466B0 /* 1789-04-30.txt in Resources */,
+				3A1A9A58135C7E6A007466B0 /* 1790-01-08.txt in Resources */,
+				3A1A9A59135C7E6A007466B0 /* 1790-12-08.txt in Resources */,
+				3A1A9A5A135C7E6A007466B0 /* 1791-10-25.txt in Resources */,
+				3A1A9A5B135C7E6A007466B0 /* 1792-11-06.txt in Resources */,
+				3A1A9A5C135C7E6A007466B0 /* 1793-03-04.txt in Resources */,
+				3A1A9A5D135C7E6A007466B0 /* 1793-12-03.txt in Resources */,
+				3A1A9A5E135C7E6A007466B0 /* 1794-11-19.txt in Resources */,
+				3A1A9A5F135C7E6A007466B0 /* 1795-12-08.txt in Resources */,
+				3A1A9A60135C7E6A007466B0 /* 1796-12-07.txt in Resources */,
+				3A1A9A61135C7E6A007466B0 /* 1975-01-15.txt in Resources */,
+				3A1A9A62135C7E6A007466B0 /* 1976-01-19.txt in Resources */,
+				3A1A9A63135C7E6A007466B0 /* 1977-01-12.txt in Resources */,
+				3A1A9A64135C7E6A007466B0 /* 1885-03-04.txt in Resources */,
+				3A1A9A65135C7E6A007466B0 /* 1885-12-08.txt in Resources */,
+				3A1A9A66135C7E6A007466B0 /* 1886-12-06.txt in Resources */,
+				3A1A9A67135C7E6A007466B0 /* 1887-12-06.txt in Resources */,
+				3A1A9A68135C7E6A007466B0 /* 1888-12-03.txt in Resources */,
+				3A1A9A69135C7E6A007466B0 /* 1893-03-04.txt in Resources */,
+				3A1A9A6A135C7E6A007466B0 /* 1893-12-04.txt in Resources */,
+				3A1A9A6B135C7E6A007466B0 /* 1894-12-03.txt in Resources */,
+				3A1A9A6C135C7E6A007466B0 /* 1895-12-02.txt in Resources */,
+				3A1A9A6D135C7E6A007466B0 /* 1896-12-07.txt in Resources */,
+				3A1A9A6E135C7E6A007466B0 /* 1949-01-20.txt in Resources */,
+				3A1A9A6F135C7E6A007466B0 /* 1929-03-04.txt in Resources */,
+				3A1A9A70135C7E6A007466B0 /* 1881-03-04.txt in Resources */,
+				3A1A9A71135C7E6A007466B0 /* 1857-03-04.txt in Resources */,
+				3A1A9A72135C7E6A007466B0 /* 1857-12-08.txt in Resources */,
+				3A1A9A73135C7E6A007466B0 /* 1858-12-06.txt in Resources */,
+				3A1A9A74135C7E6A007466B0 /* 1859-12-19.txt in Resources */,
+				3A1A9A75135C7E6A007466B0 /* 1860-12-03.txt in Resources */,
+				3A1A9A76135C7E6A007466B0 /* 1809-03-04.txt in Resources */,
+				3A1A9A77135C7E6A007466B0 /* 1809-11-29.txt in Resources */,
+				3A1A9A78135C7E6A007466B0 /* 1810-12-05.txt in Resources */,
+				3A1A9A79135C7E6A007466B0 /* 1811-11-05.txt in Resources */,
+				3A1A9A7A135C7E6A007466B0 /* 1812-11-04.txt in Resources */,
+				3A1A9A7B135C7E6A007466B0 /* 1813-03-04.txt in Resources */,
+				3A1A9A7C135C7E6A007466B0 /* 1813-12-07.txt in Resources */,
+				3A1A9A7D135C7E6A007466B0 /* 1814-09-20.txt in Resources */,
+				3A1A9A7E135C7E6A007466B0 /* 1815-12-05.txt in Resources */,
+				3A1A9A7F135C7E6A007466B0 /* 1816-12-03.txt in Resources */,
+				3A1A9A80135C7E6A007466B0 /* 1817-03-04.txt in Resources */,
+				3A1A9A81135C7E6A007466B0 /* 1817-12-12.txt in Resources */,
+				3A1A9A82135C7E6A007466B0 /* 1818-11-16.txt in Resources */,
+				3A1A9A83135C7E6A007466B0 /* 1819-12-07.txt in Resources */,
+				3A1A9A84135C7E6A007466B0 /* 1820-11-14.txt in Resources */,
+				3A1A9A85135C7E6A007466B0 /* 1821-03-05.txt in Resources */,
+				3A1A9A86135C7E6A007466B0 /* 1821-12-03.txt in Resources */,
+				3A1A9A87135C7E6A007466B0 /* 1822-12-03.txt in Resources */,
+				3A1A9A88135C7E6A007466B0 /* 1823-12-02.txt in Resources */,
+				3A1A9A89135C7E6A007466B0 /* 1824-12-07.txt in Resources */,
+				3A1A9A8A135C7E6A007466B0 /* 1845-03-04.txt in Resources */,
+				3A1A9A8B135C7E6A007466B0 /* 1845-12-02.txt in Resources */,
+				3A1A9A8C135C7E6A007466B0 /* 1846-12-08.txt in Resources */,
+				3A1A9A8D135C7E6A007466B0 /* 1847-12-07.txt in Resources */,
+				3A1A9A8E135C7E6A007466B0 /* 1848-12-05.txt in Resources */,
+				3A1A9A8F135C7E6A007466B0 /* 1977-01-20.txt in Resources */,
+				3A1A9A90135C7E6A007466B0 /* 1978-01-19.txt in Resources */,
+				3A1A9A91135C7E6A007466B0 /* 1979-01-23.txt in Resources */,
+				3A1A9A92135C7E6A007466B0 /* 1980-01-23.txt in Resources */,
+				3A1A9A93135C7E6A007466B0 /* 1797-03-04.txt in Resources */,
+				3A1A9A94135C7E6A007466B0 /* 1797-11-22.txt in Resources */,
+				3A1A9A95135C7E6A007466B0 /* 1798-12-08.txt in Resources */,
+				3A1A9A96135C7E6A007466B0 /* 1799-12-03.txt in Resources */,
+				3A1A9A97135C7E6A007466B0 /* 1800-11-22.txt in Resources */,
+				3A1A9A98135C7E6A007466B0 /* 1961-01-20.txt in Resources */,
+				3A1A9A99135C7E6A007466B0 /* 1962-01-11.txt in Resources */,
+				3A1A9A9A135C7E6A007466B0 /* 1963-01-14.txt in Resources */,
+				3A1A9A9B135C7E6A007466B0 /* 1825-03-04.txt in Resources */,
+				3A1A9A9C135C7E6A007466B0 /* 1825-12-06.txt in Resources */,
+				3A1A9A9D135C7E6A007466B0 /* 1826-12-05.txt in Resources */,
+				3A1A9A9E135C7E6A007466B0 /* 1827-12-04.txt in Resources */,
+				3A1A9A9F135C7E6A007466B0 /* 1828-12-02.txt in Resources */,
+				3A1A9AA0135C7E6A007466B0 /* 1841-12-07.txt in Resources */,
+				3A1A9AA1135C7E6A007466B0 /* 1842-12-06.txt in Resources */,
+				3A1A9AA2135C7E6A007466B0 /* 1843-12-05.txt in Resources */,
+				3A1A9AA3135C7E6A007466B0 /* 1844-12-03.txt in Resources */,
+				3A1A9AA4135C7E6A007466B0 /* 1964-01-08.txt in Resources */,
+				3A1A9AA5135C7E6A007466B0 /* 1965-01-04.txt in Resources */,
+				3A1A9AA6135C7E6A007466B0 /* 1965-01-20.txt in Resources */,
+				3A1A9AA7135C7E6A007466B0 /* 1966-01-12.txt in Resources */,
+				3A1A9AA8135C7E6A007466B0 /* 1967-01-10.txt in Resources */,
+				3A1A9AA9135C7E6A007466B0 /* 1968-01-17.txt in Resources */,
+				3A1A9AAA135C7E6A007466B0 /* 1969-01-14.txt in Resources */,
+				3A1A9AAB135C7E6A007466B0 /* 1837-03-04.txt in Resources */,
+				3A1A9AAC135C7E6A007466B0 /* 1837-12-05.txt in Resources */,
+				3A1A9AAD135C7E6A007466B0 /* 1838-12-03.txt in Resources */,
+				3A1A9AAE135C7E6A007466B0 /* 1839-12-02.txt in Resources */,
+				3A1A9AAF135C7E6A007466B0 /* 1840-12-05.txt in Resources */,
+				3A1A9AB0135C7E6A007466B0 /* 1850-12-02.txt in Resources */,
+				3A1A9AB1135C7E6A007466B0 /* 1851-12-02.txt in Resources */,
+				3A1A9AB2135C7E6A007466B0 /* 1852-12-06.txt in Resources */,
+				3A1A9AB3135C7E6A007466B0 /* 1969-01-20.txt in Resources */,
+				3A1A9AB4135C7E6A007466B0 /* 1970-01-22.txt in Resources */,
+				3A1A9AB5135C7E6A007466B0 /* 1971-01-22.txt in Resources */,
+				3A1A9AB6135C7E6A007466B0 /* 1971-02-25.txt in Resources */,
+				3A1A9AB7135C7E6A007466B0 /* 1972-01-20.txt in Resources */,
+				3A1A9AB8135C7E6A007466B0 /* 1973-01-20.txt in Resources */,
+				3A1A9AB9135C7E6A007466B0 /* 1974-01-30.txt in Resources */,
+				3A1A9ABA135C7E6A007466B0 /* 1981-01-20.txt in Resources */,
+				3A1A9ABB135C7E6A007466B0 /* 1981-06-29.txt in Resources */,
+				3A1A9ABC135C7E6A007466B0 /* 1982-01-26.txt in Resources */,
+				3A1A9ABD135C7E6A007466B0 /* 1983-01-25.txt in Resources */,
+				3A1A9ABE135C7E6A007466B0 /* 1984-01-25.txt in Resources */,
+				3A1A9ABF135C7E6A007466B0 /* 1985-01-21.txt in Resources */,
+				3A1A9AC0135C7E6A007466B0 /* 1985-02-06.txt in Resources */,
+				3A1A9AC1135C7E6A007466B0 /* 1986-02-04.txt in Resources */,
+				3A1A9AC2135C7E6A007466B0 /* 1987-01-27.txt in Resources */,
+				3A1A9AC3135C7E6A007466B0 /* 1988-01-25.txt in Resources */,
+				3A1A9AC4135C7E6A007466B0 /* 1877-03-05.txt in Resources */,
+				3A1A9AC5135C7E6A007466B0 /* 1877-12-03.txt in Resources */,
+				3A1A9AC6135C7E6A007466B0 /* 1878-12-02.txt in Resources */,
+				3A1A9AC7135C7E6A007466B0 /* 1879-12-01.txt in Resources */,
+				3A1A9AC8135C7E6A007466B0 /* 1880-12-06.txt in Resources */,
+				3A1A9AC9135C7E6A007466B0 /* 1901-12-03.txt in Resources */,
+				3A1A9ACA135C7E6A007466B0 /* 1902-12-02.txt in Resources */,
+				3A1A9ACB135C7E6A007466B0 /* 1903-12-07.txt in Resources */,
+				3A1A9ACC135C7E6A007466B0 /* 1904-12-06.txt in Resources */,
+				3A1A9ACD135C7E6A007466B0 /* 1905-03-04.txt in Resources */,
+				3A1A9ACE135C7E6A007466B0 /* 1905-12-05.txt in Resources */,
+				3A1A9ACF135C7E6A007466B0 /* 1906-12-03.txt in Resources */,
+				3A1A9AD0135C7E6A007466B0 /* 1907-12-03.txt in Resources */,
+				3A1A9AD1135C7E6A007466B0 /* 1908-12-09.txt in Resources */,
+				3A1A9AD2135C7E6A007466B0 /* 1801-03-04.txt in Resources */,
+				3A1A9AD3135C7E6A007466B0 /* 1801-12-08.txt in Resources */,
+				3A1A9AD4135C7E6A007466B0 /* 1802-12-15.txt in Resources */,
+				3A1A9AD5135C7E6A007466B0 /* 1803-10-17.txt in Resources */,
+				3A1A9AD6135C7E6A007466B0 /* 1804-11-08.txt in Resources */,
+				3A1A9AD7135C7E6A007466B0 /* 1805-03-04.txt in Resources */,
+				3A1A9AD8135C7E6A007466B0 /* 1805-12-03.txt in Resources */,
+				3A1A9AD9135C7E6A007466B0 /* 1806-12-02.txt in Resources */,
+				3A1A9ADA135C7E6A007466B0 /* 1807-10-27.txt in Resources */,
+				3A1A9ADB135C7E6A007466B0 /* 1808-11-08.txt in Resources */,
+				3A1A9ADC135C7E6A007466B0 /* 1869-03-04.txt in Resources */,
+				3A1A9ADD135C7E6A007466B0 /* 1869-12-06.txt in Resources */,
+				3A1A9ADE135C7E6A007466B0 /* 1870-12-05.txt in Resources */,
+				3A1A9ADF135C7E6A007466B0 /* 1871-12-04.txt in Resources */,
+				3A1A9AE0135C7E6A007466B0 /* 1872-12-02.txt in Resources */,
+				3A1A9AE1135C7E6A007466B0 /* 1873-03-04.txt in Resources */,
+				3A1A9AE2135C7E6A007466B0 /* 1873-12-01.txt in Resources */,
+				3A1A9AE3135C7E6A007466B0 /* 1874-12-07.txt in Resources */,
+				3A1A9AE4135C7E6A007466B0 /* 1875-12-07.txt in Resources */,
+				3A1A9AE5135C7E6A007466B0 /* 1876-12-05.txt in Resources */,
+				3A1A9AE6135C7E6A007466B0 /* 1921-03-04.txt in Resources */,
+				3A1A9AE7135C7E6A007466B0 /* 1921-12-06.txt in Resources */,
+				3A1A9AE8135C7E6A007466B0 /* 1922-12-08.txt in Resources */,
+				3A1A9AE9135C7E6A007466B0 /* 1841-03-04.txt in Resources */,
+				3A1A9AEA135C7E6A007466B0 /* 1909-03-04.txt in Resources */,
+				3A1A9AEB135C7E6A007466B0 /* 1909-12-07.txt in Resources */,
+				3A1A9AEC135C7E6A007466B0 /* 1910-12-06.txt in Resources */,
+				3A1A9AED135C7E6A007466B0 /* 1911-12-05.txt in Resources */,
+				3A1A9AEE135C7E6A007466B0 /* 1912-12-03.txt in Resources */,
+				3A1A9AEF135C7E6A007466B0 /* 1897-03-04.txt in Resources */,
+				3A1A9AF0135C7E6A007466B0 /* 1897-12-06.txt in Resources */,
+				3A1A9AF1135C7E6A007466B0 /* 1898-12-05.txt in Resources */,
+				3A1A9AF2135C7E6A007466B0 /* 1899-12-05.txt in Resources */,
+				3A1A9AF3135C7E6A007466B0 /* 1900-12-03.txt in Resources */,
+				3A1A9AF4135C7E6A007466B0 /* 1901-03-04.txt in Resources */,
+				3A1A9AF5135C7E6A007466B0 /* 1913-03-04.txt in Resources */,
+				3A1A9AF6135C7E6A007466B0 /* 1913-12-02.txt in Resources */,
+				3A1A9AF7135C7E6A007466B0 /* 1914-12-08.txt in Resources */,
+				3A1A9AF8135C7E6A007466B0 /* 1915-12-07.txt in Resources */,
+				3A1A9AF9135C7E6A007466B0 /* 1916-12-05.txt in Resources */,
+				3A1A9AFA135C7E6A007466B0 /* 1917-03-05.txt in Resources */,
+				3A1A9AFB135C7E6A007466B0 /* 1917-12-04.txt in Resources */,
+				3A1A9AFC135C7E6A007466B0 /* 1918-12-02.txt in Resources */,
+				3A1A9AFD135C7E6A007466B0 /* 1919-12-02.txt in Resources */,
+				3A1A9AFE135C7E6A007466B0 /* 1920-12-07.txt in Resources */,
+				3A1A9AFF135C7E6A007466B0 /* 1849-03-05.txt in Resources */,
+				3A1A9B00135C7E6A007466B0 /* 1849-12-04.txt in Resources */,
+				3A1A9B05135C83D3007466B0 /* Speeches.txt in Resources */,
+				3A1A9B32135C8B66007466B0 /* Zachary Taylor.jpg in Resources */,
+				3A1A9B33135C8B66007466B0 /* Woodrow Wilson.gif in Resources */,
+				3A1A9B34135C8B66007466B0 /* William McKinley.gif in Resources */,
+				3A1A9B35135C8B66007466B0 /* William Taft.jpg in Resources */,
+				3A1A9B36135C8B66007466B0 /* William Harrison.jpg in Resources */,
+				3A1A9B37135C8B66007466B0 /* Warren Harding.gif in Resources */,
+				3A1A9B38135C8B66007466B0 /* Ulysses Grant.gif in Resources */,
+				3A1A9B39135C8B66007466B0 /* Thomas Jefferson.jpg in Resources */,
+				3A1A9B3A135C8B66007466B0 /* Theodore Roosevelt.jpg in Resources */,
+				3A1A9B3B135C8B66007466B0 /* Rutherford Hayes.png in Resources */,
+				3A1A9B3C135C8B66007466B0 /* Ronald Reagan.jpg in Resources */,
+				3A1A9B3D135C8B66007466B0 /* Richard Nixon.jpg in Resources */,
+				3A1A9B3E135C8B66007466B0 /* Millard Fillmore.jpg in Resources */,
+				3A1A9B3F135C8B66007466B0 /* Martin Van Buren.gif in Resources */,
+				3A1A9B40135C8B66007466B0 /* Lyndon Johnson.png in Resources */,
+				3A1A9B41135C8B66007466B0 /* John Tyler.jpg in Resources */,
+				3A1A9B42135C8B66007466B0 /* John Quincy Adams.jpg in Resources */,
+				3A1A9B43135C8B66007466B0 /* John Kennedy.jpg in Resources */,
+				3A1A9B44135C8B66007466B0 /* John Adams.jpg in Resources */,
+				3A1A9B45135C8B66007466B0 /* Jimmy Carter.gif in Resources */,
+				3A1A9B46135C8B66007466B0 /* James Polk.jpg in Resources */,
+				3A1A9B47135C8B66007466B0 /* James Monroe.gif in Resources */,
+				3A1A9B48135C8B66007466B0 /* James Madison.jpg in Resources */,
+				3A1A9B49135C8B66007466B0 /* James Buchanan.gif in Resources */,
+				3A1A9B4A135C8B66007466B0 /* James Garfield.jpg in Resources */,
+				3A1A9B4B135C8B66007466B0 /* Herbert Hoover.jpg in Resources */,
+				3A1A9B4C135C8B66007466B0 /* Harry Truman.jpg in Resources */,
+				3A1A9B4D135C8B66007466B0 /* Grover Cleveland.jpg in Resources */,
+				3A1A9B4E135C8B66007466B0 /* Gerald Ford.jpg in Resources */,
+				3A1A9B4F135C8B66007466B0 /* George Washington.jpg in Resources */,
+				3A1A9B50135C8B66007466B0 /* George W Bush.jpeg in Resources */,
+				3A1A9B51135C8B66007466B0 /* George H W Bush.jpg in Resources */,
+				3A1A9B52135C8B66007466B0 /* Franklin Pierce.jpg in Resources */,
+				3A1A9B53135C8B66007466B0 /* Franklin Roosevelt.jpg in Resources */,
+				3A1A9B54135C8B66007466B0 /* Dwight Eisenhower.jpg in Resources */,
+				3A1A9B55135C8B66007466B0 /* Calvin Coolidge.jpg in Resources */,
+				3A1A9B57135C8B66007466B0 /* Bill Clinton.jpg in Resources */,
+				3A1A9B58135C8B66007466B0 /* Benjamin Harrison.jpg in Resources */,
+				3A1A9B59135C8B66007466B0 /* Barack Obama.jpg in Resources */,
+				3A1A9B5A135C8B66007466B0 /* Andrew Johnson.gif in Resources */,
+				3A1A9B5B135C8B66007466B0 /* Andrew Jackson.jpg in Resources */,
+				3A1A9B5C135C8B66007466B0 /* Abraham Lincoln.jpg in Resources */,
+				3A1A9B5E135C8BE4007466B0 /* Chester Arthur.gif in Resources */,
+				3A1A9B60135C926B007466B0 /* whitehouse.jpg in Resources */,
+				3A1A9B66135CA0F1007466B0 /* Parties.txt in Resources */,
+				3A31E30D135E481A0084E981 /* Colors.txt in Resources */,
+				3A9A942A13608ED000B9DBCF /* right.tiff in Resources */,
+				3A9A942D13608EDA00B9DBCF /* left.tiff in Resources */,
+				3A9A942F13608EEC00B9DBCF /* right_alt.tiff in Resources */,
+				3A9A943113608EF500B9DBCF /* left_alt.tiff in Resources */,
+				3A9A94341360911D00B9DBCF /* in.png in Resources */,
+				3A9A94351360911D00B9DBCF /* out.png in Resources */,
+				3A36344713609E610032DF4F /* EPluribusUnum.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A837F87135BC927004BCE17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A837F9D135BC927004BCE17 /* main.m in Sources */,
+				3A837FA3135BC928004BCE17 /* EPluribusUnumAppDelegate.m in Sources */,
+				3A1A98EA135C740A007466B0 /* President.h in Sources */,
+				3A1A98EB135C740A007466B0 /* President.m in Sources */,
+				3A1A98F0135C74E5007466B0 /* Speech.h in Sources */,
+				3A1A98F1135C74E5007466B0 /* Speech.m in Sources */,
+				3A1A9B63135C97C9007466B0 /* CorpusView.h in Sources */,
+				3A1A9B64135C97C9007466B0 /* CorpusView.m in Sources */,
+				3A5C4D04135F41E800640E41 /* BackgroundView.m in Sources */,
+				3A5C4D07135F447E00640E41 /* ChartView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3A837F98135BC927004BCE17 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A837F99135BC927004BCE17 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3A837F9E135BC927004BCE17 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A837F9F135BC927004BCE17 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		3A837FA4135BC928004BCE17 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A837FA5135BC928004BCE17 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A837FA7135BC928004BCE17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				DEAD_CODE_STRIPPING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_STRICT_ALIASING = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3A837FA8135BC928004BCE17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				DEAD_CODE_STRIPPING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_STRICT_ALIASING = YES;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3A837FAA135BC928004BCE17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Corpora Compare/E Pluribus Unum-Prefix.pch";
+				INFOPLIST_FILE = "Corpora Compare/E Pluribus Unum-Info.plist";
+				PRODUCT_NAME = "E Pluribus Unum";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3A837FAB135BC928004BCE17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Corpora Compare/E Pluribus Unum-Prefix.pch";
+				INFOPLIST_FILE = "Corpora Compare/E Pluribus Unum-Info.plist";
+				PRODUCT_NAME = "E Pluribus Unum";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A837F85135BC927004BCE17 /* Build configuration list for PBXProject "E Pluribus Unum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A837FA7135BC928004BCE17 /* Debug */,
+				3A837FA8135BC928004BCE17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A837FA9135BC928004BCE17 /* Build configuration list for PBXNativeTarget "E Pluribus Unum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A837FAA135BC928004BCE17 /* Debug */,
+				3A837FAB135BC928004BCE17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A837F82135BC927004BCE17 /* Project object */;
+}
