@@ -103,6 +103,8 @@
 	
 	[progressWindow close];
 	[chartView setBarSpacing:2.0];
+	[chartView setBarsCount:50];
+	[chartView setBarsOffset:0];
 	[window makeKeyAndOrderFront:self];
 	[chartView setRepresentedObject:self];
 }

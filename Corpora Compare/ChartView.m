@@ -14,6 +14,38 @@
 @synthesize barSpacing;
 @synthesize representedObject;
 @synthesize comparedObject;
+@synthesize barsCount;
+@synthesize barsOffset;
+
+- (IBAction)incrementBarsCount:(id)sender
+{
+	(void)sender;
+	barsCount += 1;
+	[self setNeedsDisplay:YES];
+}
+
+- (IBAction)decrementBarsCount:(id)sender
+{
+	(void)sender;
+	if (barsCount == 1) return;
+	barsCount -= 1;
+	[self setNeedsDisplay:YES];
+}
+
+- (IBAction)incrementBarsOffset:(id)sender
+{
+	(void)sender;
+	barsOffset += 1;
+	[self setNeedsDisplay:YES];
+}
+
+- (IBAction)decrementBarsOffset:(id)sender
+{
+	(void)sender;
+	if (!barsOffset) return;
+	barsOffset -= 1;
+	[self setNeedsDisplay:YES];
+}
 
 - (IBAction)update:(id)sender
 {
@@ -43,11 +75,22 @@
 	
 	[[representedObject color] setFill];
 	
-	NSSize segmentSize = NSMakeSize((double)([self bounds].size.width) / [barsCountSlider doubleValue], [self bounds].size.height);
+	NSSize segmentSize = NSMakeSize((double)([self bounds].size.width) / (double)barsCount, [self bounds].size.height);
 	
-	for (NSInteger b = 0; b < [barsCountSlider integerValue]; b++)
+	NSMutableDictionary *stringDrawAttributes = [[NSMutableDictionary alloc] init];
+	[stringDrawAttributes setValue:[representedObject color] forKey:NSForegroundColorAttributeName];
+	NSShadow *stringShadow = [[NSShadow alloc] init];
+	[stringShadow setShadowColor:[NSColor blackColor]];
+	[stringShadow setShadowOffset:NSMakeSize(0, 0)];
+	[stringShadow setShadowBlurRadius:4];
+	[stringDrawAttributes setValue:stringShadow forKey:NSShadowAttributeName];
+	
+	[stringDrawAttributes setValue:[NSFont fontWithName:@"Goudy Old Style" size:48.0] forKey:NSFontAttributeName];
+	for (double size_2 = 96.0; [[NSString stringWithString:@" "] sizeWithAttributes:stringDrawAttributes].height > segmentSize.width - barSpacing; [stringDrawAttributes setValue:[NSFont fontWithName:@"Goudy Old Style" size:(--size_2)/2.0] forKey:NSFontAttributeName]);
+	
+	for (NSInteger b = 0; b < barsCount; b++)
 	{
-		NSString *word = [[representedObject wordsByFrequency] objectAtIndex:b];
+		NSString *word = [[representedObject wordsByFrequency] objectAtIndex:(b + barsOffset)];
 		double relativeFrequency = (double)[[[representedObject wordContexts] valueForKey:word] count] / (double)[[[representedObject wordContexts] valueForKey:[[representedObject wordsByFrequency] objectAtIndex:0]] count];
 		[[NSBezierPath bezierPathWithRect:NSMakeRect(b * segmentSize.width, 0, segmentSize.width - barSpacing,  relativeFrequency * segmentSize.height)] fill];
 		
@@ -63,6 +106,13 @@
 			[comparisonLine lineToPoint:NSMakePoint((b+1) * segmentSize.width - barSpacing, comparativeFrequency * segmentSize.height)];
 			[comparisonLine stroke];
 		}
+		NSAffineTransform *transform = [NSAffineTransform transform];
+		[transform translateXBy:((b + 1) * segmentSize.width) - barSpacing yBy:0.0];
+		[transform rotateByDegrees:90];
+		[transform concat];
+		[word drawAtPoint:NSMakePoint(0, 0) withAttributes:stringDrawAttributes];
+		[transform invert];
+		[transform concat];
 	}
 }
 

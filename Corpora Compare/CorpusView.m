@@ -52,13 +52,13 @@
 
 - (NSSize)area
 {
-	return NSMakeSize([self bounds].size.width-32.0, [self bounds].size.height-32.0);
+	return NSMakeSize([self bounds].size.width - 32.0, [self bounds].size.height - 32.0);
 }
 
 - (NSPoint)center
 {
 	NSSize area = [self area];
-	return NSMakePoint([self bounds].origin.x + 0.5*area.width,
+	return NSMakePoint([self bounds].origin.x + 0.5 * area.width,
 					   [self bounds].origin.y + area.height - 12);
 }
 
@@ -109,7 +109,7 @@
 		{
 			double angle = M_PI_2 + (double)(p)*M_PI/(double)([presidents count]);
 			destination = NSMakeRect(center.x + (0.5 * area.width * sin(angle)),
-									 center.y + (area.height * cos(angle)), 32, 32);
+									 center.y + ((area.height - 24) * cos(angle)), 32, 32);
 		}
 		[[[president view] animator] setFrame:destination];
 	}

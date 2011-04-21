@@ -38,8 +38,12 @@
 			NSArray *words = [sentence componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 			for (NSString *word in words)
 			{
-				if (![wordContextsWorking valueForKey:word]) [wordContextsWorking setValue:[NSMutableArray array] forKey:word];
-				[[wordContextsWorking valueForKey:word] addObject:sentence];
+				NSString *key = [[word stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] lowercaseString];
+				if (![key isEqualToString:@""])
+				{
+					if (![wordContextsWorking valueForKey:key]) [wordContextsWorking setValue:[NSMutableArray array] forKey:key];
+					[[wordContextsWorking valueForKey:key] addObject:sentence];
+				}
 			}
 		}
 		wordContexts = [NSDictionary dictionaryWithDictionary:wordContextsWorking];

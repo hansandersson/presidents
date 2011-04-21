@@ -14,14 +14,22 @@
     id <PresidentialSpeechStatisticsProtocol> representedObject;
 	id <PresidentialSpeechStatisticsProtocol> comparedObject;
 	
-	IBOutlet NSSlider *barsCountSlider;
+	IBOutlet NSInteger barsCount;
+	IBOutlet NSInteger barsOffset;
 	double barSpacing;
 }
 
 @property (readwrite, assign) id <PresidentialSpeechStatisticsProtocol> representedObject;
 @property (readwrite, assign) id <PresidentialSpeechStatisticsProtocol> comparedObject;
 @property (readwrite, assign) double barSpacing;
+@property (readwrite, assign) NSInteger barsCount;
+@property (readwrite, assign) NSInteger barsOffset;
 
 - (IBAction)update:(id)sender;
+
+- (IBAction)incrementBarsCount:(id)sender;
+- (IBAction)decrementBarsCount:(id)sender;
+- (IBAction)incrementBarsOffset:(id)sender;
+- (IBAction)decrementBarsOffset:(id)sender;
 
 @end
