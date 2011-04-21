@@ -14,12 +14,22 @@
 
 @synthesize focusWord;
 
-- (void)setFocusWord:(NSString *)newFocusWord
+/*- (void)setFocusWord:(NSString *)newFocusWord
 {
-	if ([focusWord isEqualToString:newFocusWord]) return;
-	focusWord = [newFocusWord copy];
-	[self positionPresidents];
-}
+	focusWord = newFocusWord;
+	for (President *president in presidents)
+	{
+		if (!focusWord) [[president view] setAlphaValue:1.0];
+		else
+		{
+			NSArray *presidentFocusWordContexts = [[president wordContexts] valueForKey:focusWord];
+			double focus = presidentFocusWordContexts
+			? pow((double) [presidentFocusWordContexts count] / [[president wordsCount] doubleValue], 1.0/4.0)
+			: 0.0;
+			[[president view] setAlphaValue:focus];
+		}
+	}
+}*/
 
 - (IBAction)select:(id)sender
 {
@@ -41,9 +51,10 @@
 {
 	[super mouseMoved:theEvent];
 	if (selection) return;
+	NSPoint locationInSelf = [self convertPoint:[theEvent locationInWindow] fromView:[[theEvent window] contentView]];
 	for (President *president in presidents)
 	{
-		if (CGRectContainsPoint(CGRectMake([[president view] frame].origin.x, [[president view] frame].origin.y, [[president view] frame].size.width, [[president view] frame].size.height), CGPointMake([theEvent locationInWindow].x, [theEvent locationInWindow].y)))
+		if (CGRectContainsPoint(CGRectMake([[president view] frame].origin.x, [[president view] frame].origin.y, [[president view] frame].size.width, [[president view] frame].size.height), CGPointMake(locationInSelf.x, locationInSelf.y)))
 		{
 			if (highlight != president)
 			{
@@ -121,16 +132,6 @@
 									 center.y + ((area.height - 24) * cos(angle)), 32, 32);
 		}
 		[[[president view] animator] setFrame:destination];
-		
-		if (focusWord)
-		{
-			NSArray *presidentFocusWordContexts = [[president wordContexts] valueForKey:focusWord];
-			double focus = presidentFocusWordContexts
-			? (sqrt((double) [presidentFocusWordContexts count] / [[president wordsCount] doubleValue]))/2.0 + 0.5
-			: 0.25;
-			[[[president view] animator] setAlphaValue:focus];
-		}
-		else if ([[president view] alphaValue] != 1.0) [[[president view] animator] setAlphaValue:1.0];
 	}
 }
 
@@ -153,7 +154,11 @@
 	
 	if (!reference)
 	{
-		[labelField setStringValue:@""];
+		[labelField setTextColor:[NSColor whiteColor]];
+		CGColorRef cgWhite = CGColorCreateGenericGray(0.0, 1.0);
+		[[labelField layer] setShadowColor:cgWhite];
+		CGColorRelease(cgWhite);
+		[labelField setStringValue:@"Forty-Three Presidents"];
 		return;
 	}
 	

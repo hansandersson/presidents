@@ -39,4 +39,6 @@
 
 @property (readwrite, copy) NSColor *color;
 
+- (IBAction)showDossier:(id)sender;
+
 @end

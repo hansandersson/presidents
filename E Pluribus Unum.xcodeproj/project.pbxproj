@@ -303,6 +303,9 @@
 		3A31E30D135E481A0084E981 /* Colors.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A31E30C135E481A0084E981 /* Colors.txt */; };
 		3A36344713609E610032DF4F /* EPluribusUnum.icns in Resources */ = {isa = PBXBuildFile; fileRef = 3A36344613609E610032DF4F /* EPluribusUnum.icns */; };
 		3A3634491360ACB80032DF4F /* filter.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 3A3634481360ACB80032DF4F /* filter.tiff */; };
+		3A36344C1360BB6B0032DF4F /* SharedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A36344B1360BB6A0032DF4F /* SharedView.m */; };
+		3A36344F1360C49F0032DF4F /* DossierController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A36344E1360C49F0032DF4F /* DossierController.m */; };
+		3A3634511360C50D0032DF4F /* Dossier.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A3634501360C50D0032DF4F /* Dossier.xib */; };
 		3A5C4D04135F41E800640E41 /* BackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5C4D03135F41E800640E41 /* BackgroundView.m */; };
 		3A5C4D07135F447E00640E41 /* ChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5C4D06135F447E00640E41 /* ChartView.m */; };
 		3A837F90135BC927004BCE17 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A837F8F135BC927004BCE17 /* Cocoa.framework */; };
@@ -616,6 +619,11 @@
 		3A31E30C135E481A0084E981 /* Colors.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Colors.txt; sourceTree = "<group>"; };
 		3A36344613609E610032DF4F /* EPluribusUnum.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = EPluribusUnum.icns; path = ../EPluribusUnum.icns; sourceTree = "<group>"; };
 		3A3634481360ACB80032DF4F /* filter.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = filter.tiff; sourceTree = "<group>"; };
+		3A36344A1360BB6A0032DF4F /* SharedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedView.h; sourceTree = "<group>"; };
+		3A36344B1360BB6A0032DF4F /* SharedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedView.m; sourceTree = "<group>"; };
+		3A36344D1360C49F0032DF4F /* DossierController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DossierController.h; sourceTree = "<group>"; };
+		3A36344E1360C49F0032DF4F /* DossierController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DossierController.m; sourceTree = "<group>"; };
+		3A3634501360C50D0032DF4F /* Dossier.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Dossier.xib; sourceTree = "<group>"; };
 		3A5C4D00135F3E3D00640E41 /* PresidentialSpeechStatisticsProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresidentialSpeechStatisticsProtocol.h; sourceTree = "<group>"; };
 		3A5C4D02135F41E800640E41 /* BackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundView.h; sourceTree = "<group>"; };
 		3A5C4D03135F41E800640E41 /* BackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundView.m; sourceTree = "<group>"; };
@@ -1338,18 +1346,23 @@
 				3A5C4D00135F3E3D00640E41 /* PresidentialSpeechStatisticsProtocol.h */,
 				3A837FA1135BC928004BCE17 /* EPluribusUnumAppDelegate.h */,
 				3A837FA2135BC928004BCE17 /* EPluribusUnumAppDelegate.m */,
+				3A36344D1360C49F0032DF4F /* DossierController.h */,
+				3A36344E1360C49F0032DF4F /* DossierController.m */,
 				3A1A98E7135C740A007466B0 /* President.h */,
 				3A1A98E8135C740A007466B0 /* President.m */,
 				3A1A98EE135C74E5007466B0 /* Speech.h */,
 				3A1A98EF135C74E5007466B0 /* Speech.m */,
 				3A5C4D02135F41E800640E41 /* BackgroundView.h */,
 				3A5C4D03135F41E800640E41 /* BackgroundView.m */,
+				3A36344A1360BB6A0032DF4F /* SharedView.h */,
+				3A36344B1360BB6A0032DF4F /* SharedView.m */,
 				3A5C4D05135F447D00640E41 /* ChartView.h */,
 				3A5C4D06135F447E00640E41 /* ChartView.m */,
 				3A1A9B61135C97C8007466B0 /* CorpusView.h */,
 				3A1A9B62135C97C8007466B0 /* CorpusView.m */,
 				3A837FA4135BC928004BCE17 /* MainMenu.xib */,
 				3A1A98E9135C740A007466B0 /* President.xib */,
+				3A3634501360C50D0032DF4F /* Dossier.xib */,
 				3A837F96135BC927004BCE17 /* Supporting Files */,
 			);
 			name = "E Pluribus Unum";
@@ -1731,6 +1744,7 @@
 				3A9A94351360911D00B9DBCF /* out.png in Resources */,
 				3A36344713609E610032DF4F /* EPluribusUnum.icns in Resources */,
 				3A3634491360ACB80032DF4F /* filter.tiff in Resources */,
+				3A3634511360C50D0032DF4F /* Dossier.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1751,6 +1765,8 @@
 				3A1A9B64135C97C9007466B0 /* CorpusView.m in Sources */,
 				3A5C4D04135F41E800640E41 /* BackgroundView.m in Sources */,
 				3A5C4D07135F447E00640E41 /* ChartView.m in Sources */,
+				3A36344C1360BB6B0032DF4F /* SharedView.m in Sources */,
+				3A36344F1360C49F0032DF4F /* DossierController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

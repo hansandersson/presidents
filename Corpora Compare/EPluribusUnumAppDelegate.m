@@ -10,6 +10,7 @@
 #import "President.h"
 #import "CorpusView.h"
 #import "ChartView.h"
+#import "DossierController.h"
 
 @implementation EPluribusUnumAppDelegate
 
@@ -22,6 +23,12 @@
 @synthesize wordsCount;
 
 @synthesize color;
+
+- (BOOL)validateToolbarItem:(NSToolbarItem *)theItem
+{
+	(void)theItem;
+	return NO; //[[chartView representedObject] isKindOfClass:[President class]];
+}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
@@ -107,6 +114,17 @@
 	[chartView setBarsOffset:0];
 	[window makeKeyAndOrderFront:self];
 	[chartView setRepresentedObject:self];
+}
+
+- (IBAction)showDossier:(id)sender
+{
+	(void)sender;
+	/*if ([[chartView representedObject] isKindOfClass:[President class]])
+	{
+		DossierController *dossierController = [[DossierController alloc] initWithWindowNibName:@"Dossier"];
+		[dossierController setRepresentedObject:[chartView representedObject]];
+		[dossierController beginDossierModalForWindow:[self window]];
+	}*/
 }
 
 @end

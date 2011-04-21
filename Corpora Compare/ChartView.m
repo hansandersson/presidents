@@ -41,7 +41,7 @@
 
 - (IBAction)incrementBarsOffset:(id)sender
 {
-	[self setSearchWord:nil];
+	//[self setSearchWord:nil];
 	(void)sender;
 	barsOffset += 1;
 	[self setNeedsDisplay:YES];
@@ -49,7 +49,7 @@
 
 - (IBAction)decrementBarsOffset:(id)sender
 {
-	[self setSearchWord:nil];
+	//[self setSearchWord:nil];
 	(void)sender;
 	if (!barsOffset) return;
 	barsOffset -= 1;
@@ -72,11 +72,11 @@
 	NSInteger searchWordIndex = NSNotFound;
 	if (newSearchWord)
 	{
-		for (NSString *word in [[self representedObject] wordsByFrequency])
+		for (NSString *word in [self filteredWordsByFrequency])
 		{
 			if ([word isEqualToString:newSearchWord])
 			{
-				searchWordIndex = [[[self representedObject] wordsByFrequency] indexOfObject:word];
+				searchWordIndex = [[self filteredWordsByFrequency] indexOfObject:word];
 				break;
 			}
 		}
@@ -121,16 +121,27 @@
 	
 	[[representedObject color] setFill];
 	
-	NSMutableDictionary *stringDrawAttributes = [[NSMutableDictionary alloc] init];
-	[stringDrawAttributes setValue:[representedObject color] forKey:NSForegroundColorAttributeName];
+	NSMutableDictionary *nameDrawAttributes = [NSMutableDictionary dictionary];
+	[nameDrawAttributes setValue:[representedObject color] forKey:NSForegroundColorAttributeName];
 	NSShadow *stringShadow = [[NSShadow alloc] init];
 	[stringShadow setShadowColor:[NSColor blackColor]];
 	[stringShadow setShadowOffset:NSMakeSize(0, 0)];
 	[stringShadow setShadowBlurRadius:4];
-	[stringDrawAttributes setValue:stringShadow forKey:NSShadowAttributeName];
+	[nameDrawAttributes setValue:stringShadow forKey:NSShadowAttributeName];
 	
-	[stringDrawAttributes setValue:[NSFont fontWithName:@"Goudy Old Style" size:48.0] forKey:NSFontAttributeName];
-	for (double size_2 = 96.0; [[NSString stringWithString:@" "] sizeWithAttributes:stringDrawAttributes].height > segmentSize.width - barSpacing; [stringDrawAttributes setValue:[NSFont fontWithName:@"Goudy Old Style" size:(--size_2)/2.0] forKey:NSFontAttributeName]);
+	[nameDrawAttributes setValue:[NSFont fontWithName:@"Goudy Old Style" size:48.0] forKey:NSFontAttributeName];
+	for (double size_2 = 96.0; [[NSString stringWithString:@" "] sizeWithAttributes:nameDrawAttributes].height > segmentSize.width - barSpacing; [nameDrawAttributes setValue:[NSFont fontWithName:@"Goudy Old Style" size:(--size_2)/2.0] forKey:NSFontAttributeName]);
+	
+	NSMutableDictionary *qDrawAttributes = [NSMutableDictionary dictionary];
+	[qDrawAttributes setValue:[NSColor blackColor] forKey:NSForegroundColorAttributeName];
+	NSShadow *qShadow = [[NSShadow alloc] init];
+	[qShadow setShadowColor:[representedObject color]];
+	[qShadow setShadowOffset:NSMakeSize(0.0, 0.0)];
+	[qShadow setShadowBlurRadius:barSpacing];
+	[qDrawAttributes setValue:qShadow forKey:NSShadowAttributeName];
+	
+	[qDrawAttributes setValue:[NSFont fontWithName:@"Goudy Old Style" size:48.0] forKey:NSFontAttributeName];
+	for (double size_2 = 96.0; [[NSString stringWithString:@"100"] sizeWithAttributes:qDrawAttributes].width > segmentSize.width - 3*barSpacing; [qDrawAttributes setValue:[NSFont fontWithName:@"Goudy Old Style" size:(--size_2)/2.0] forKey:NSFontAttributeName]);
 	
 	NSArray *filteredWordsByFrequency = [self filteredWordsByFrequency];
 	
@@ -159,14 +170,25 @@
 			[comparisonLine lineToPoint:NSMakePoint((b+1) * segmentSize.width - barSpacing, comparativeFrequency * segmentSize.height)];
 			[comparisonLine stroke];
 		}
+		
+		NSString *q = [NSString stringWithFormat:@"%i", (int)(relativeFrequency*100)];
+		[q drawAtPoint:NSMakePoint((b+1)*segmentSize.width - (2.0*barSpacing) - [q sizeWithAttributes:qDrawAttributes].width, 0.0) withAttributes:qDrawAttributes];
+		
 		NSAffineTransform *transform = [NSAffineTransform transform];
-		[transform translateXBy:((b + 1) * segmentSize.width) - barSpacing yBy:segmentSize.height - [word sizeWithAttributes:stringDrawAttributes].width];
+		[transform translateXBy:((b + 1) * segmentSize.width) - barSpacing yBy:segmentSize.height - [word sizeWithAttributes:nameDrawAttributes].width];
 		[transform rotateByDegrees:90];
 		[transform concat];
-		[word drawAtPoint:NSMakePoint(0, 0) withAttributes:stringDrawAttributes];
+		[word drawAtPoint:NSMakePoint(0, 0) withAttributes:nameDrawAttributes];
 		[transform invert];
 		[transform concat];
 	}
+}
+
+- (BOOL)resignFirstResponder
+{
+	BOOL willResign = [super resignFirstResponder];
+	if (willResign) [corpusView setFocusWord:nil];
+	return willResign;
 }
 
 - (NSArray *)filteredWordsByFrequency
@@ -179,7 +201,10 @@
 - (void)mouseMoved:(NSEvent *)theEvent
 {
 	[super mouseMoved:theEvent];
-	[corpusView setFocusWord:[[self filteredWordsByFrequency] objectAtIndex:(NSInteger) ([self convertPointFromBase:[theEvent locationInWindow]].x / [self segmentSize].width)]];
+	NSPoint locationInSelf = [self convertPoint:[theEvent locationInWindow] fromView:[[theEvent window] contentView]];
+	NSInteger column = (NSInteger) (locationInSelf.x / [self segmentSize].width);
+	if (column < 0) return;
+	[corpusView setFocusWord:[[self filteredWordsByFrequency] objectAtIndex:column]];
 }
 
 - (void)mouseDown:(NSEvent *)theEvent
@@ -192,7 +217,7 @@
 {
 	[super mouseUp:theEvent];
 	NSInteger unclickedB = (NSInteger) ([self convertPointFromBase:[theEvent locationInWindow]].x / [self segmentSize].width);
-	if (clickedB == unclickedB)
+	if (clickedB == unclickedB && !(clickedB < 0) && !(unclickedB < 0))
 	{
 		if (!exclusions) exclusions = [NSMutableArray array];
 		[exclusions addObject:[[self filteredWordsByFrequency] objectAtIndex:clickedB]];
