@@ -41,16 +41,15 @@
 	else
 	{
 		selection = sender;
-		highlight = nil;
 		[chartView setRepresentedObject:(id <PresidentialSpeechStatisticsProtocol>)sender];
 	}
+	highlight = nil;
 	[self positionPresidents];
 }
 
 - (void)mouseMoved:(NSEvent *)theEvent
 {
 	[super mouseMoved:theEvent];
-	if (selection) return;
 	NSPoint locationInSelf = [self convertPoint:[theEvent locationInWindow] fromView:[[theEvent window] contentView]];
 	for (President *president in presidents)
 	{
@@ -150,50 +149,54 @@
 {
 	[super drawRect:dirtyRect];
 	
-	President *reference = highlight ? highlight : selection;
-	
-	if (!reference)
+	if (!selection)
 	{
 		[labelField setTextColor:[NSColor whiteColor]];
 		CGColorRef cgWhite = CGColorCreateGenericGray(0.0, 1.0);
 		[[labelField layer] setShadowColor:cgWhite];
 		CGColorRelease(cgWhite);
 		[labelField setStringValue:@"Forty-Three Presidents"];
-		return;
+	}
+	else
+	{
+		[labelField setTextColor:[selection color]];
+		CGColorRef selectionPartyColorRef = CGColorCreateGenericRGB([[selection color] redComponent], [[selection color] greenComponent], [[selection color] blueComponent], [[selection color] alphaComponent]);
+		[[labelField layer] setShadowColor:selectionPartyColorRef];
+		CGColorRelease(selectionPartyColorRef);
+		[labelField setStringValue:[selection name]];
 	}
 	
-	[labelField setTextColor:[reference color]];
-	CGColorRef referencePartyColorRef = CGColorCreateGenericRGB([[reference color] redComponent], [[reference color] greenComponent], [[reference color] blueComponent], [[reference color] alphaComponent]);
-	[[labelField layer] setShadowColor:referencePartyColorRef];
-	CGColorRelease(referencePartyColorRef);
-	[labelField setStringValue:[reference name]];
+	President *reference = selection ? selection : highlight;
 	
-	for (President *president in presidents)
+	if (reference)
 	{
-		if (president != reference)
+		for (President *president in presidents)
 		{
-			NSPoint start = [reference viewCenter];
-			NSPoint end = [president viewCenter];
-			
-			NSBezierPath *arc = [[NSBezierPath alloc] init];
-			[arc moveToPoint:start];
-			[arc curveToPoint:end controlPoint1:[self center] controlPoint2:[self center]];
-			
-			NSDecimalNumber *pairSimilarity = [similarities valueForKey:[[reference name] stringByAppendingFormat:@"–%@", [president name]]];
-			
-			pairSimilarity = [[pairSimilarity decimalNumberBySubtracting:minimumSimilarity]
-							  decimalNumberByDividingBy:
-							  [maximumSimilarity decimalNumberBySubtracting:minimumSimilarity]];
-			
-			[[[president color] colorWithAlphaComponent:[pairSimilarity doubleValue]] setStroke];
-			[arc setLineWidth:2.0 * [pairSimilarity doubleValue]];
-			[arc stroke];
-			
-			if ([[president color] isEqualTo:[reference color]]) [self shadow:president];
+			if (president != reference)
+			{
+				NSPoint start = [reference viewCenter];
+				NSPoint end = [president viewCenter];
+				
+				NSBezierPath *arc = [[NSBezierPath alloc] init];
+				[arc moveToPoint:start];
+				[arc curveToPoint:end controlPoint1:[self center] controlPoint2:[self center]];
+				
+				NSDecimalNumber *pairSimilarity = [similarities valueForKey:[[reference name] stringByAppendingFormat:@"–%@", [president name]]];
+				
+				pairSimilarity = [[pairSimilarity decimalNumberBySubtracting:minimumSimilarity]
+								  decimalNumberByDividingBy:
+								  [maximumSimilarity decimalNumberBySubtracting:minimumSimilarity]];
+				
+				[[[president color] colorWithAlphaComponent:[pairSimilarity doubleValue]] setStroke];
+				[arc setLineWidth:2.0 * [pairSimilarity doubleValue]];
+				[arc stroke];
+				
+				if ([[president color] isEqualTo:[reference color]]) [self shadow:president];
+			}
 		}
 	}
 	
-	[self shadow:reference];
+	if (selection) [self shadow:selection];
 }
 
 - (void)shadow:(President *)president

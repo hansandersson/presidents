@@ -137,7 +137,7 @@
 	NSShadow *qShadow = [[NSShadow alloc] init];
 	[qShadow setShadowColor:[representedObject color]];
 	[qShadow setShadowOffset:NSMakeSize(0.0, 0.0)];
-	[qShadow setShadowBlurRadius:barSpacing];
+	[qShadow setShadowBlurRadius:2];
 	[qDrawAttributes setValue:qShadow forKey:NSShadowAttributeName];
 	
 	[qDrawAttributes setValue:[NSFont fontWithName:@"Goudy Old Style" size:48.0] forKey:NSFontAttributeName];
