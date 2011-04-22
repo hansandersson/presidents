@@ -27,6 +27,8 @@
 	
 	IBOutlet CorpusView *corpusView;
 	IBOutlet ChartView *chartView;
+	
+	NSColor *color;
 }
 
 @property (assign) IBOutlet NSWindow *window;

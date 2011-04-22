@@ -130,7 +130,7 @@
 			destination = NSMakeRect(center.x + (0.5 * area.width * sin(angle)),
 									 center.y + ((area.height - 24) * cos(angle)), 32, 32);
 		}
-		[[[president view] animator] setFrame:destination];
+		[(NSView *)[[president view] animator] setFrame:destination];
 	}
 }
 
@@ -203,7 +203,7 @@
 {
 	NSShadow *shadow = [[NSShadow alloc] init];
 	[shadow setShadowBlurRadius:12.0];
-	[shadow setShadowOffset:CGSizeMake(0.0, 0.0)];
+	[shadow setShadowOffset:NSMakeSize(0.0, 0.0)];
 	[shadow setShadowColor:[president color]];
 	[shadow set];
 	[[president color] setFill];

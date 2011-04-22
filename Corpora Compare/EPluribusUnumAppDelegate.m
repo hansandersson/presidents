@@ -100,9 +100,9 @@
 	wordContexts = [NSDictionary dictionaryWithDictionary:wordContextsWorking];
 	
 	wordsByFrequency = [[wordContexts allKeys] sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2){
-		return ( [[wordContexts valueForKey:obj1] count] == [[wordContexts valueForKey:obj2] count]
+		return ( [(NSArray *)[wordContexts valueForKey:obj1] count] == [(NSArray *)[wordContexts valueForKey:obj2] count]
 				? NSOrderedSame
-				: ( [[wordContexts valueForKey:obj1] count] > [[wordContexts valueForKey:obj2] count]
+				: ( [(NSArray *)[wordContexts valueForKey:obj1] count] > [(NSArray *)[wordContexts valueForKey:obj2] count]
 				   ? NSOrderedAscending //Most-frequent words first
 				   : NSOrderedDescending )
 				);

@@ -156,12 +156,12 @@
 	for (NSUInteger b = 0; b < barsCount && b < [filteredWordsByFrequency count]; b++)
 	{
 		NSString *word = [filteredWordsByFrequency objectAtIndex:(b + barsOffset)];
-		double relativeFrequency = (double)[[[representedObject wordContexts] valueForKey:word] count] / (double)[[[representedObject wordContexts] valueForKey:[filteredWordsByFrequency objectAtIndex:0]] count];
+		double relativeFrequency = (double)[(NSArray *)[[representedObject wordContexts] valueForKey:word] count] / (double)[(NSArray *)[[representedObject wordContexts] valueForKey:[filteredWordsByFrequency objectAtIndex:0]] count];
 		[[NSBezierPath bezierPathWithRect:NSMakeRect(b * segmentSize.width, 0, segmentSize.width - barSpacing,  relativeFrequency * segmentSize.height)] fill];
 		
 		if (comparedObject && [[comparedObject wordContexts] valueForKey:word])
 		{
-			double comparativeFrequency = (double)[[[comparedObject wordContexts] valueForKey:word] count] / (double)[[[comparedObject wordContexts] valueForKey:[comparisonWordsFilteredByFrequency objectAtIndex:0]] count];
+			double comparativeFrequency = (double)[(NSArray *)[[comparedObject wordContexts] valueForKey:word] count] / (double)[(NSArray *)[[comparedObject wordContexts] valueForKey:[comparisonWordsFilteredByFrequency objectAtIndex:0]] count];
 			
 			if (comparativeFrequency < relativeFrequency && [[representedObject color] isEqualTo:[comparedObject color]]) [[NSColor blackColor] setStroke];
 			else [[comparedObject color] setStroke];
@@ -199,14 +199,14 @@
 	return filteredWordsByFrequency;
 }
 
-- (void)mouseMoved:(NSEvent *)theEvent
+/*- (void)mouseMoved:(NSEvent *)theEvent
 {
 	[super mouseMoved:theEvent];
 	NSPoint locationInSelf = [self convertPoint:[theEvent locationInWindow] fromView:[[theEvent window] contentView]];
 	NSInteger column = (NSInteger) (locationInSelf.x / [self segmentSize].width);
 	if (column < 0) return;
 	[corpusView setFocusWord:[[self filteredWordsByFrequency] objectAtIndex:column]];
-}
+}*/
 
 - (void)mouseDown:(NSEvent *)theEvent
 {
@@ -218,10 +218,10 @@
 {
 	[super mouseUp:theEvent];
 	NSInteger unclickedB = (NSInteger) ([self convertPointFromBase:[theEvent locationInWindow]].x / [self segmentSize].width);
-	if (clickedB == unclickedB && !(clickedB < 0) && !(unclickedB < 0))
+	if (clickedB == unclickedB && !(clickedB < 0) && !(unclickedB < 0) && barsOffset+clickedB < [[self filteredWordsByFrequency] count])
 	{
 		if (!exclusions) exclusions = [NSMutableArray array];
-		[exclusions addObject:[[self filteredWordsByFrequency] objectAtIndex:clickedB]];
+		[exclusions addObject:[[self filteredWordsByFrequency] objectAtIndex:barsOffset+clickedB]];
 		[exclusionsTableView reloadData];
 		[self setNeedsDisplay:YES];
 	}
