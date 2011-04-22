@@ -129,9 +129,4 @@
 	if (target && action) [target performSelector:action withObject:self];
 }
 
-- (void)dealloc
-{
-    [super dealloc];
-}
-
 @end

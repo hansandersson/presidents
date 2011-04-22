@@ -40,7 +40,10 @@
 			{
 				NSString *key = [[[word stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] stringByTrimmingCharactersInSet:[NSCharacterSet punctuationCharacterSet]] lowercaseString];
 				
-				if (![key isEqualToString:@""] && ![[key stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"0987654321"]] isEqualToString:@""])
+				if (![key isEqualToString:@""]
+				&& [key rangeOfCharacterFromSet:[NSCharacterSet decimalDigitCharacterSet]].location == NSNotFound
+				&& [key rangeOfCharacterFromSet:[NSCharacterSet symbolCharacterSet]].location == NSNotFound
+				&& [key rangeOfCharacterFromSet:[NSCharacterSet punctuationCharacterSet]].location == NSNotFound)
 				{
 					if (![wordContextsWorking valueForKey:key]) [wordContextsWorking setValue:[NSMutableArray array] forKey:key];
 					[[wordContextsWorking valueForKey:key] addObject:sentence];
@@ -50,11 +53,6 @@
 		wordContexts = [NSDictionary dictionaryWithDictionary:wordContextsWorking];
 	}
 	return self;
-}
-
-- (void)dealloc
-{
-    [super dealloc];
 }
 
 @end

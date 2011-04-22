@@ -83,12 +83,13 @@
 	}
 	searchWord = newSearchWord;
 	if (searchWordIndex != NSNotFound) [self setBarsOffset:searchWordIndex];
-	else
+	else if (!searchWord || [searchWord isEqualToString:@""])
 	{
 		searchWord = nil;
 		[searchField setStringValue:@""];
 		[self setBarsOffset:0];
 	}
+	[[self window] makeFirstResponder:[self superview]];
 }
 
 - (void)setRepresentedObject:(id<PresidentialSpeechStatisticsProtocol>)newRepresentedObject

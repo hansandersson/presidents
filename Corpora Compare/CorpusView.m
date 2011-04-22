@@ -196,7 +196,7 @@
 		}
 	}
 	
-	if (selection) [self shadow:selection];
+	if (reference) [self shadow:reference];
 }
 
 - (void)shadow:(President *)president
