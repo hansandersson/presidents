@@ -18,8 +18,8 @@
 	
 	IBOutlet CorpusView *corpusView;
 	
-	IBOutlet NSUInteger barsCount;
-	IBOutlet NSUInteger barsOffset;
+	NSUInteger barsCount;
+	NSUInteger barsOffset;
 	NSString *searchWord;
 	double barSpacing;
 	

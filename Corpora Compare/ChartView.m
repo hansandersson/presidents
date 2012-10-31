@@ -131,7 +131,7 @@
 	[nameDrawAttributes setValue:stringShadow forKey:NSShadowAttributeName];
 	
 	[nameDrawAttributes setValue:[NSFont fontWithName:@"Goudy Old Style" size:48.0] forKey:NSFontAttributeName];
-	for (double size_2 = 96.0; [[NSString stringWithString:@" "] sizeWithAttributes:nameDrawAttributes].height > segmentSize.width - barSpacing; [nameDrawAttributes setValue:[NSFont fontWithName:@"Goudy Old Style" size:(--size_2)/2.0] forKey:NSFontAttributeName]);
+	for (double size_2 = 96.0; [@" " sizeWithAttributes:nameDrawAttributes].height > segmentSize.width - barSpacing; [nameDrawAttributes setValue:[NSFont fontWithName:@"Goudy Old Style" size:(--size_2)/2.0] forKey:NSFontAttributeName]);
 	
 	NSMutableDictionary *qDrawAttributes = [NSMutableDictionary dictionary];
 	[qDrawAttributes setValue:[NSColor blackColor] forKey:NSForegroundColorAttributeName];
@@ -142,7 +142,7 @@
 	[qDrawAttributes setValue:qShadow forKey:NSShadowAttributeName];
 	
 	[qDrawAttributes setValue:[NSFont fontWithName:@"Goudy Old Style" size:48.0] forKey:NSFontAttributeName];
-	for (double size_2 = 96.0; [[NSString stringWithString:@"100"] sizeWithAttributes:qDrawAttributes].width > segmentSize.width - 3*barSpacing; [qDrawAttributes setValue:[NSFont fontWithName:@"Goudy Old Style" size:(--size_2)/2.0] forKey:NSFontAttributeName]);
+	for (double size_2 = 96.0; [@"100" sizeWithAttributes:qDrawAttributes].width > segmentSize.width - 3*barSpacing; [qDrawAttributes setValue:[NSFont fontWithName:@"Goudy Old Style" size:(--size_2)/2.0] forKey:NSFontAttributeName]);
 	
 	NSArray *filteredWordsByFrequency = [self filteredWordsByFrequency];
 	
